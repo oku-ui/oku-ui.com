@@ -35,7 +35,7 @@ jobs:
           cache: pnpm
             
       - name: 📦 Install deps (with cache)
-        run: pnpm install --child-concurrency 3
+        run: pnpm install
 
       - name: 👀 Lint
         run: pnpm lint
