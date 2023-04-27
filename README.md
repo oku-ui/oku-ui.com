@@ -29,4 +29,14 @@ Locally preview production build:
 pnpm run preview
 ```
 
+
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg">
+    <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg'/>
+  </a>
+</p>
+
+
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
