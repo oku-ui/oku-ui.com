@@ -1,15 +1,33 @@
 {
   "name": "oku-ui-docs",
   "private": true,
+  "version": "0.0.0",
+  "description": "Give your JavaScript the ability to speak many languages.",
+  "homepage": "https://github.com/oku-ui/docs",
+  "bugs": "https://github.com/oku-ui/docs/issues",
+  "author": "Mehmet @productdevbook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oku-ui/docs.git"
+  },
+  "funding": "https://github.com/sponsors/productdevbook",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.vue .",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.vue . --fix"
   },
   "devDependencies": {
-    "@types/node": "^18.16.1",
+    "@antfu/eslint-config": "^0.38.5",
     "@nuxt/content": "^2.6.0",
-    "nuxt": "^3.4.2"
+    "@types/node": "^18.16.1",
+    "eslint": "^8.39.0",
+    "nuxt": "^3.4.2",
+    "typescript": "^5.0.4"
   }
 }
