@@ -12,7 +12,8 @@
   },
   "funding": "https://github.com/sponsors/productdevbook",
   "engines": {
-    "node": ">=16"
+    "node": ">=16",
+    "pnpm": ">=8"
   },
   "scripts": {
     "build": "nuxt build",
