@@ -4,4 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
   ],
+  devtools: {
+    enabled: true,
+  },
 })
