@@ -30,7 +30,7 @@
     "@types/node": "^18.16.1",
     "@unocss/nuxt": "^0.51.8",
     "eslint": "^8.39.0",
-    "nuxt": "^3.4.2",
+    "nuxt": "^3.4.3",
     "typescript": "^5.0.4"
   }
 }
