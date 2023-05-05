@@ -17,6 +17,7 @@
     ],
     "packageRules": [
         {
+            "groupName": "root",
             "matchFiles": [
                 "package.json"
             ],
