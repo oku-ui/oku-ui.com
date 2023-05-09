@@ -7,4 +7,7 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  css: [
+    '@unocss/reset/tailwind.css',
+  ],
 })
