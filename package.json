@@ -26,11 +26,15 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
+    "@iconify-json/mdi": "^1.1.51",
+    "@iconify-json/octicon": "^1.1.38",
+    "@iconify-json/ph": "^1.1.5",
     "@nuxt/content": "^2.6.0",
     "@nuxt/devtools": "^0.4.6",
+    "@nuxtjs/plausible": "^0.2.1",
     "@types/node": "^18.16.6",
     "@unocss/nuxt": "^0.51.12",
-    "eslint": "^8.40.0",
+    "eslint": "8.39.0",
     "nuxt": "^3.4.3",
     "typescript": "^5.0.4"
   }
