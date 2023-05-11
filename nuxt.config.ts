@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@nuxtjs/plausible',
+    '@nuxthq/studio',
   ],
   devtools: {
     enabled: true,
