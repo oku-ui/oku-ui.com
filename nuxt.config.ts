@@ -33,6 +33,5 @@ export default defineNuxtConfig({
   plausible: {
     apiHost: 'https://rapor.vucod.com',
     domain: 'oku-ui.com',
-    trackLocalhost: true,
   },
 })
