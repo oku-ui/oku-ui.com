@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const { data } = await useAsyncData('nav', () =>
-  queryContent('/docs/primitives').where({ root: true }).only(['title', '_path', '_dir', 'root']).find(),
+  queryContent('/about').only(['title', '_path', '_dir']).find(),
 )
 
 const tree = computed(() => {
+  console.log(JSON.stringify(data.value))
   return data.value?.reduce((result, currentObject) => {
     const key = currentObject._dir
     if (!result[key])

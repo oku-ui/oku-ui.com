@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/plausible',
     '@nuxthq/studio',
+    '@vueuse/nuxt',
   ],
   devtools: {
     enabled: true,
@@ -29,6 +30,15 @@ export default defineNuxtConfig({
     },
     documentDriven: true,
   },
+
+  nitro: {
+    rootDir: '.',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
+  components: [{ path: '~/components', global: true }],
 
   plausible: {
     apiHost: 'https://rapor.vucod.com',

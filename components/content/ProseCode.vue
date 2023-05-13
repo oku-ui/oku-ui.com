@@ -1,0 +1,32 @@
+<script setup lang="ts">
+const props = defineProps<{
+  code: string
+  language?: string
+  filename?: string
+  higlights?: number[]
+  meta?: string
+}>()
+const { code } = toRefs(props)
+const { copy, copied } = useClipboard({ source: code })
+</script>
+
+<template>
+  <div class="group relative border border-oku-700 rounded">
+    <div v-if="filename" class="mr-4 mt-4 md:mr-0 md:mt-0 flex justify-end">
+      <samp
+        class="not-prose w-max md:absolute top-4 right-4 opacity-70 md:group-hover:opacity-0 transition text-xs px-2 py-1 bg-oku-700 rounded"
+      >
+        {{ filename }}
+      </samp>
+    </div>
+
+    <button
+      class="absolute bottom-4 right-4 text-lg w-10 h-10 flex items-center justify-center rounded-lg border border-oku-700  opacity-0 group-hover:opacity-100 text-white transition bg-yellow-500"
+      @click="copy()"
+    >
+      <div v-if="!copied" class="i-ph:clipboard w-6 h-6" />
+      <div v-else class="i-ph:check" />
+    </button>
+    <slot />
+  </div>
+</template>

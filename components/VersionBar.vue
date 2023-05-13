@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('nav', () =>
-  queryContent('/docs/primitives').where({ root: true }).only(['title', '_path', '_dir', 'root']).find(),
+const slug = computed(() => useRoute().path)
+const dirname = computed(() => slug.value.split('/')[1])
+const { data } = await useAsyncData('version', () =>
+  queryContent(dirname.value).where({ root: false }).only(['title', '_path', '_dir', 'root', 'version']).find(),
 )
 
 const tree = computed(() => {
@@ -18,13 +20,9 @@ const tree = computed(() => {
 <template>
   <div>
     <div v-for="(child, key) of tree" :key="key" class="mb-6">
-      <h4 class="font-semibold text-lg capitalize">
-        {{ key }}
-      </h4>
-
       <NuxtLink v-for="item in child" :key="item" :to="item._path" class="mt-2 text-sm flex flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
         {{
-          item.title
+          item.version
         }}
       </NuxtLink>
     </div>
