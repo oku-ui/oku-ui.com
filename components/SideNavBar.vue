@@ -2,10 +2,13 @@
 const { data } = await useAsyncData('nav', () =>
   queryContent('/docs/primitives').where({ root: true }).only(['title', '_path', '_dir', 'root']).find(),
 )
+const { path } = toRefs(useRoute())
 
 const tree = computed(() => {
   return data.value?.reduce((result, currentObject) => {
     const key = currentObject._dir
+    currentObject.active = path.value.includes(currentObject._path)
+
     if (!result[key])
       result[key] = []
 
@@ -22,7 +25,7 @@ const tree = computed(() => {
         {{ key }}
       </h4>
 
-      <NuxtLink v-for="item in child" :key="item" :to="item._path" class="mt-2 text-sm flex flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
+      <NuxtLink v-for="item in child" :key="item" :to="item._path" :class="{ 'router-link-active': item.active }" class="mt-2 text-sm flex flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
         {{
           item.title
         }}
