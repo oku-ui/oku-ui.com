@@ -1,6 +1,6 @@
 <template>
   <Body class="antialiased font-sans text-oku-50 dark:text-oku-200 bg-oku-950">
-    <NavBar
+    <DocsNavBar
       class="sticky top-0 bg-oku-950 border-b-1 border-oku-900 bg-opacity-50 backdrop-blur-md"
     />
 

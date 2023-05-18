@@ -32,6 +32,7 @@
     "@nuxt/content": "^2.6.0",
     "@nuxt/devtools": "^0.4.6",
     "@nuxthq/studio": "^0.12.1",
+    "@nuxthq/ui": "^2.0.4",
     "@nuxtjs/plausible": "^0.2.1",
     "@types/node": "^18.16.6",
     "@unocss/nuxt": "^0.51.12",

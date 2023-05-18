@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const slug = computed(() => useRoute().path)
-const { data } = await useAsyncData(slug.value, () =>
+const { data } = await useAsyncData('about', () =>
   queryContent(slug.value).findOne(),
 )
 useCustomHead({

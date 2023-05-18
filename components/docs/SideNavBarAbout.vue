@@ -4,7 +4,6 @@ const { data } = await useAsyncData('nav', () =>
 )
 
 const tree = computed(() => {
-  console.log(JSON.stringify(data.value))
   return data.value?.reduce((result, currentObject) => {
     const key = currentObject._dir
     if (!result[key])

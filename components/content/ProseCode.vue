@@ -11,7 +11,7 @@ const { copy, copied } = useClipboard({ source: code })
 </script>
 
 <template>
-  <div class="group relative border border-oku-700 rounded">
+  <div class="group relative border border-oku-700 rounded" :class="`language-${language}`">
     <div v-if="filename" class="mr-4 mt-4 md:mr-0 md:mt-0 flex justify-end">
       <samp
         class="not-prose w-max md:absolute top-4 right-4 opacity-70 md:group-hover:opacity-0 transition text-xs px-2 py-1 bg-oku-700 rounded"
@@ -30,3 +30,10 @@ const { copy, copied } = useClipboard({ source: code })
     <slot />
   </div>
 </template>
+
+<style>
+pre code .line {
+  display: block;
+  min-height: 1rem;
+}
+</style>

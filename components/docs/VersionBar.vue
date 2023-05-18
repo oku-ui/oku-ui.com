@@ -15,17 +15,29 @@ const tree = computed(() => {
     return result
   }, {})
 })
+
+const selectValue = ref('')
+const router = useRouter()
+watch(selectValue, (value) => {
+  if (value)
+    router.push(`/${dirname.value}/${value}`)
+})
 </script>
 
 <template>
   <div>
-    <div v-for="(child, key) of tree" :key="key" class="mb-6">
-      <NuxtLink v-for="item in child" :key="item" :to="item._path" class="mt-2 text-sm flex flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
+    <!-- Drapdown Menu -->
+    <select v-for="(child, key) of tree" :key="key" v-model="selectValue" class="mt-2 text-sm flex bg-oku-500 flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
+      <option disabled value="" class="text-white">
+        Select version
+      </option>
+
+      <option v-for="item in child" :key="item" :value="item.value" class="mt-2 text-sm flex flex-col space-y-1 p-2 font-semibold bg-oku-800 hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
         {{
           item.version
         }}
-      </NuxtLink>
-    </div>
+      </option>
+    </select>
   </div>
 </template>
 

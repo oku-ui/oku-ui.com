@@ -26,6 +26,6 @@ const isPreview = ref(true)
         <slot name="code" />
       </div>
     </div>
-    <VersionBar />
+    <DocsVersionBar />
   </div>
 </template>
