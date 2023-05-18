@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/plausible',
     '@nuxthq/studio',
+    '@vueuse/nuxt',
   ],
   devtools: {
     enabled: true,
@@ -23,12 +24,24 @@ export default defineNuxtConfig({
     configFile: '~/unocss.config.ts',
   },
   content: {
-    highlight: {
-      theme: 'github-dark',
-      preload: ['vue', 'ts'],
-    },
     documentDriven: true,
+    highlight: {
+      theme: {
+        default: 'github-dark',
+        dark: 'github-dark',
+        light: 'github-light',
+      },
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
+    },
   },
+  nitro: {
+    rootDir: '.',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
+  components: [{ path: '~/components', global: true }],
 
   plausible: {
     apiHost: 'https://rapor.vucod.com',
