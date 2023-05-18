@@ -23,7 +23,7 @@ defineProps<{
         class="absolute bottom-0 opacity-50 right-0 flex items-center lg:inset-y-0 lg:h-full"
       >
         <img
-          src="cover.svg"
+          src="/cover.svg"
           class="hidden h-full cursor-pointer object-cover lg:block"
         >
       </div>
