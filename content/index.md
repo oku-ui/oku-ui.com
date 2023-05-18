@@ -5,7 +5,15 @@
 ::showcase-grid
     ::showcase-card
     ---
-    title: "Label"
+    to: "/about"
+    title: "About"
+    description: "Renders an accessible label associated with controls."
+    ---
+    ::
+    ::showcase-card
+    ---
+    to: "/docs/primitives/overview/introduction"
+    title: "Primitives"
     description: "Renders an accessible label associated with controls."
     ---
     ::
