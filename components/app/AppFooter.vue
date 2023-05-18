@@ -1,17 +1,21 @@
 <script setup lang="ts">
 interface MenuItem {
-  label: string
+  icon: string
   href: string
 }
 
 const menu: MenuItem[] = [
   {
-    label: 'Home',
-    href: '/',
+    icon: 'i-mdi-github',
+    href: 'https://github.com/oku-ui',
   },
   {
-    label: 'Primitives',
-    href: '/docs/primitives/overview/introduction',
+    icon: 'i-mdi-discord',
+    href: 'https://chat.productdevbook.com',
+  },
+  {
+    icon: 'i-mdi-twitter',
+    href: 'https://twitter.com/oku_ui',
   },
 ]
 </script>
@@ -33,27 +37,18 @@ const menu: MenuItem[] = [
     </div>
   </div>
   <footer class="relative z-10">
-    <div class="mx-auto max-w-6xl py-8 md:py-12 grid gap-6 md:grid-cols-3">
-      <div class="flex items-center justify-center gap-4 md:order-3">
-        <a href="https://twitter.com/oku_ui" rel="noopener noreferrer" target="_blank" class="font-medium focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 focus:ring-offset-white dark:focus:ring-offset-black text-sm p-2 border border-transparent u-text-gray-500 hover:u-text-gray-700 focus:u-text-gray-700 disabled:hover:u-text-gray-500 inline-flex items-center rounded-md !p-0" aria-label="Twitter">
-          <span class="i-mdi-twitter flex-shrink-0 h-5 w-5" aria-hidden="true" />
+    <div class="gap-8 flex flex-col-reverse sm:flex-row items-center w-full mx-auto max-w-6xl px-12 py-8 md:py-12">
+      <p class="text-center text-sm text-slate-400">
+        2023 Oku. A project by productdevbook.
+      </p>
 
-        </a>
-        <a href="https://github.com/oku-ui" rel="noopener noreferrer" target="_blank" class="font-medium focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 focus:ring-offset-white dark:focus:ring-offset-black text-sm p-2 border border-transparent u-text-gray-500 hover:u-text-gray-700 focus:u-text-gray-700 disabled:hover:u-text-gray-500 inline-flex items-center rounded-md !p-0" aria-label="GitHub">
-          <span class="i-mdi-github flex-shrink-0 h-5 w-5" aria-hidden="true" />
-        </a>
-      </div>
-      <ul class="mt-4 md:mt-0 justify-center gap-x-4 lg:gap-x-6 flex items-center md:order-2 overflow-x-auto">
-        <li v-for="item in menu" :key="item">
-          <NuxtLink :href="item.href" class="text-sm focus:outline-none u-text-gray-600 hover:u-text-gray-900 focus:u-text-gray-900" label="Guide">
-            {{ item.label }}
-          </NuxtLink>
-        </li>
-      </ul>
-      <div class="mt-4 md:mt-0 md:order-1">
-        <p class="text-center text-sm u-text-gray-700">
-          2023 Oku. A project by productdevbook.
-        </p>
+      <div class="flex min-w-0 justify-end flex-1 gap-x-6">
+        <NuxtLink
+          v-for="item in menu" :key="item.href"
+          :to="item.href"
+          :class="item.icon"
+          class="text-gray-50 text-2xl focus:outline-none font-bold hover:text-cyan-600 focus:text-gray-50"
+        />
       </div>
     </div>
   </footer>

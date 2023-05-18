@@ -39,4 +39,5 @@ useCustomHead({
   </main>
 
   <DocsPrevNext />
+  <DocsSponsors />
 </template>

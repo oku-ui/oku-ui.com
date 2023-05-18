@@ -41,8 +41,5 @@
     "eslint": "8.39.0",
     "nuxt": "^3.5.0",
     "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "@iconify-json/logos": "^1.1.30"
   }
 }

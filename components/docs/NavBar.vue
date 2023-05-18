@@ -6,15 +6,15 @@ interface MenuItem {
 
 const menu: MenuItem[] = [
   {
-    icon: 'i-ph-github-logo-fill',
+    icon: 'i-mdi-github',
     href: 'https://github.com/oku-ui',
   },
   {
-    icon: 'i-ph-discord-logo-fill',
+    icon: 'i-mdi-discord',
     href: 'https://chat.productdevbook.com',
   },
   {
-    icon: 'i-ph-twitter-logo-fill',
+    icon: 'i-mdi-twitter',
     href: 'https://twitter.com/oku_ui',
   },
 ]

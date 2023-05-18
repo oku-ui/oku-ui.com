@@ -9,12 +9,13 @@ const { elementX, elementY } = useMouseInElement(card)
       '--x': `${elementX}px`,
       '--y': `${elementY}px`,
     }"
-    class="border-gradient group relative h-[370px] rounded p-8 before:(content-[''] absolute rounded-xl -inset-x-px -inset-y-px overflow-hidden h-[calc(100%+2px)] w-[calc(100%+2px)]) z-10 lg:h-[250px] lg:p-16"
+    class="border-gradient group relative rounded before:(content-[''] absolute rounded-xl -inset-x-px -inset-y-px overflow-hidden h-[calc(100%+2px)] w-[calc(100%+2px)]) z-10"
   >
     <div class="absolute inset-0 rounded-xl bg-[#1a2632] transition-colors duration-300" />
     <div class="absolute bg-down inset-0 rounded-xl bg-[#1a2632] transition-colors duration-300" />
-
-    <slot />
+    <div class="relative z-10">
+      <slot />
+    </div>
   </div>
 </template>
 
