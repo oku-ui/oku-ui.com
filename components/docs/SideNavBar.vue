@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data } = await useAsyncData('nav', () =>
-  queryContent('/docs/primitives').where({ root: true }).only(['title', '_path', '_dir', 'root']).find(),
+  queryContent('/docs/primitives').only(['title', '_path', '_dir', 'root']).find(),
 )
 const { path } = toRefs(useRoute())
 
@@ -20,22 +20,23 @@ const tree = computed(() => {
 
 <template>
   <div>
-    <div v-for="(child, key) of tree" :key="key" class="mb-6">
-      <h4 class="font-semibold text-lg capitalize">
-        {{ key }}
-      </h4>
-
-      <NuxtLink v-for="item in child" :key="item" :to="item._path" :class="{ 'router-link-active': item.active }" class="mt-2 text-sm flex flex-col space-y-1  p-2 font-semibold hover:text-oku-300  hover:border-l-5 hover:border-oku-500">
-        {{
-          item.title
-        }}
-      </NuxtLink>
+    <div class="space-y-8">
+      <div v-for="(child, key) of tree" :key="key" class="space-y-3">
+        <div class="text-sm font-semibold text-gray-200">
+          <span class="truncate capitalize">{{ key }}</span>
+        </div>
+        <nav class="border-l border-gray-800 space-y-2 mt-1">
+          <NuxtLink v-for="item in child" :key="item" :to="item._path" :label="item.title" :class="{ 'router-link-active': item.active }" class="group text-gray-300 text-sm block border-l border-current -ml-px lg:leading-6 pl-4 font-semibold">
+            <span class="truncate relative">{{ item.title }}</span>
+          </NuxtLink>
+        </nav>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .router-link-active {
-    @apply text-oku-300 font-bold hover:text-oku-500 hover:underline border-l-5 border-oku-300;
+  @apply text-white border-l-2 border-current font-semibold;
 }
 </style>
