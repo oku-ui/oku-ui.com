@@ -41,5 +41,8 @@
     "eslint": "8.39.0",
     "nuxt": "^3.5.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@oku-ui/label": "^0.1.0"
   }
 }
