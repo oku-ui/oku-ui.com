@@ -17,4 +17,5 @@ useCustomHead({
     </p>
     <ContentRenderer :value="data" />
   </main>
+  <DocsSponsors />
 </template>

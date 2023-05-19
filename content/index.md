@@ -5,9 +5,9 @@
 ::showcase-grid
     ::showcase-card
     ---
-    to: "/about"
+    to: "about/we"
     title: "About"
-    description: "Renders an accessible label associated with controls."
+    description: "Oku is a brand and community focused on the Vue and Nuxt markets. So, what wins the Oku?"
     ---
     ::
     ::showcase-card
