@@ -38,9 +38,9 @@ const menu: MenuItem[] = [
   </div>
   <footer class="relative z-10">
     <div class="gap-8 flex flex-col-reverse sm:flex-row items-center w-full mx-auto max-w-6xl px-12 py-8 md:py-12">
-      <p class="text-center text-sm text-slate-400">
+      <a target="_blank" href="https://github.com/productdevbook" class="text-center text-sm text-slate-400">
         2023 Oku. A project by productdevbook.
-      </p>
+      </a>
 
       <div class="flex min-w-0 justify-end flex-1 gap-x-6">
         <NuxtLink

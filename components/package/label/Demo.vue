@@ -14,7 +14,7 @@ onMounted(() => {
       <OkuLabel ref="labelRef" class="text-base font-bold text-white" for="firstName">
         First name
       </OkuLabel>
-      <input id="firstName" class="ml-4 bg-white/50 text-white rounded ring-blue p-2 focus:border-blue" type="text" defaultValue="Fatih Dereli">
+      <input id="firstName" class="ml-4 bg-white/50 text-white rounded ring-blue p-2 focus:border-blue" type="text" value="Fatih Dereli">
     </div>
   </div>
 </template>
