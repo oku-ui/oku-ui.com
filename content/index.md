@@ -22,7 +22,7 @@
     ::showcase-card
     ---
     to: "#"
-    title: "Notication"
+    title: "Notification"
     description: "in the future."
     ---
     ::
