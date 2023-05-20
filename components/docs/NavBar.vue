@@ -21,7 +21,7 @@ const menu: MenuItem[] = [
 </script>
 
 <template>
-  <div class="relative z-10">
+  <div class="relative z-100">
     <div class="mx-auto sm:px-6 lg:px-8 px-4 max-w-6xl">
       <nav class="h-16 flex items-center justify-between" aria-label="Global">
         <div class="flex lg:min-w-0" aria-label="Global">
