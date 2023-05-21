@@ -6,7 +6,7 @@ import { onMounted, ref } from 'vue'
 const refV = ref<CheckboxRef>()
 
 onMounted(() => {
-  console.log(refV.value?.innerRef, 'tt')
+  // console.log(refV.value?.innerRef, 'tt')
 })
 </script>
 
