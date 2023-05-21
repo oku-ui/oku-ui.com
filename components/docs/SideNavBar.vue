@@ -21,7 +21,7 @@ const mobileShow = ref(false)
 </script>
 
 <template>
-  <div class="sticky top-15 z-10 md:z-0 rounded-md w-56 shrink-0 bg-slate-800/50 md:bg-transparent backdrop-filter backdrop-blur-lg md:blur-none overflow-hidden border-1.5 border-slate-700/50 flex-0">
+  <div class="sticky top-15 z-100 md:z-0 rounded-md w-56 shrink-0 bg-slate-800/50 md:bg-transparent backdrop-filter backdrop-blur-lg md:blur-none overflow-hidden border-1.5 border-slate-700/50 flex-0">
     <button :class="{ 'border-b border-slate-700': mobileShow }" class="text-left px-4 inline-block w-full md:hidden py-2 text-sm bg-slate-800" @click="mobileShow = !mobileShow">
       Navigation
     </button>
