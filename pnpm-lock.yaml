@@ -33,6 +33,9 @@ devDependencies:
   '@nuxtjs/plausible':
     specifier: ^0.2.1
     version: 0.2.1
+  '@oku-ui/aspect-ratio':
+    specifier: ^0.1.0
+    version: 0.1.0(vue@3.3.2)
   '@types/node':
     specifier: ^18.16.12
     version: 18.16.12
@@ -1552,6 +1555,16 @@ packages:
       - webpack
     dev: true
 
+  /@oku-ui/aspect-ratio@0.1.0(vue@3.3.2):
+    resolution: {integrity: sha512-mT2IQH2mi0ZDtFOsjkUpnEh0/9/ajaF6eZiE7CGDOyn6vzHvaIGEDGfEO+oa694t24nEa9apfpLeIqUrwt2eUg==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/primitive': 0.0.1(vue@3.3.2)
+      '@oku-ui/utils': 0.0.1
+      vue: 3.3.2
+    dev: true
+
   /@oku-ui/label@0.1.0(vue@3.3.2):
     resolution: {integrity: sha512-co206xY+fkIj/p88xZVhNx8yyOU8s0HVNmjtGTerAdmIAoq/RJwQ9aP/h80gWka3fZdIpOeIyfcB7BYvrZqXFg==}
     peerDependencies:
@@ -1568,11 +1581,9 @@ packages:
       vue: ^3.3.2
     dependencies:
       vue: 3.3.2
-    dev: false
 
   /@oku-ui/utils@0.0.1:
     resolution: {integrity: sha512-HRMM1EmtJsp/HMHzv6xt5D2L8DZDPp6thQn4d1uj+KQOMmXdq9O4PzlCC+LFHawDJqbeEiYAkjVUwxhraWF1gA==}
-    dev: false
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
