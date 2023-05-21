@@ -34,6 +34,7 @@
     "@nuxthq/studio": "^0.12.1",
     "@nuxthq/ui": "^2.0.4",
     "@nuxtjs/plausible": "^0.2.1",
+    "@oku-ui/aspect-ratio": "^0.1.0",
     "@types/node": "^18.16.12",
     "@unocss/nuxt": "^0.51.13",
     "@vueuse/core": "^10.1.2",
