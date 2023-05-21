@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@oku-ui/checkbox':
-    specifier: ^0.1.1
-    version: 0.1.1(vue@3.3.2)
+    specifier: ^0.1.3
+    version: 0.1.3(vue@3.3.2)
   '@oku-ui/label':
     specifier: ^0.1.0
     version: 0.1.0(vue@3.3.2)
@@ -1555,8 +1555,8 @@ packages:
       - webpack
     dev: true
 
-  /@oku-ui/checkbox@0.1.1(vue@3.3.2):
-    resolution: {integrity: sha512-6Sz7zjeysXao7cidyS9T9Q2/pLs4IeKmJN0E5XM7eZ/8I1+0NKZR+xWOZPMrU2hBQBmvSINimf2b79A1yxOnPg==}
+  /@oku-ui/checkbox@0.1.3(vue@3.3.2):
+    resolution: {integrity: sha512-FWz84l9eG2QBYwqZQjZx//DlU0tBis95ZjOQyQ6NrI+s/b2VwG7/zNieB0UdrV9NnxZxeMN3b3QNHMX78Zgzjw==}
     peerDependencies:
       vue: ^3.3.2
     dependencies:
