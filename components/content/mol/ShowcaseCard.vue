@@ -3,7 +3,7 @@ defineProps<{
   to: string
   title: string
   description: string
-  active: boolean
+  active?: boolean
 }>()
 </script>
 
