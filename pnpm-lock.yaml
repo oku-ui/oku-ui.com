@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@oku-ui/checkbox':
+    specifier: ^0.1.1
+    version: 0.1.1(vue@3.3.2)
   '@oku-ui/label':
     specifier: ^0.1.0
     version: 0.1.0(vue@3.3.2)
@@ -1552,6 +1555,18 @@ packages:
       - webpack
     dev: true
 
+  /@oku-ui/checkbox@0.1.1(vue@3.3.2):
+    resolution: {integrity: sha512-6Sz7zjeysXao7cidyS9T9Q2/pLs4IeKmJN0E5XM7eZ/8I1+0NKZR+xWOZPMrU2hBQBmvSINimf2b79A1yxOnPg==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/primitive': 0.0.1(vue@3.3.2)
+      '@oku-ui/provide': 0.0.1(vue@3.3.2)
+      '@oku-ui/use-composable': 0.0.4(vue@3.3.2)
+      '@oku-ui/utils': 0.0.1
+      vue: 3.3.2
+    dev: false
+
   /@oku-ui/label@0.1.0(vue@3.3.2):
     resolution: {integrity: sha512-co206xY+fkIj/p88xZVhNx8yyOU8s0HVNmjtGTerAdmIAoq/RJwQ9aP/h80gWka3fZdIpOeIyfcB7BYvrZqXFg==}
     peerDependencies:
@@ -1567,6 +1582,23 @@ packages:
     peerDependencies:
       vue: ^3.3.2
     dependencies:
+      vue: 3.3.2
+    dev: false
+
+  /@oku-ui/provide@0.0.1(vue@3.3.2):
+    resolution: {integrity: sha512-5Usp/wOz9ctNBfxN1epen4i2ozykwo/FrNTU0a4+C/PrLVqvkfzXVE0N8AcKFyN8i+rQMIFyDbK23tEwXZ8qug==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      vue: 3.3.2
+    dev: false
+
+  /@oku-ui/use-composable@0.0.4(vue@3.3.2):
+    resolution: {integrity: sha512-zihrDACzDNmeN6CtrSNfHvcScvxM2QgC9TPyKo5Gw46rYyT4WUEehd5LEEgkdpTb4COCR8dMB34wKKA1Y8ciIg==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/utils': 0.0.1
       vue: 3.3.2
     dev: false
 
