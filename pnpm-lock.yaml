@@ -36,6 +36,9 @@ devDependencies:
   '@oku-ui/aspect-ratio':
     specifier: ^0.1.0
     version: 0.1.0(vue@3.3.2)
+  '@oku-ui/avatar':
+    specifier: ^0.1.1
+    version: 0.1.1(vue@3.3.2)
   '@types/node':
     specifier: ^18.16.12
     version: 18.16.12
@@ -1565,6 +1568,18 @@ packages:
       vue: 3.3.2
     dev: true
 
+  /@oku-ui/avatar@0.1.1(vue@3.3.2):
+    resolution: {integrity: sha512-qlhaGGhOyh7Faz9cXLTg4rXiUndSRN+qrAlTl1KH5lt8FFGGV9ke1eg0EpZDZnEsnQuaDMjn+ihLg5PchFLLKg==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/primitive': 0.0.1(vue@3.3.2)
+      '@oku-ui/provide': 0.0.1(vue@3.3.2)
+      '@oku-ui/use-composable': 0.0.4(vue@3.3.2)
+      '@oku-ui/utils': 0.0.1
+      vue: 3.3.2
+    dev: true
+
   /@oku-ui/label@0.1.0(vue@3.3.2):
     resolution: {integrity: sha512-co206xY+fkIj/p88xZVhNx8yyOU8s0HVNmjtGTerAdmIAoq/RJwQ9aP/h80gWka3fZdIpOeIyfcB7BYvrZqXFg==}
     peerDependencies:
@@ -1581,6 +1596,23 @@ packages:
       vue: ^3.3.2
     dependencies:
       vue: 3.3.2
+
+  /@oku-ui/provide@0.0.1(vue@3.3.2):
+    resolution: {integrity: sha512-5Usp/wOz9ctNBfxN1epen4i2ozykwo/FrNTU0a4+C/PrLVqvkfzXVE0N8AcKFyN8i+rQMIFyDbK23tEwXZ8qug==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      vue: 3.3.2
+    dev: true
+
+  /@oku-ui/use-composable@0.0.4(vue@3.3.2):
+    resolution: {integrity: sha512-zihrDACzDNmeN6CtrSNfHvcScvxM2QgC9TPyKo5Gw46rYyT4WUEehd5LEEgkdpTb4COCR8dMB34wKKA1Y8ciIg==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/utils': 0.0.1
+      vue: 3.3.2
+    dev: true
 
   /@oku-ui/utils@0.0.1:
     resolution: {integrity: sha512-HRMM1EmtJsp/HMHzv6xt5D2L8DZDPp6thQn4d1uj+KQOMmXdq9O4PzlCC+LFHawDJqbeEiYAkjVUwxhraWF1gA==}
