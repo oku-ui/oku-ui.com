@@ -21,13 +21,13 @@ const mobileShow = ref(false)
 </script>
 
 <template>
-  <div class="sticky top-15 z-100 md:z-0 rounded-md w-56 shrink-0 bg-slate-800/50 md:bg-transparent backdrop-filter backdrop-blur-lg md:blur-none overflow-hidden border-1.5 border-slate-700/50 flex-0">
-    <button :class="{ 'border-b border-slate-700': mobileShow }" class="text-left px-4 inline-block w-full md:hidden py-2 text-sm bg-slate-800" @click="mobileShow = !mobileShow">
+  <div class="sticky top-15 z-100 lg:z-0 rounded-lg w-56 shrink-0 bg-slate-800/50 lg:bg-transparent backdrop-filter backdrop-blur-lg lg:blur-none overflow-hidden border-1.5 border-slate-700/50 flex-0">
+    <button :class="{ 'border-b border-slate-700': mobileShow }" class="text-left px-4 inline-block w-full lg:hidden py-2 text-sm bg-slate-800" @click="mobileShow = !mobileShow">
       Navigation
     </button>
-    <div :class="{ '!block': mobileShow }" class="mt-4 space-y-8 hidden md:block px-4 md:pl-0 pb-4">
+    <div :class="{ '!block': mobileShow }" class="mt-4 space-y-8 hidden lg:block px-4 lg:pl-0 pb-4">
       <div v-for="(child, key) of tree" :key="key" class="space-y-3">
-        <div class="md:px-4 text-sm font-semibold text-gray-200">
+        <div class="lg:px-4 text-sm font-semibold text-gray-200">
           <span class="truncate capitalize">{{ key }}</span>
         </div>
         <nav class="border-l border-gray-800 space-y-2 mt-1">
