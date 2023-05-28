@@ -39,6 +39,9 @@ devDependencies:
   '@oku-ui/avatar':
     specifier: ^0.1.1
     version: 0.1.1(vue@3.3.4)
+  '@oku-ui/separator':
+    specifier: ^0.1.2
+    version: 0.1.2(vue@3.3.4)
   '@types/node':
     specifier: ^18.16.14
     version: 18.16.14
@@ -1649,6 +1652,16 @@ packages:
     peerDependencies:
       vue: ^3.3.2
     dependencies:
+      vue: 3.3.4
+    dev: true
+
+  /@oku-ui/separator@0.1.2(vue@3.3.4):
+    resolution: {integrity: sha512-4TG0BFCn9DYwy/dyXqEiDyoaV79S5SAhoeHewkf8helThr61TpRCyX6PoxNgN9jMLR1WfILVkcs6lX903ygY6A==}
+    peerDependencies:
+      vue: ^3.3.2
+    dependencies:
+      '@oku-ui/primitive': 0.0.1(vue@3.3.4)
+      '@oku-ui/utils': 0.0.1
       vue: 3.3.4
     dev: true
 
