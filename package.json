@@ -36,6 +36,7 @@
     "@nuxtjs/plausible": "^0.2.1",
     "@oku-ui/aspect-ratio": "^0.1.0",
     "@oku-ui/avatar": "^0.1.1",
+    "@oku-ui/separator": "^0.1.2",
     "@types/node": "^18.16.14",
     "@unocss/nuxt": "^0.52.1",
     "@vueuse/core": "^10.1.2",
