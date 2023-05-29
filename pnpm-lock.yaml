@@ -42,6 +42,9 @@ devDependencies:
   '@oku-ui/separator':
     specifier: ^0.1.2
     version: 0.1.2(vue@3.3.4)
+  '@oku-ui/toggle':
+    specifier: ^0.1.0
+    version: 0.1.0(vue@3.3.4)
   '@types/node':
     specifier: ^18.16.14
     version: 18.16.14
@@ -1661,6 +1664,18 @@ packages:
       vue: ^3.3.2
     dependencies:
       '@oku-ui/primitive': 0.0.1(vue@3.3.4)
+      '@oku-ui/utils': 0.0.1
+      vue: 3.3.4
+    dev: true
+
+  /@oku-ui/toggle@0.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-lip2zjy/cBmox9fNnbfz70Ydz297FizDAVUSeEGS6S2XkzZQDKIfkLmItj9t3ZklR0UUMc1vdH1rJ2tk+cNdFw==}
+    peerDependencies:
+      vue: ^3.3.1
+    dependencies:
+      '@oku-ui/primitive': 0.0.1(vue@3.3.4)
+      '@oku-ui/provide': 0.0.1(vue@3.3.4)
+      '@oku-ui/use-composable': 0.0.4(vue@3.3.4)
       '@oku-ui/utils': 0.0.1
       vue: 3.3.4
     dev: true
