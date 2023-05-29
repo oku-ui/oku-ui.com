@@ -41,8 +41,6 @@ import Label from '@oku-ui/label'
 
 ## API Reference
 
-### Root
-
 Contains the content for the label.
 
 | Name | Required | Type | Default | Description |
