@@ -1,6 +1,6 @@
 ---
 title: Separator
-description: Renders an accessible label associated with controls.
+description: Visually or semantically separates content.
 icon: i-ph-triangle-thin
 ---
 
@@ -39,7 +39,8 @@ import { OkuSeparator } from '@oku-ui/separator'
 ```
 
 ## API Reference
-Contains all the parts of an avatar.
+The separator.
+
 | Prop | Type | Default |
 | --- | --- | --- |
 | <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
