@@ -39,6 +39,7 @@ import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
 
 ## API Reference
 
+### Root
 Contains the content you want to constrain to a given ratio.
 
 | Prop | Type | Default |

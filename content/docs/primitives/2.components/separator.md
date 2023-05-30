@@ -39,6 +39,8 @@ import { OkuSeparator } from '@oku-ui/separator'
 ```
 
 ## API Reference
+
+### Root
 The separator.
 
 | Prop | Type | Default |

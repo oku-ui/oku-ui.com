@@ -41,7 +41,7 @@ import { onMounted, ref } from 'vue'
 const refV = ref<CheckboxRef>()
 
 onMounted(() => {
-  console.log(refV.value?.innerRef, 'tt')
+  console.log(refV.value?.innerRef)
 })
 </script>
 
@@ -55,6 +55,8 @@ onMounted(() => {
 ```
 
 ## API Reference
+
+### Root
 Contains all the parts of a checkbox. An input will also render when used within a form to ensure events propagate correctly.
 
 | Prop | Type | Default |
@@ -73,7 +75,7 @@ Contains all the parts of a checkbox. An input will also render when used within
 
 
 
-## Indicator
+### Indicator
 Renders when the checkbox is in a checked or indeterminate state. You can style this element directly, or you can use it as a wrapper to put an icon into, or both.
 
 | Prop | Type | Default |
