@@ -40,6 +40,8 @@ import { OkuToggle } from '@oku-ui/toggle'
 ```
 
 ## API Reference
+
+### Root
 The toggle.
 | Prop | Type | Default |
 | --- | --- | --- |
