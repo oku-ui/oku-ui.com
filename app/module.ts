@@ -1,10 +1,25 @@
 import { fileURLToPath } from 'url'
-import { addPlugin, defineNuxtModule } from '@nuxt/kit'
+import { defineNuxtModule } from '@nuxt/kit'
 import { resolve } from 'pathe'
 import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 
 const themeDir = fileURLToPath(new URL('./', import.meta.url))
-const resolveThemeDir = (path: string) => resolve(themeDir, path)
+
+import colors from 'tailwindcss/colors.js'
+
+// @ts-ignore
+delete colors.lightBlue
+// @ts-ignore
+delete colors.warmGray
+// @ts-ignore
+delete colors.trueGray
+// @ts-ignore
+delete colors.coolGray
+// @ts-ignore
+delete colors.blueGray
+
+
+
 export interface ModuleOptions {
 
   icons: string[] | string
@@ -24,10 +39,7 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   setup(options, nuxt) {
-    nuxt.hook('tailwindcss:config', function (tailwindConfig) {
-      tailwindConfig.plugins = tailwindConfig.plugins || []
-      tailwindConfig.plugins.push(iconsPlugin({ collections: getIconCollections(options.icons as any[]) }))
-    })
+    
 
   }
 })

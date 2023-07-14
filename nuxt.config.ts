@@ -29,7 +29,6 @@ export default defineNuxtConfig({
     {
       global: true,
       path: '~/components/primitives',
-      isAsync: true
     },
     {
       global: true,

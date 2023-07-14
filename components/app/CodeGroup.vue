@@ -1,25 +1,24 @@
 <template>
-  <div class="xl:-mx-10 relative rounded-lg overflow-hidden text-sm">
-    <div class="bg-gradient-to-br from-teal-500 to-green-600 w-full relative items-center justify-center flex">
-      <div class="w-full max-w-[700px] flex flex-col items-center justify-center py-[100px]">
-        <slot name="previewSlot" />
+  <div class="overflow-hidden">
+    <div class="bg-gradient-to-br from-oku-50 to-oku-500 w-full relative items-center justify-center flex">
+      <div class="w-full max-w-[600px] flex flex-col items-center justify-center py-[100px]">
+        <slot name="preview" />
       </div>
     </div>
-    <slot name="codeSlot">
-      <div :selected-index="selectedIndex" @change="changeTab(selectedIndex)">
-        <div class="flex border border-gray-200 dark:border-gray-700 border-b-0 rounded-t-md overflow-hidden -mb-px">
+    <slot name="code">
+      <div :selected-index="selectedIndex" class="mt-5" @change="changeTab(selectedIndex)">
+        <div class="flex border border-oku-200 dark:border-oku-700 bg-oku-50 dark:bg-oku-950 rounded mb-4 overflow-hidden">
           <div v-for="(tab, index) in tabs" :key="index" as="template" @click="selectedIndex = index">
             <button
-              class="px-4 py-2 focus:outline-none text-sm border-r border-r-gray-200 dark:border-r-gray-700 transition-colors"
-              tabindex="-1"
-              :class="[selectedIndex === index ? 'font-medium text-primary-500 dark:text-primary-400 bg-gray-50 dark:bg-gray-800' : 'hover:bg-gray-50 dark:hover:bg-gray-800']"
+              class="px-4 py-2 focus:outline-none border-r-oku-200 dark:border-r-oku-700"
+              :class="[selectedIndex === index ? 'font-medium text-oku-950 dark:text-white bg-oku-200 dark:bg-oku-800' : 'hover:bg-oku-200 dark:hover:bg-oku-800']"
             >
               {{ tab.label }}
             </button>
           </div>
         </div>
 
-        <div class="[&>div>pre]:!rounded-t-none">
+        <div>
           <component :is="selectedTab!.component" />
         </div>
       </div>
