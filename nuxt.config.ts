@@ -1,50 +1,46 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { createResolver, logger, defineNuxtModule } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
+
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [{ rel: 'icon', type: 'image/svg', href: '/icon.svg' }],
-    },
-  },
+  // https://github.com/nuxt-themes/docus
+  extends: '@nuxt-themes/docus',
 
   modules: [
-    '@nuxt/content',
-    '@unocss/nuxt',
+    // https://github.com/nuxt-modules/plausible
     '@nuxtjs/plausible',
-    '@nuxthq/studio',
-    '@vueuse/nuxt',
-  ],
-  devtools: {
-    enabled: true,
-  },
-  css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/css/main.css',
-  ],
-  unocss: {
-    configFile: '~/unocss.config.ts',
-  },
-  content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'github-dark',
-        dark: 'github-dark',
-        light: 'github-light',
-      },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
-    },
-  },
-  nitro: {
-    rootDir: '.',
-    prerender: {
-      crawlLinks: true,
-      routes: ['/'],
-    },
-  },
-  components: [{ path: '~/components', global: true }],
+    // https://github.com/nuxt/devtools
+    '@nuxt/devtools',
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    resolve('./app/module'),
 
-  plausible: {
-    apiHost: 'https://rapor.vucod.com',
-    domain: 'oku-ui.com',
+  ],
+
+  pinceau: {
+    preflight: false,
   },
+
+  oku: {
+    icons: ['heroicons'],
+  },
+
+  components: [
+    {
+      global: true,
+      path: '~/components/primitives',
+      isAsync: true
+    },
+    {
+      global: true,
+      path: '~/components/app'
+    },
+    {
+      global: true,
+      path: '~/components/docs',
+      prefix: ''
+    },
+  ]
+
+  
 })
