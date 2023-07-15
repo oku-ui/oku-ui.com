@@ -15,7 +15,7 @@ export interface Link {
   icon?: string
   iconClass?: string
   // avatar?: Partial<Avatar>
-  click?: Function
+  click?: () => void
   badge?: string | number
 }
 

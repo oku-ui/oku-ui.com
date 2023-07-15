@@ -40,6 +40,7 @@ pnpm run preview
 
 ## Credits
 - [VitePress](https://github.com/vuejs/vitepress)
+- [NuxtLabs UI](https://github.com/nuxtlabs/ui)
 - [Docus](https://docus.dev)
 - [Nuxt](https://nuxtjs.org)
 - [Vue](https://vuejs.org)
