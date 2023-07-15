@@ -38,12 +38,12 @@ const data = [
 </script>
 
 <template>
-  <div class="flex flex-col items-center px-5 min-h-screen w-full max-w-screen">
+  <div class="flex flex-col items-center px-4 min-h-screen w-full max-w-screen">
     <h1 class="text-[#111] text-3xl md:text-5xl mt-20 text-center font-medium dark:text-white">
       Oku focuses on the smallest detail.
     </h1>
-    <div class="grid mx-auto grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 max-w-[1200px] mt-12">
-      <div v-for="item in data" :key="item.title" class="aspect-square">
+    <div class="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 max-w-[1200px] mt-12">
+      <div v-for="item in data" :key="item.title" class="!aspect-square w-full flex items-center justify-center">
         <ShowcaseCard :data="{ ...item }" />
       </div>
     </div>
@@ -51,7 +51,19 @@ const data = [
       <h2 id="the-team" class="text-2xl font-bold text-center">
         Our Team
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full lg:grid-cols-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full lg:grid-cols-4">
+        <div class="w-full">
+          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
+        </div>
+        <div class="w-full">
+          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
+        </div>
+        <div class="w-full">
+          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
+        </div>
+        <div class="w-full">
+          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
+        </div>
         <div class="w-full">
           <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
         </div>
