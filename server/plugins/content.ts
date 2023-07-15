@@ -1,22 +1,23 @@
 // Autodoc from inkline.io
 // reference: https://github.com/inkline/inkline.io/blob/main/server/plugins/content.ts
-import { readFileSync } from 'node:fs'
-import { resolve } from 'pathe'
-import glob from 'fast-glob'
+import { accessSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
-const rootPath = resolve('.')
-const codeCache = new Map<string, string>()
-const codeFilePaths = [...glob.sync(resolve('**', 'Demo.vue'))]
-
-codeFilePaths.forEach((filePath) => {
-  const keyName = filePath.split(rootPath)[1].slice(1)
-  codeCache.set(keyName, readFileSync(filePath, 'utf-8'))
-})
-
-const autodocsRegEx = /codegen\s*\{(.+})/g
+const autodocsRegEx = /code-group\s*\{(.+})/g
 const paramsRegEx = /(\w+)="([^"]+)"/g
 
+function isFileExits(path: string) {
+  try {
+    accessSync(path)
+    return true
+  }
+  catch (e: any) {
+    return false
+  }
+}
+
 export default defineNitroPlugin((nitroApp) => {
+  // @ts-expect-error
   nitroApp.hooks.hook('content:file:beforeParse', (file) => {
     if (file._id.endsWith('.md')) {
       let match
@@ -35,14 +36,22 @@ export default defineNitroPlugin((nitroApp) => {
             return acc
           }, {})
 
-          const code = codeCache.get(params.src)
-          const codeBlock = `~~~${params.lang}\n${code}\n~~~`
+          let codeBlock = '';
+          ['index.vue', 'tailwind.config.js'].forEach((f) => {
+            const filePath = `${process.cwd()}/components/${params.file}/${f}`
 
-          if (code)
-            body = body.replace(match[0], codeBlock)
+            if (isFileExits(filePath)) {
+              const extension = f.split('.').pop()
+              const syntax = extension
+              const source = readFileSync(join(filePath), 'utf8')
 
-          else
-            console.error(`Could not find code for ${params.src}`)
+              codeBlock = codeBlock.concat(`~~~${syntax}[${f}]\n${source}\n~~~\n`)
+            }
+          })
+
+          if (codeBlock.length)
+            body = body.replace(match[0], `${match[0]}\n${codeBlock}\n`)
+          else console.error(`Could not find code in ${params.file}`)
         }
       } while (match)
 

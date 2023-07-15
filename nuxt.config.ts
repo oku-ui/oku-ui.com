@@ -1,4 +1,7 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -6,45 +9,108 @@ export default defineNuxtConfig({
     },
   },
 
+  // https://github.com/nuxt-themes/docus
+  extends: '@nuxt-themes/docus',
+
   modules: [
-    '@nuxt/content',
-    '@unocss/nuxt',
-    '@nuxtjs/plausible',
-    '@nuxthq/studio',
+    // https://github.com/productdevbookcom/v-plausible
+    'v-plausible',
+    // https://github.com/nuxt/devtools
+    '@nuxt/devtools',
+    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
+    '@nuxthq/studio',
+    resolve('./app/module'),
+
   ],
-  devtools: {
-    enabled: true,
+
+  pinceau: {
+    preflight: false,
   },
-  css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/css/main.css',
+
+  oku: {
+    icons: ['heroicons'],
+  },
+
+  components: [
+    {
+      global: true,
+      path: '~/components/primitives',
+    },
+    {
+      global: true,
+      path: '~/components/app',
+    },
+    {
+      global: true,
+      path: '~/components/docs',
+      prefix: '',
+    },
   ],
-  unocss: {
-    configFile: '~/unocss.config.ts',
-  },
-  content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'github-dark',
-        dark: 'github-dark',
-        light: 'github-light',
-      },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
-    },
-  },
-  nitro: {
-    rootDir: '.',
-    prerender: {
-      crawlLinks: true,
-      routes: ['/'],
-    },
-  },
-  components: [{ path: '~/components', global: true }],
 
   plausible: {
-    apiHost: 'https://rapor.vucod.com',
-    domain: 'oku-ui.com',
+    init: {
+      domain: 'oku-ui.com',
+      apiHost: 'https://rapor.vucod.com',
+    },
+    // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
+    partytown: false,
+  },
+
+  routeRules: {
+    '/docs/primitives/overview/introduction': {
+      redirect: {
+        to: '/primitives/introduction/introduction',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/aspet-ratio': {
+      redirect: {
+        to: '/primitives/components/aspect-ratio',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/avatar': {
+      redirect: {
+        to: '/primitives/components/avatar',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/checbox': {
+      redirect: {
+        to: '/primitives/components/checkbox',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/label': {
+      redirect: {
+        to: '/primitives/components/label',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/progress': {
+      redirect: {
+        to: '/primitives/components/progress',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/separator': {
+      redirect: {
+        to: '/primitives/components/separator',
+        statusCode: 301,
+      },
+    },
+    '/docs/primitives/components/toggle': {
+      redirect: {
+        to: '/primitives/components/toggle',
+        statusCode: 301,
+      },
+    },
+    '/about/we': {
+      redirect: {
+        to: '/oku',
+        statusCode: 301,
+      },
+    },
   },
 })

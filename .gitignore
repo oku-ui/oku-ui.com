@@ -1,9 +1,12 @@
 node_modules
+*.iml
+.idea
 *.log*
 .nuxt
-.nitro
-.cache
-.output
-.env
-dist
+.vscode
 .DS_Store
+coverage
+dist
+sw.*
+.env
+.output

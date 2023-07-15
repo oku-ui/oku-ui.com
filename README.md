@@ -33,10 +33,18 @@ pnpm run preview
 ## Sponsors
 
 <p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg">
-    <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg'/>
+  <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg">
+    <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg'/>
   </a>
 </p>
 
+## Credits
+- [VitePress](https://github.com/vuejs/vitepress)
+- [NuxtLabs UI](https://github.com/nuxtlabs/ui)
+- [Docus](https://docus.dev)
+- [Nuxt](https://nuxtjs.org)
+- [Vue](https://vuejs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Radix Primitives](https://radix-ui.com/primitives/docs/primitives)
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
