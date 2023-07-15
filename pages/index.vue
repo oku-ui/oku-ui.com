@@ -43,6 +43,35 @@ const data = [
         <ShowcaseCard :data="{ ...item }" />
       </div>
     </div>
+    <div class="mt-20">
+      <h2 id="the-team" class="text-xl font-bold text-center">
+        Contributors
+      </h2>
+      <p class="text-lg max-w-200 text-center leading-7 mt-10">
+        <Contributors />
+        <br>
+        <a href="https://chat.productdevbook.com" rel="noopener noreferrer">Join the community</a> and get involved!
+      </p>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-20">
+      <h2 class="text-center text-lg font-semibold leading-8 text-gray-900 dark:text-white">
+        Sponsored by
+      </h2>
+      <div class="mx-auto mt-10 flex justify-center items-center max-w-none ">
+        <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg" target="_blank" rel="noopener noreferrer">
+          <img
+            crossorigin="anonymous"
+            inline-block
+            width="768" height="1464"
+            class="resizable-img"
+            loading="lazy"
+            src="/sponsors/productdevbook.svg"
+            alt="Anthony Fu's sponsors"
+          >
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
