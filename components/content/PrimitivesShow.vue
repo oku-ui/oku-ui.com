@@ -11,7 +11,7 @@ const data: CardProps[] = [
   {
     version: '0.0.1',
     link: '',
-    title: 'Aspet Ratio',
+    title: 'Aspect Ratio',
     description: 'Displays content within a desired ratio.',
     component: 'OkuAspectRatio',
   },
