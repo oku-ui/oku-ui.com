@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
+    'v-plausible',
+    '@nuxthq/studio',
     resolve('./app/module'),
 
   ],
@@ -40,5 +42,14 @@ export default defineNuxtConfig({
       prefix: '',
     },
   ],
+
+  plausible: {
+    init: {
+      domain: 'oku-ui.com',
+      apiHost: 'https://rapor.vucod.com',
+    },
+    // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
+    partytown: false,
+  },
 
 })

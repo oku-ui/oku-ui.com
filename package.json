@@ -14,16 +14,18 @@
   },
   "dependencies": {
     "@iconify-json/fa-brands": "^1.1.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "lodash-es": "^4.17.21",
     "@iconify-json/heroicons": "^1.1.11",
+    "@nuxthq/studio": "^0.13.4",
     "@oku-ui/aspect-ratio": "^0.2.0-beta.1",
     "@oku-ui/avatar": "^0.2.0-beta.1",
     "@oku-ui/checkbox": "^0.2.0-beta.1",
     "@oku-ui/label": "^0.2.0-beta.1",
     "@oku-ui/progress": "^0.2.0-beta.1",
     "@oku-ui/separator": "^0.2.0-beta.1",
-    "@oku-ui/toggle": "^0.2.0-beta.1"
+    "@oku-ui/toggle": "^0.2.0-beta.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "lodash-es": "^4.17.21",
+    "v-plausible": "^1.0.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",
