@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { teamMembers } = useContributors()
 const data = [
   {
     to: 'oku',
@@ -48,29 +49,27 @@ const data = [
       </div>
     </div>
     <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
-      <h2 id="the-team" class="text-2xl font-bold text-center">
+      <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
         Our Team
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full lg:grid-cols-4">
-        <div class="w-full">
-          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
-        </div>
-        <div class="w-full">
-          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
-        </div>
-        <div class="w-full">
-          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
-        </div>
-        <div class="w-full">
-          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
-        </div>
-        <div class="w-full">
-          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
-        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-stretch gap-4 w-full lg:grid-cols-4">
+        <template v-for="item in teamMembers" :key="item.github">
+          <TeamCard
+            :data="{
+              image: item.avatar,
+              name: item.name,
+              github: item.github,
+              title: item.title,
+              description: item.desc,
+              twitter: item.twitter,
+              sponsor: item.sponsor,
+            }"
+          />
+        </template>
       </div>
     </div>
-    <div class="mt-20">
-      <h2 id="the-team" class="text-xl font-bold text-center">
+    <div class="mt-40">
+      <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
         Contributors
       </h2>
       <p class="text-lg max-w-200 text-center leading-7 mt-10">
@@ -80,8 +79,8 @@ const data = [
       </p>
     </div>
 
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-20">
-      <h2 class="text-center text-lg font-semibold leading-8 text-gray-900 dark:text-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-40 mb-40">
+      <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
         Sponsored by
       </h2>
       <div class="mx-auto mt-10 flex justify-center items-center max-w-none ">

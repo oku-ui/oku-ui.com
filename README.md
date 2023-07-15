@@ -1,57 +1,49 @@
-# Docus Starter
-
-Starter template for [Docus](https://docus.dev).
-
-## Clone
-
-Clone the repository (using `nuxi`):
-
-```bash
-npx nuxi init -t themes/docus
-```
-
 ## Setup
 
-Install dependencies:
+Make sure to install the dependencies:
 
 ```bash
-yarn install
+# pnpm
+pnpm install
 ```
 
-## Development
+## Development Server
+
+Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+pnpm run dev
 ```
 
-## Edge Side Rendering
+## Production
 
-Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
-
-Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
+Build the application for production:
 
 ```bash
-yarn build
+pnpm run build
 ```
 
-## Static Generation
-
-Use the `generate` command to build your application.
-
-The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
+Locally preview production build:
 
 ```bash
-yarn generate
+pnpm run preview
 ```
 
-## Preview build
 
-You might want to preview the result of your build locally, to do so, run the following command:
+## Sponsors
 
-```bash
-yarn preview
-```
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg">
+    <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg'/>
+  </a>
+</p>
 
----
+## Credits
+- [VitePress](https://github.com/vuejs/vitepress)
+- [Docus](https://docus.dev)
+- [Nuxt](https://nuxtjs.org)
+- [Vue](https://vuejs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Radix Primitives](https://radix-ui.com/primitives/docs/primitives)
 
-For a detailed explanation of how things work, check out [Docus](https://docus.dev).
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
