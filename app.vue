@@ -4,6 +4,7 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 provide('navigation', navigation)
 
 useHead({
+  title: 'Oku',
   link: [
     { rel: 'prefetch', href: '/sponsors/productdevbook.svg' },
   ],

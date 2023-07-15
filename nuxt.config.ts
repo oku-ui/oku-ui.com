@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'v-plausible',
+    'v-plausible/nuxt',
     '@nuxthq/studio',
     resolve('./app/module'),
 
