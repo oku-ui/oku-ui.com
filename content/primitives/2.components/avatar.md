@@ -3,6 +3,9 @@ title: Avatar
 description: An image element with a fallback for representing the user.
 ---
 
+# Avatar
+An image element with a fallback for representing the user.
+
 ::code-group{file="primitives/OkuAvatar"}
 #preview
  ::oku-avatar

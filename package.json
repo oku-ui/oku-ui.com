@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@iconify-json/fa-brands": "^1.1.4",
-    "@iconify-json/heroicons": "^1.1.11",
-    "@oku-ui/aspect-ratio": "^0.1.0",
-    "@oku-ui/avatar": "^0.1.1",
-    "@oku-ui/checkbox": "^0.1.4",
-    "@oku-ui/label": "^0.1.0",
-    "@oku-ui/progress": "^0.1.0",
-    "@oku-ui/separator": "^0.1.2",
-    "@oku-ui/toggle": "^0.1.0",
     "@tailwindcss/typography": "^0.5.9",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "@iconify-json/heroicons": "^1.1.11",
+    "@oku-ui/aspect-ratio": "^0.2.0-beta.1",
+    "@oku-ui/avatar": "^0.2.0-beta.1",
+    "@oku-ui/checkbox": "^0.2.0-beta.1",
+    "@oku-ui/label": "^0.2.0-beta.1",
+    "@oku-ui/progress": "^0.2.0-beta.1",
+    "@oku-ui/separator": "^0.2.0-beta.1",
+    "@oku-ui/toggle": "^0.2.0-beta.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",

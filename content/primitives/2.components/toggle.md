@@ -3,6 +3,8 @@ title: Toggle
 description: A two-state button that can be either on or off.
 ---
 
+# Toggle
+A two-state button that can be either on or off.
 
 ::code-group{file="primitives/OkuToggle"}
 #preview

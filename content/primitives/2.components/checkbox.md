@@ -4,6 +4,8 @@ description: Renders an accessible checkbox associated with controls.
 icon: i-ph-triangle-thin
 ---
 
+# Checkbox
+Renders an accessible checkbox associated with controls.
 
 ::code-group{file="primitives/OkuCheckbox"}
 #preview

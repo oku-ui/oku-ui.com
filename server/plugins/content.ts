@@ -46,7 +46,6 @@ export default defineNitroPlugin((nitroApp) => {
               const source = readFileSync(join(filePath), 'utf8')
 
               codeBlock = codeBlock.concat(`~~~${syntax}[${f}]\n${source}\n~~~\n`)
-              console.log(codeBlock)
             }
           })
 

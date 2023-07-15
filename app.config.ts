@@ -2,7 +2,7 @@ export default defineAppConfig({
   docus: {
     title: 'Oku',
     description: 'The best place to start your documentation.',
-    image: 'https://github.com/oku-ui/static/blob/main/logo/logo-white.svg',
+    image: '/og-image.png',
     socials: {
       github: 'oku-ui',
       twitter: 'oku-ui',

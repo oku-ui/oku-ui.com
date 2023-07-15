@@ -4,6 +4,8 @@ description: Renders an accessible label associated with controls.
 icon: i-ph-triangle-thin
 ---
 
+# Label
+Renders an accessible label associated with controls.
 
 ::code-group{file="primitives/OkuLabel"}
 #preview

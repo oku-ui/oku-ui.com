@@ -3,6 +3,10 @@ title: Aspect Ratio
 description: Displays content within a desired ratio.
 ---
 
+# Aspect Ratio
+Displays content within a desired ratio.
+
+
 ::code-group{file="primitives/OkuAspectRatio"}
 #preview
  ::oku-aspect-ratio

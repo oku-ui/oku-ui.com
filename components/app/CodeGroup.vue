@@ -23,7 +23,7 @@ function changeTab(index: number) {
 
 <template>
   <div class="overflow-hidden">
-    <div class="bg-gradient-to-br rounded-lg from-oku-600 to-oku-950 w-full relative items-center justify-center flex">
+    <div class="bg-gradient-to-br rounded-lg from-oku-100 to-oku-600 w-full relative items-center justify-center flex">
       <div class="w-full max-w-xl flex flex-col items-center justify-center py-24">
         <slot name="preview" />
       </div>

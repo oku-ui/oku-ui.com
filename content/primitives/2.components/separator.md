@@ -4,6 +4,8 @@ description: Visually or semantically separates content.
 icon: i-ph-triangle-thin
 ---
 
+# Separator
+Visually or semantically separates content.
 
 ::code-group{file="primitives/OkuSeparator"}
 #preview
