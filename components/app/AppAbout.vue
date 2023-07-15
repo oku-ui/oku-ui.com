@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const isDark = useColorMode()
+const { value } = useColorMode()
+
+const isDark = ref('dark')
+
+watch(() => value, (val) => {
+  isDark.value = val
+})
 
 const kapadokyaImage = computed(() => {
   return isDark.value === 'dark' ? 'https://images.unsplash.com/photo-1664733580150-6a6de8415b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80' : 'https://images.unsplash.com/photo-1487564149407-9fb3522e2ceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'
