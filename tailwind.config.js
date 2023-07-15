@@ -16,10 +16,11 @@ module.exports = {
           800: '#314659',
           900: '#2d3d4c',
           950: '#1a2632',
-        }
-      }
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
-

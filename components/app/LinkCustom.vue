@@ -1,3 +1,23 @@
+<script setup lang="ts">
+const props = defineProps({
+  activeClass: {
+    type: String,
+    default: '',
+  },
+  inactiveClass: {
+    type: String,
+    default: '',
+  },
+})
+
+function resolveLinkClass({ isActive, isExactActive }: { isActive: boolean; isExactActive: boolean }) {
+  if (isActive || isExactActive)
+    return props.activeClass
+
+  return props.inactiveClass
+}
+</script>
+
 <template>
   <button v-if="!$attrs.to" v-bind="$attrs" :class="inactiveClass">
     <slot />
@@ -8,24 +28,3 @@
     </a>
   </NuxtLink>
 </template>
-
-<script setup lang="ts">
-const props = defineProps({
-  activeClass: {
-    type: String,
-    default: ''
-  },
-  inactiveClass: {
-    type: String,
-    default: ''
-  }
-})
-
-function resolveLinkClass({ isActive, isExactActive }: { isActive: boolean, isExactActive: boolean }) {
-  if (isActive || isExactActive) {
-    return props.activeClass
-  }
-
-  return props.inactiveClass
-}
-</script>

@@ -1,7 +1,30 @@
+<script setup lang="ts">
+defineOptions({
+  inheritAttrs: false,
+})
+
+const slots = useSlots()
+
+const selectedIndex = ref(0)
+
+const tabs = computed(() => slots.default?.().map((slot, index) => {
+  return {
+    label: slot.props?.filename || slot.props?.label || `${index}`,
+    component: slot,
+  }
+}) || [])
+
+const selectedTab = computed(() => tabs.value.find((_, index) => index === selectedIndex.value))
+
+function changeTab(index: number) {
+  selectedIndex.value = index
+}
+</script>
+
 <template>
   <div class="overflow-hidden">
-    <div class="bg-gradient-to-br from-oku-50 to-oku-500 w-full relative items-center justify-center flex">
-      <div class="w-full max-w-[600px] flex flex-col items-center justify-center py-[100px]">
+    <div class="bg-gradient-to-br rounded-lg from-oku-600 to-oku-950 w-full relative items-center justify-center flex">
+      <div class="w-full max-w-xl flex flex-col items-center justify-center py-24">
         <slot name="preview" />
       </div>
     </div>
@@ -26,36 +49,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const slots = useSlots()
-
-const selectedIndex = ref(0)
-
-// Computed
-
-const tabs = computed(() => slots.default?.().map((slot, index) => {
-  return {
-    label: slot.props?.filename || slot.props?.label || `${index}`,
-    component: slot
-  }
-}) || [])
-
-const selectedTab = computed(() => tabs.value.find((_, index) => index === selectedIndex.value)) 
-
-// Methods
-
-function changeTab(index: number) {
-  alert('1')
-  selectedIndex.value = index
-}
-
-defineOptions({
-  inheritAttrs: false,
-})
-</script>
 <style scoped>
 .highlight-md.prose-code.language-md {
   @apply mt-0;
 }
 </style>
-

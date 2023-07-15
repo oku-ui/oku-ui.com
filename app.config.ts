@@ -9,30 +9,30 @@ export default defineAppConfig({
       discord: {
         label: 'Discord',
         icon: 'simple-icons:discord',
-        href: 'https://chat.oku-ui.com'
-      }
+        href: 'https://chat.productdevbook.com',
+      },
     },
     github: {
       dir: 'content',
       branch: 'main',
       repo: 'docs',
       owner: 'oku-ui',
-      edit: true
+      edit: true,
     },
     aside: {
       level: 0,
       collapsed: false,
-      exclude: []
+      exclude: [],
     },
     main: {
       padded: true,
-      fluid: true
+      fluid: true,
     },
     header: {
       logo: true,
       showLinkIcon: true,
       exclude: [],
-      fluid: true
-    }
-  }
+      fluid: true,
+    },
+  },
 })
