@@ -7,13 +7,12 @@ export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
 
   modules: [
-    // https://github.com/nuxt-modules/plausible
-    '@nuxtjs/plausible',
+    // https://github.com/productdevbookcom/v-plausible
+    'v-plausible',
     // https://github.com/nuxt/devtools
     '@nuxt/devtools',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'v-plausible/nuxt',
     '@nuxthq/studio',
     resolve('./app/module'),
 

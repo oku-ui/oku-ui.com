@@ -25,5 +25,5 @@ jobs:
       - run: pnpm install
 
       - name: Fix lint issues
-        run: npm run lint:fix
+        run: npm run fix
       - uses: autofix-ci/action@8bc06253bec489732e5f9c52884c7cace15c0160
