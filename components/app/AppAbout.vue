@@ -5,31 +5,7 @@ const kapadokyaImage = computed(() => {
   return isDark.value === 'dark' ? 'https://images.unsplash.com/photo-1664733580150-6a6de8415b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80' : 'https://images.unsplash.com/photo-1487564149407-9fb3522e2ceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'
 })
 
-const teams: {
-  name: string
-  role: string
-  image: string
-  github: string
-}[] = [
-  {
-    image: 'https://avatars.githubusercontent.com/u/38668796?v=4',
-    name: 'Mehmet - productdevbook',
-    role: 'Founder',
-    github: 'https://github.com/productdevbook',
-  },
-  {
-    image: 'https://avatars.githubusercontent.com/u/44074974?v=4',
-    name: 'suxiong',
-    role: 'primitives - developer',
-    github: 'https://github.com/YeSuX',
-  },
-  {
-    image: 'https://avatars.githubusercontent.com/u/30652791?v=4',
-    name: 'Anjorin Damilare',
-    role: 'maintainer',
-    github: 'https://github.com/dammy001',
-  },
-]
+const { teamMembers: teams } = useContributors()
 </script>
 
 <template>
@@ -259,12 +235,12 @@ const teams: {
       </div>
       <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
         <li v-for="item in teams" :key="item.name">
-          <img class="mx-auto h-24 w-24 rounded-full" :src="item.image" alt="">
+          <img class="mx-auto h-24 w-24 rounded-full" :src="item.avatar" alt="">
           <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-white">
             {{ item.name }}
           </h3>
           <p class="text-sm leading-6 text-gray-600 dark:text-white/60">
-            {{ item.role }}
+            {{ item.title }}
           </p>
         </li>
 
