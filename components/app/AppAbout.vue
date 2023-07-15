@@ -1,10 +1,14 @@
 <script setup lang="ts">
-const { value } = useColorMode()
+const dark = useColorMode()
 
 const isDark = ref('dark')
 
-watch(() => value, (val) => {
-  isDark.value = val
+watch(dark, (val) => {
+  isDark.value = dark.value
+})
+
+onMounted(() => {
+  isDark.value = dark.value
 })
 
 const kapadokyaImage = computed(() => {

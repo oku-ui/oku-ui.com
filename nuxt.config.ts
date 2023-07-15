@@ -56,7 +56,6 @@ export default defineNuxtConfig({
     // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
     partytown: false,
   },
-
   routeRules: {
     '/docs/primitives/overview/introduction': {
       redirect: {
@@ -76,7 +75,7 @@ export default defineNuxtConfig({
         statusCode: 301,
       },
     },
-    '/docs/primitives/components/checbox': {
+    '/docs/primitives/components/checkbox': {
       redirect: {
         to: '/primitives/components/checkbox',
         statusCode: 301,
