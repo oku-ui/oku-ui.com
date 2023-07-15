@@ -5,7 +5,7 @@ export default defineAppConfig({
     image: '/og-image.png',
     socials: {
       github: 'oku-ui',
-      twitter: 'oku-ui',
+      twitter: 'oku_ui',
       discord: {
         label: 'Discord',
         icon: 'simple-icons:discord',

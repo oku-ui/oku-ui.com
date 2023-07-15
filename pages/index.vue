@@ -75,7 +75,7 @@ const data = [
       <p class="text-lg max-w-200 text-center leading-7 mt-10">
         <Contributors />
         <br>
-        <a href="https://chat.productdevbook.com" rel="noopener noreferrer">Join the community</a> and get involved!
+        <a class="text-oku-500 font-bold" href="https://chat.productdevbook.com" rel="noopener noreferrer">Join the community</a> and get involved!
       </p>
     </div>
 
