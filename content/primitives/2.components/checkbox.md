@@ -1,7 +1,6 @@
 ---
 title: Checkbox
 description: Renders an accessible checkbox associated with controls.
-icon: i-ph-triangle-thin
 ---
 
 # Checkbox

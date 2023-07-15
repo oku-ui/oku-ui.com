@@ -15,6 +15,9 @@ dependencies:
   '@iconify-json/heroicons':
     specifier: ^1.1.11
     version: 1.1.11
+  '@iconify-json/ph':
+    specifier: ^1.1.5
+    version: 1.1.5
   '@nuxthq/studio':
     specifier: ^0.13.4
     version: 0.13.4(rollup@3.26.2)
@@ -1056,6 +1059,12 @@ packages:
     resolution: {integrity: sha512-Autw98FvUTmBCgb4CuKZ7iQQ2633YBCmcCbAbVNU9hAo6vms9uVcbtrAQt/qlB+qzNi52PV3DWDiRtJgmPeZIw==}
     dependencies:
       '@iconify/types': 2.0.0
+
+  /@iconify-json/ph@1.1.5:
+    resolution: {integrity: sha512-iLXq3nohfGge22gL2tZmQ2WHBKkKkIbGWrkuyC8arckS4PWaONyh4A+uDPtSek9QbYDvi9AE2+NxWkNZhANotA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}

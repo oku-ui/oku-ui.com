@@ -1,7 +1,6 @@
 ---
 title: Separator
 description: Visually or semantically separates content.
-icon: i-ph-triangle-thin
 ---
 
 # Separator

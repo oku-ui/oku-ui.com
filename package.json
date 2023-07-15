@@ -16,6 +16,7 @@
   "dependencies": {
     "@iconify-json/fa-brands": "^1.1.4",
     "@iconify-json/heroicons": "^1.1.11",
+    "@iconify-json/ph": "^1.1.5",
     "@nuxthq/studio": "^0.13.4",
     "@oku-ui/aspect-ratio": "^0.2.2",
     "@oku-ui/avatar": "^0.2.2",
