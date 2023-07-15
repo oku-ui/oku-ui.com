@@ -3,8 +3,6 @@ import type { CheckboxRef } from '@oku-ui/checkbox'
 import { OkuCheckbox, OkuCheckboxIndicator } from '@oku-ui/checkbox'
 
 const refV = ref<CheckboxRef>()
-
-
 </script>
 
 <template>
@@ -19,4 +17,3 @@ const refV = ref<CheckboxRef>()
     </label>
   </div>
 </template>
-

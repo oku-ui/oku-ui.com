@@ -56,7 +56,7 @@ const data: CardProps[] = [
     title: 'Toggle',
     description: 'A toggle is a control that is used to quickly switch between two possible states.',
     component: 'OkuToggle',
-  }
+  },
 ]
 
 // const { trackEvent } = usePlausible()
@@ -78,15 +78,15 @@ const data: CardProps[] = [
       <template v-for="item in data" :key="item.title">
         <div class="relative overflow-hidden group w-full">
           <div
-            class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
+            class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#DEDEDE] dark:border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
           >
             <div class="relative">
               <component :is="item.component" class="py-10" />
             </div>
             <div class="">
-              <span class="text-xs px-2 py-1 border border-[#222] rounded-full text-[#676767] inline">{{ item.version }}</span>
+              <span class="text-xs px-2 py-1 border border-[#DEDEDE] dark:border-[#222] rounded-full text-[#676767] inline">{{ item.version }}</span>
             </div>
-            <span class="text-white font-medium">{{ item.title }}</span>
+            <span class="text-[#111] dark:text-white font-medium">{{ item.title }}</span>
             <p class="text-[#6D6D6D] text-sm md:text-base line-clamp-2">
               {{ item.description }}
             </p>
@@ -115,4 +115,5 @@ const data: CardProps[] = [
     transform: scale(1.5);
 
   }
-}</style>
+}
+</style>

@@ -16,7 +16,6 @@ const children = computed(() => {
       return navigation.value[1].children
     case 'oku':
       return navigation.value[0].children
-
   }
 })
 </script>

@@ -7,6 +7,7 @@ interface CardProps {
     description: string
     active?: boolean
     image: string
+    buttonText?: string
   }
 }
 
@@ -14,22 +15,26 @@ defineProps<CardProps>()
 </script>
 
 <template>
-  <NuxtLink :to="data.to" class="mx-4 lg:mx-0">
-    <div :class="data.theme" class="w-full h-full flex flex-col items-center border overflow-hidden rounded-lg border-[#D0D0D0] dark:border-[#303030] text-center backdrop-blur-sm bg-[#6C6C6C] bg-opacity-10 relative group p-4 pt-20">
-      <div class="shadow-1 shadow group-hover:opacity-60" />
-      <div class="shadow-2 shadow group-hover:opacity-60" />
-      <div class="shadow-3 shadow group-hover:opacity-60" />
+  <NuxtLink :class="{ 'opacity-50 !pointer-events-none cursor-default': !data.active }" :to="data.to" class="mx-4 lg:mx-0">
+    <div :class="[{ [data.theme]: true }]" class="w-full h-full group flex flex-col items-center border overflow-hidden rounded-lg border-[#cccccc] dark:border-[#303030] text-center backdrop-blur-sm dark:bg-[#6C6C6C] bg-[#bdbdbd] bg-opacity-20 dark:bg-opacity-10 relative p-2 md:p-4 md:pt-10 lg:pt-16">
+      <div class="shadow-1 shadow group-hover:opacity-100" />
+      <div class="shadow-2 shadow group-hover:opacity-100" />
+      <div class="shadow-3 shadow group-hover:opacity-100" />
       <img class="absolute -left-6 top-1/2 -translate-y-1/2 z-10" :src="`${data.image}.svg`" alt="oku" width="160" height="160">
-      <div class="flex items-center flex-col gap-4 relative w-full">
-        <div class="absolute bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{'!hidden': data.active}">
+      <div class="flex items-center flex-col md:gap-4 relative w-full">
+        <div class="absolute bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
           COMING SOON
         </div>
-        <h2 class="text-2xl font-medium title">
+        <h2 class="text-lg md:text-2xl font-medium title">
           {{ data.title }}
         </h2>
 
         <div class="text-sm md:text-base card-text">
           {{ data.description }}
+        </div>
+        <div :class="{ '!hidden': !data.buttonText }" class="card-button px-3 py-1 flex items-center justify-center gap-1 rounded-md border">
+          {{ data.buttonText }}
+          <span class="i-heroicons-arrow-small-right w-4 h-4 transition-all duration-300 group-hover:translate-x-1" />
         </div>
       </div>
     </div>
@@ -99,6 +104,12 @@ defineProps<CardProps>()
   .card-text {
     color: #747F96;
   }
+
+  .card-button {
+    color: #4A87FF;
+    background: rgba(96, 149, 255, .1);
+    border-color: rgba(96, 149, 255, .12);
+  }
 }
 
 .blue {
@@ -109,6 +120,12 @@ defineProps<CardProps>()
   .card-text {
     color: #4771C4;
   }
+  .card-button {
+    color: #4A87FF;
+    background: rgba(96, 149, 255, .18);
+    border-color: rgba(96, 149, 255, .2);
+  }
+
   .shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(139, 255, 248, 0.10) 0%, rgba(153, 255, 249, 0.00) 100%);
     right: -61px;
@@ -134,6 +151,12 @@ defineProps<CardProps>()
   .card-text {
     color: #877396;
   }
+
+  .card-button {
+    color: #B14AFF;
+    background: rgba(186, 96, 255, .1);
+    border-color: rgba(186, 96, 255, .12);
+  }
 }
 
 .purple {
@@ -143,6 +166,12 @@ defineProps<CardProps>()
 
   .card-text {
     color: #8D47C4;
+  }
+
+  .card-button {
+    color: #B14AFF;
+    background: rgba(186, 96, 255, .18);
+    border-color: rgba(186, 96, 255, .2);
   }
   .shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(207, 139, 255, 0.10) 0%, rgba(212, 153, 255, 0.00) 100%);
@@ -179,7 +208,7 @@ defineProps<CardProps>()
 
 .green {
   .title {
-    color: #35E026;
+    color: #26b819;
   }
 
   .card-text {
@@ -206,5 +235,4 @@ defineProps<CardProps>()
     top: -80px;
   }
 }
-
 </style>

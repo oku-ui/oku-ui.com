@@ -6,20 +6,20 @@ import type { Lang } from 'shiki-es'
 defineProps({
   code: {
     type: String,
-    default: ''
+    default: '',
   },
   language: {
     type: String as PropType<Lang>,
-    default: null
+    default: null,
   },
   filename: {
     type: String,
-    default: null
+    default: null,
   },
   highlights: {
     type: Array as () => number[],
-    default: () => []
-  }
+    default: () => [],
+  },
 })
 
 const hovered = ref(false)

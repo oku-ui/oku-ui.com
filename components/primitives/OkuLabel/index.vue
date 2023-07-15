@@ -18,4 +18,3 @@ const labelRef = ref<LabelRef>()
     </div>
   </div>
 </template>
-

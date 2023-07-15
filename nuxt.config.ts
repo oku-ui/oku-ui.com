@@ -1,4 +1,4 @@
-import { createResolver, logger, defineNuxtModule } from '@nuxt/kit'
+import { createResolver } from '@nuxt/kit'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -11,8 +11,8 @@ export default defineNuxtConfig({
     '@nuxtjs/plausible',
     // https://github.com/nuxt/devtools
     '@nuxt/devtools',
-    "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt",
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
     resolve('./app/module'),
 
   ],
@@ -32,14 +32,13 @@ export default defineNuxtConfig({
     },
     {
       global: true,
-      path: '~/components/app'
+      path: '~/components/app',
     },
     {
       global: true,
       path: '~/components/docs',
-      prefix: ''
+      prefix: '',
     },
-  ]
+  ],
 
-  
 })

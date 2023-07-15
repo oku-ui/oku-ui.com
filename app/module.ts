@@ -1,24 +1,20 @@
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'node:url'
 import { defineNuxtModule } from '@nuxt/kit'
-import { resolve } from 'pathe'
-import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
-
-const themeDir = fileURLToPath(new URL('./', import.meta.url))
 
 import colors from 'tailwindcss/colors.js'
 
-// @ts-ignore
+const themeDir = fileURLToPath(new URL('./', import.meta.url))
+
+// @ts-expect-error
 delete colors.lightBlue
-// @ts-ignore
+// @ts-expect-error
 delete colors.warmGray
-// @ts-ignore
+// @ts-expect-error
 delete colors.trueGray
-// @ts-ignore
+// @ts-expect-error
 delete colors.coolGray
-// @ts-ignore
+// @ts-expect-error
 delete colors.blueGray
-
-
 
 export interface ModuleOptions {
 
@@ -32,14 +28,13 @@ export default defineNuxtModule<ModuleOptions>({
     version: '3.0.0',
     compatibility: {
       nuxt: '^3.0.0-rc.14',
-      bridge: false
+      bridge: false,
     },
     defaults: {
       icons: ['heroicons'],
     },
   },
   setup(options, nuxt) {
-    
 
-  }
+  },
 })

@@ -5,7 +5,6 @@ const src = 'https://picsum.photos/id/1005/400/400'
 const src2 = 'https://picsum.photos/id/1010/400/400'
 
 const srcBroken = 'https://broken.link.com/broken-pic.jpg'
-
 </script>
 
 <template>

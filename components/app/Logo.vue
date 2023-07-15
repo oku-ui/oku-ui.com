@@ -6,7 +6,6 @@ const logo = computed(() => {
 })
 </script>
 
-
 <template>
   <img width="120" :src="logo">
 </template>

@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { upperFirst } from 'scule'
+
+const { prev, next, navigation } = useContent()
+const { navDirFromPath } = useContentHelpers()
+
+function directory(link: any) {
+  const nav = navDirFromPath(link._path, navigation.value || [])
+
+  if (nav && nav[0]) {
+    return nav[0]?._path ?? ''
+  }
+  else {
+    const dirs = link.split('/')
+    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''
+    return directory.split('-').map(upperFirst).join(' ')
+  }
+}
+</script>
+
 <template>
   <div class="grid gap-6 sm:grid-cols-2">
     <DocsPrevNextCard
@@ -11,25 +31,3 @@
     />
   </div>
 </template>
-
-<script setup lang="ts">
-
-
-import { upperFirst } from 'scule'
-
-const { prev, next, navigation } = useContent()
-const { navDirFromPath } = useContentHelpers()
-
-const directory = (link: any) => {
-  const nav = navDirFromPath(link._path, navigation.value || [])
-
-  if (nav && nav[0]) {
-    return nav[0]?._path ?? ''
-  } else {
-    const dirs = link.split('/')
-    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''
-    return directory.split('-').map(upperFirst).join(' ')
-  }
-}
-
-</script>

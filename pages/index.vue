@@ -7,6 +7,7 @@ const data = [
     active: true,
     theme: 'blue',
     image: 'users',
+    buttonText: 'Explore',
   },
   {
     to: 'primitives',
@@ -15,6 +16,7 @@ const data = [
     active: true,
     theme: 'purple',
     image: 'command',
+    buttonText: 'See Docs',
   },
   {
     to: '#',
@@ -22,6 +24,7 @@ const data = [
     description: 'in the future.',
     theme: 'orange',
     image: 'bell',
+    active: false,
   },
   {
     to: '#',
@@ -29,6 +32,7 @@ const data = [
     description: 'in the future.',
     theme: 'green',
     image: 'zap',
+    active: false,
   },
 ]
 </script>
@@ -38,9 +42,19 @@ const data = [
     <h1 class="text-[#111] text-3xl md:text-5xl mt-20 text-center font-medium dark:text-white">
       Oku focuses on the smallest detail.
     </h1>
-    <div class="grid mx-auto grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mt-12">
+    <div class="grid mx-auto grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 max-w-[1200px] mt-12">
       <div v-for="item in data" :key="item.title" class="aspect-square">
         <ShowcaseCard :data="{ ...item }" />
+      </div>
+    </div>
+    <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
+      <h2 id="the-team" class="text-2xl font-bold text-center">
+        Our Team
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full lg:grid-cols-4">
+        <div class="w-full">
+          <TeamCard name="Emir Uluçay" title="Core team member of Vitest" image="user-avatars/0fatihyildiz.png" description="An open source fullstack developer" />
+        </div>
       </div>
     </div>
     <div class="mt-20">

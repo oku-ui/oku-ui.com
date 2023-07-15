@@ -1,3 +1,24 @@
+<script setup lang="ts">
+defineProps({
+  icon: {
+    type: String,
+    default: null,
+  },
+  title: {
+    type: String,
+    default: '',
+  },
+  description: {
+    type: String,
+    default: '',
+  },
+  to: {
+    type: String,
+    required: true,
+  },
+})
+</script>
+
 <template>
   <NuxtLink
     :to="to"
@@ -22,24 +43,3 @@
     </p>
   </NuxtLink>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  icon: {
-    type: String,
-    default: null
-  },
-  title: {
-    type: String,
-    default: ''
-  },
-  description: {
-    type: String,
-    default: ''
-  },
-  to: {
-    type: String,
-    required: true
-  }
-})
-</script>

@@ -23,4 +23,3 @@ onMounted(() => {
     </OkuProgress>
   </div>
 </template>
-

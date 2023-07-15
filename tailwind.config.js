@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
+
 module.exports = {
   content: [],
   theme: {
@@ -21,6 +23,10 @@ module.exports = {
     },
   },
   plugins: [
+    iconsPlugin({
+      // Select the icon collections you want to use
+      collections: getIconCollections(['fa-brands', 'heroicons']),
+    }),
     require('@tailwindcss/typography'),
   ],
 }

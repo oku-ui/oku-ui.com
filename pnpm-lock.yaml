@@ -9,6 +9,9 @@ overrides:
   '@vue/runtime-core': 3.3.4
 
 dependencies:
+  '@iconify-json/fa-brands':
+    specifier: ^1.1.4
+    version: 1.1.4
   '@iconify-json/heroicons':
     specifier: ^1.1.11
     version: 1.1.11
@@ -1059,6 +1062,12 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
+  /@iconify-json/fa-brands@1.1.4:
+    resolution: {integrity: sha512-JT9BgOFT17qgwctdjGbIKENcW2jEOzo22/SPTAT2T4ygQPtG4niBFnjkDZNcqk9JHSyc6sYvgb9NFKoJ8eGkHQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify-json/heroicons@1.1.11:
     resolution: {integrity: sha512-Autw98FvUTmBCgb4CuKZ7iQQ2633YBCmcCbAbVNU9hAo6vms9uVcbtrAQt/qlB+qzNi52PV3DWDiRtJgmPeZIw==}
     dependencies:
@@ -1790,7 +1799,7 @@ packages:
     peerDependencies:
       vue: ^3.3.2
     dependencies:
-      '@oku-ui/primitive': 0.0.1(vue@3.3.4)
+      '@oku-ui/primitive': 0.1.0-beta.0(vue@3.3.4)
       '@oku-ui/provide': 0.0.1(vue@3.3.4)
       '@oku-ui/use-composable': 0.1.0(vue@3.3.4)
       '@oku-ui/utils': 0.0.1
@@ -1811,6 +1820,14 @@ packages:
     resolution: {integrity: sha512-8iktOuESUKoZhO+DsH38nIbGE7NqH3I7Im1sk9RuWFYgF3ZdaGL1V/cHjOLkrSwE2Un8Hdk0ZWLUIAn7AotSZA==}
     peerDependencies:
       vue: ^3.3.2
+    dependencies:
+      vue: 3.3.4
+    dev: false
+
+  /@oku-ui/primitive@0.1.0-beta.0(vue@3.3.4):
+    resolution: {integrity: sha512-YI4mmYhcYCSvwBt+EVnmY5pxdHqgHFGF3IAGZdbd0HsN0P/+cSwHXHsupS387iR/ce5QayfgAUckFfbJ07qBjg==}
+    peerDependencies:
+      vue: ^3.3.4
     dependencies:
       vue: 3.3.4
     dev: false

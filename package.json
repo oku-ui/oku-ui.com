@@ -12,6 +12,19 @@
     "docs:contributors": "esno scripts/update-contributors.ts",
     "prefetch": "esno scripts/fetch-avatars.ts"
   },
+  "dependencies": {
+    "@iconify-json/fa-brands": "^1.1.4",
+    "@iconify-json/heroicons": "^1.1.11",
+    "@oku-ui/aspect-ratio": "^0.1.0",
+    "@oku-ui/avatar": "^0.1.1",
+    "@oku-ui/checkbox": "^0.1.4",
+    "@oku-ui/label": "^0.1.0",
+    "@oku-ui/progress": "^0.1.0",
+    "@oku-ui/separator": "^0.1.2",
+    "@oku-ui/toggle": "^0.1.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "lodash-es": "^4.17.21"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",
     "@egoist/tailwindcss-icons": "^1.1.0",
@@ -35,17 +48,5 @@
       "vue": "3.3.4",
       "@vue/runtime-core": "3.3.4"
     }
-  },
-  "dependencies": {
-    "@iconify-json/heroicons": "^1.1.11",
-    "@oku-ui/aspect-ratio": "^0.1.0",
-    "@oku-ui/avatar": "^0.1.1",
-    "@oku-ui/checkbox": "^0.1.4",
-    "@oku-ui/label": "^0.1.0",
-    "@oku-ui/progress": "^0.1.0",
-    "@oku-ui/separator": "^0.1.2",
-    "@oku-ui/toggle": "^0.1.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "lodash-es": "^4.17.21"
   }
 }

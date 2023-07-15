@@ -1,9 +1,9 @@
 // Autodoc from inkline.io
 // reference: https://github.com/inkline/inkline.io/blob/main/server/plugins/content.ts
-import { readFileSync, accessSync } from 'node:fs'
+import { accessSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { resolve } from 'pathe'
 import glob from 'fast-glob'
-import { join } from "node:path";
 
 const rootPath = resolve('.')
 const codeCache = new Map<string, string>()
@@ -19,16 +19,16 @@ const paramsRegEx = /(\w+)="([^"]+)"/g
 
 function isFileExits(path: string) {
   try {
-    accessSync(path);
-    return true;
-  } catch (e) {
-    return false;
+    accessSync(path)
+    return true
+  }
+  catch (e) {
+    return false
   }
 }
 
-
 export default defineNitroPlugin((nitroApp) => {
-  // @ts-ignore
+  // @ts-expect-error
   nitroApp.hooks.hook('content:file:beforeParse', (file) => {
     if (file._id.endsWith('.md')) {
       let match
@@ -47,22 +47,22 @@ export default defineNitroPlugin((nitroApp) => {
             return acc
           }, {})
 
-          let codeBlock = "";
-          ["index.vue", "styles.css", "tailwind.config.js"].forEach((f) => {
-            const filePath = `${process.cwd()}/components/${params.file}/${f}`;
+          let codeBlock = '';
+          ['index.vue', 'styles.css', 'tailwind.config.js'].forEach((f) => {
+            const filePath = `${process.cwd()}/components/${params.file}/${f}`
 
             if (isFileExits(filePath)) {
-              const extension = f.split(".").pop();
-              const syntax = extension;
-              const source = readFileSync(join(filePath), "utf8");
+              const extension = f.split('.').pop()
+              const syntax = extension
+              const source = readFileSync(join(filePath), 'utf8')
 
-              codeBlock = codeBlock.concat(`~~~${syntax}[${f}]\n${source}\n~~~\n`);
+              codeBlock = codeBlock.concat(`~~~${syntax}[${f}]\n${source}\n~~~\n`)
             }
-          });
+          })
 
-          if (codeBlock.length) body = body.replace(match[0], `${match[0]}\n${codeBlock}\n`);
-          else console.error(`Could not find codes in ${params.file}`);
-          
+          if (codeBlock.length)
+            body = body.replace(match[0], `${match[0]}\n${codeBlock}\n`)
+          else console.error(`Could not find codes in ${params.file}`)
         }
       } while (match)
 

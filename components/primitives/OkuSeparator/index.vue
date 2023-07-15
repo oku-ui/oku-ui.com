@@ -23,4 +23,3 @@ import { OkuSeparator } from '@oku-ui/separator'
     </div>
   </div>
 </template>
-
