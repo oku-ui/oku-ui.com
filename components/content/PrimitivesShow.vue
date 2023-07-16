@@ -74,7 +74,7 @@ const data: CardProps[] = [
   <div class="relative">
     <ContentSlot :use="$slots.root" />
 
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid lg:grid-cols-3 gap-6">
       <template v-for="item in data" :key="item.title">
         <div class="relative overflow-hidden group w-full">
           <div
