@@ -89,7 +89,7 @@ const data: CardProps['data'][] = [
           </template>
         </div>
       </div>
-      <div class="hidden sm:grid grid-cols-2 gap-6 mb-6">
+      <div class="hidden sm:grid grid-cols-2 lg:hidden gap-6 mb-6">
       <!-- eslint-disable -->
         <div class="w-full space-y-6">
           <template v-for="(item, index) in data">
