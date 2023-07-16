@@ -79,9 +79,9 @@ const plainTeamMembers: CoreTeam[] = [
   {
     avatar: contributorsAvatars.YeSuX,
     name: 'Suxiong',
-    github: 'YeSuX1998',
+    github: 'YeSuX',
     twitter: 'YeSuX1998',
-    title: 'A font-end Developer',
+    title: 'A front-end Developer',
     desc: 'Core team member of Oku',
   },
   {
