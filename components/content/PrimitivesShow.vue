@@ -1,13 +1,7 @@
 <script setup lang="ts">
-interface CardProps {
-  version: string
-  link: string
-  title: string
-  description: string
-  component: string
-}
+import type { CardProps } from '../app/ComponentCard.vue'
 
-const data: CardProps[] = [
+const data: CardProps['data'][] = [
   {
     version: '0.2.2',
     link: '',
@@ -74,46 +68,47 @@ const data: CardProps[] = [
   <div class="relative">
     <ContentSlot :use="$slots.root" />
 
-    <div class="grid lg:grid-cols-3 gap-6">
-      <template v-for="item in data" :key="item.title">
-        <div class="relative overflow-hidden group w-full">
-          <div
-            class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#DEDEDE] dark:border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
-          >
-            <div class="relative">
-              <component :is="item.component" class="py-10" />
-            </div>
-            <div class="">
-              <span class="text-xs px-2 py-1 border border-[#DEDEDE] dark:border-[#222] rounded-full text-[#676767] inline">{{ item.version }}</span>
-            </div>
-            <span class="text-[#111] dark:text-white font-medium">{{ item.title }}</span>
-            <p class="text-[#6D6D6D] text-sm md:text-base line-clamp-2">
-              {{ item.description }}
-            </p>
-            <div class="card-light" />
-          </div>
+    <!-- <template v-for="item in data" :key="item.title">
+
+      </template> -->
+    <div class="hidden lg:grid grid-cols-3 gap-6 mb-6">
+      <!-- eslint-disable -->
+        <div class="w-full space-y-6">
+          <template v-for="(item, index) in data">
+            <ComponentCard v-if="index % 3 === 0" :key="item.title" :data="{...item}" />
+          </template>
         </div>
-      </template>
-    </div>
+        <div class="w-full space-y-6">
+          <template v-for="(item, index) in data">
+            <ComponentCard v-if="index % 3 === 1" :key="item.title" :data="{...item}" />
+          </template>
+        </div>
+        <div class="w-full space-y-6">
+          <template v-for="(item, index) in data">
+            <ComponentCard v-if="index % 3 === 2" :key="item.title" :data="{...item}" />
+          </template>
+        </div>
+      </div>
+      <div class="hidden sm:grid grid-cols-2 lg:hidden gap-6 mb-6">
+      <!-- eslint-disable -->
+        <div class="w-full space-y-6">
+          <template v-for="(item, index) in data">
+            <ComponentCard v-if="index % 2 === 0" :key="item.title" :data="{...item}" />
+          </template>
+        </div>
+        <div class="w-full space-y-6">
+          <template v-for="(item, index) in data">
+            <ComponentCard v-if="index % 2 === 1" :key="item.title" :data="{...item}" />
+          </template>
+        </div>
+      </div>
+      <div class="grid sm:hidden grid-cols-1 gap-6 mb-6">
+      <!-- eslint-disable -->
+        <div class="w-full space-y-6">
+          <template v-for="item in data" :key="item.title">
+            <ComponentCard  :data="{...item}" />
+          </template>
+        </div>
+      </div>
   </div>
 </template>
-
-<style>
-.card-light {
-  @apply absolute w-[220px] h-[220px] transition-all duration-300;
-  right: -1px;
-  top: -93px;
-  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
-  opacity: 0.3;
-  z-index: -1;
-
-}
-
-.group:hover {
-  .card-light {
-    opacity: 0.5;
-    transform: scale(1.5);
-
-  }
-}
-</style>
