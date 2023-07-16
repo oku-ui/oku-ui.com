@@ -81,7 +81,7 @@ const plainTeamMembers: CoreTeam[] = [
     name: 'Suxiong',
     github: 'YeSuX1998',
     twitter: 'YeSuX1998',
-    title: 'A font-end Developer',
+    title: 'A front-end Developer',
     desc: 'Core team member of Oku',
   },
   {
