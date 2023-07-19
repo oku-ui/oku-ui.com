@@ -21,6 +21,7 @@
     "@oku-ui/aspect-ratio": "^0.2.2",
     "@oku-ui/avatar": "^0.2.2",
     "@oku-ui/checkbox": "^0.2.2",
+    "@oku-ui/collapsible": "^0.2.4",
     "@oku-ui/label": "^0.2.2",
     "@oku-ui/progress": "^0.2.2",
     "@oku-ui/separator": "^0.2.2",

@@ -2,7 +2,9 @@
 const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
 
 module.exports = {
-  content: [],
+  content: [
+    './components/**/*.vue',
+  ],
   theme: {
     extend: {
       colors: {
@@ -25,7 +27,7 @@ module.exports = {
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(['fa-brands', 'heroicons']),
+      collections: getIconCollections(['fa-brands', 'heroicons', 'ph']),
     }),
     require('@tailwindcss/typography'),
   ],
