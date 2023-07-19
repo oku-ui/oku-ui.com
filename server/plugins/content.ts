@@ -38,6 +38,7 @@ export default defineNitroPlugin((nitroApp) => {
 
           let codeBlock = '';
           ['index.vue', 'tailwind.config.js'].forEach((f) => {
+            // eslint-disable-next-line n/prefer-global/process
             const filePath = `${process.cwd()}/components/${params.file}/${f}`
 
             if (isFileExits(filePath)) {
