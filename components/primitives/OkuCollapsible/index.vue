@@ -12,9 +12,9 @@ const rootDisabled = ref(false)
 </script>
 
 <template>
-  <OkuCollapsible v-model="open" class="max-w-[280px] w-full" :disabled="rootDisabled">
+  <OkuCollapsible v-model="open" class="max-w-[280px] w-full mx-auto" :disabled="rootDisabled">
     <div style="display: flex; align-items: center; justify-content: space-between">
-      <span class="text-black  text-sm leading-6">
+      <span class="text-white text-sm font-bold leading-6">
         @oku-ui 3 repos
       </span>
       <OkuCollapsibleTrigger
