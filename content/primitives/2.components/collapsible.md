@@ -32,7 +32,7 @@ Import the component.
 
 ```vue
 <script setup lang="ts">
-import { OkuToggle } from '@oku-ui/toggle'
+import { OkuCollapse, OkuCollapsibleContent, OkuCollapsibleTrigger } from '@oku-ui/collapsible'
 </script>
 
 <template>
