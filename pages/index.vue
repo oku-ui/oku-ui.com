@@ -85,7 +85,7 @@ const data = [
       </h2>
       <div class="mx-auto mt-10 flex justify-center items-center max-w-none ">
         <div class="flex flex-col items-center">
-          <a class="text-lg font-semibold text-oku-600" href="https://github.com/sponsors/antfu" rel="noopener noreferrer">productdevbook's Sponsors</a>
+          <a class="text-lg font-semibold text-oku-600" href="https://github.com/sponsors/productdevbook" rel="noopener noreferrer">productdevbook's Sponsors</a>
           <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg" target="_blank" rel="noopener noreferrer">
             <img
               crossorigin="anonymous"
