@@ -37,6 +37,7 @@ css({
       color: '{color.gray.400}'
     },
     '.edit-link': {
+      marginBottom:'{space.8}',
       flex: 1,
       display: 'flex',
       alignItems: 'center',
