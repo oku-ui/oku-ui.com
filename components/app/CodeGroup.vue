@@ -23,8 +23,8 @@ function changeTab(index: number) {
 
 <template>
   <div class="overflow-hidden">
-    <div class="bg-gradient-to-br rounded-lg from-[#CC0C62] to-[#DE8B25] w-full relative items-center justify-center flex">
-      <div class="w-full max-w-xl flex flex-col items-center justify-center p-20">
+    <div class=" rounded-lg componentBackground w-full relative items-center justify-center flex ">
+      <div class="w-full max-w-xl flex flex-col items-center justify-center p-20 ">
         <slot name="preview" />
       </div>
     </div>
@@ -49,8 +49,16 @@ function changeTab(index: number) {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .highlight-md.prose-code.language-md {
   @apply mt-0;
+}
+
+.dark .componentBackground {
+  @apply bg-gradient-to-br from-[#161616] to-[#262626];
+}
+
+.componentBackground {
+  @apply bg-gradient-to-br from-[#E2E2E2] to-[#EFEFEF] shadow-inner;
 }
 </style>
