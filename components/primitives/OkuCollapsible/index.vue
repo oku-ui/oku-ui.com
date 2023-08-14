@@ -25,15 +25,15 @@ const rootDisabled = ref(false)
       </OkuCollapsibleTrigger>
     </div>
 
-    <div class="bg-gray-100 rounded dark:bg-[#282828] my-[10px] p-[10px]">
+    <div class="bg-white rounded dark:bg-[#282828] my-[10px] p-[10px]">
       <span class="text-[#333333] dark:text-[#f2f2f2] text-sm leading-6">@oku-ui/primivites</span>
     </div>
 
     <OkuCollapsibleContent>
-      <div key="lorem1" class="bg-[#EFEFEF] dark:bg-[#282828] rounded my-[10px] p-[10px]">
+      <div key="lorem1" class="bg-white dark:bg-[#282828] rounded my-[10px] p-[10px]">
         <span class="text-[#333333] dark:text-[#f2f2f2] text-sm leading-6">@productdevbook</span>
       </div>
-      <div key="lorem2" class="bg-[#EFEFEF] dark:bg-[#282828] rounded my-[10px] p-[10px]">
+      <div key="lorem2" class="bg-white dark:bg-[#282828] rounded my-[10px] p-[10px]">
         <span class="text-[#333333] dark:text-[#f2f2f2] text-sm leading-6">@huntersofbook</span>
       </div>
     </OkuCollapsibleContent>
