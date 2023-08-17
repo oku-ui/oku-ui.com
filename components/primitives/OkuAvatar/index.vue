@@ -30,13 +30,13 @@ const consoleLog = (status: string) => console.log(status)
       </OkuAvatarFallback>
     </OkuAvatar>
 
-    <OkuAvatar class="w-14 h-14 bg-white items-center inline-block overflow-hidden rounded-full">
-      <OkuAvatarFallback class="flex items-center text-black font-bold h-full w-full justify-center" :delay-ms="100">
+    <OkuAvatar class="w-14 h-14 bg-[#4D4D4D] dark:bg-[#D7D7D7] items-center inline-block overflow-hidden rounded-full">
+      <OkuAvatarFallback class="flex items-center text-white dark:text-[#222] font-bold h-full w-full justify-center" :delay-ms="100">
         CT
       </OkuAvatarFallback>
     </OkuAvatar>
 
-    <OkuAvatar class="w-14 h-14 bg-gray-400 items-center inline-block overflow-hidden rounded-full">
+    <OkuAvatar class="w-14 h-14 bg-[#313131] dark:bg-[#8D8D8D] items-center inline-block overflow-hidden rounded-full">
       <OkuAvatarImage class="w-full h-full object-cover" :src="srcBroken" :on-loading-status-change="consoleLog" />
     </OkuAvatar>
   </div>
