@@ -5,24 +5,24 @@ import { OkuSeparator } from '@oku-ui/separator'
 <template>
   <div class="flex items-center justify-center">
     <div>
-      <h1 class="text-[#111] dark:text-white">
+      <h1 class="text-codGray-950 dark:text-white">
         Horizontal
       </h1>
-      <p class="text-[#333333] dark:text-[#A2A2A2] mt-1">
+      <p class="text-codGray-700 dark:text-gray-200 mt-1">
         The following separator is horizontal and has semantic meaning.
       </p>
 
-      <OkuSeparator class="border-0 bg-[#AEAEAE] my-4 h-[1px] dark:bg-[#434343]" orientation="horizontal" />
+      <OkuSeparator class="border-0 bg-gray-400 my-4 h-[1px] dark:bg-codGray-700" orientation="horizontal" />
       <div class="flex items-center h-full">
-        <p class="text-[#222222] dark:text-[#E2E2E2]">
+        <p class="text-codGray-900 dark:text-gray-100">
           Home
         </p>
-        <OkuSeparator class="w-[1px] mx-4 bg-[#AEAEAE] dark:bg-[#434343] h-6" orientation="vertical" decorative />
-        <p class="text-[#222222] dark:text-[#E2E2E2]">
+        <OkuSeparator class="w-[1px] mx-4 bg-gray-400 dark:bg-codGray-700 h-6" orientation="vertical" decorative />
+        <p class="text-codGray-900 dark:text-gray-100">
           Docs
         </p>
-        <OkuSeparator class="w-[1px] mx-4 bg-[#AEAEAE] dark:bg-[#434343] h-6" orientation="vertical" decorative />
-        <p class="text-[#222222] dark:text-[#E2E2E2]">
+        <OkuSeparator class="w-[1px] mx-4 bg-gray-400 dark:bg-codGray-700 h-6" orientation="vertical" decorative />
+        <p class="text-codGray-900 dark:text-gray-100">
           Source
         </p>
       </div>
