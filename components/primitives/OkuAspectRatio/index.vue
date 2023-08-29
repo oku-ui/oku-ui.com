@@ -4,7 +4,7 @@ import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
 
 <template>
   <div class="flex items-center justify-center">
-    <div class="w-[250px] rounded-sm overflow-hidden">
+    <div class="shadow-blackA-300 dark:shadow-codGray-950 w-[250px] overflow-hidden shadow-[0_2px_10px] rounded-lg">
       <OkuAspectRatio :ratio="3 / 2">
         <img
           class="object-cover w-full h-full rounded-lg"
