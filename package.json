@@ -49,8 +49,8 @@
   },
   "pnpm": {
     "overrides": {
-      "vue": "3.3.4",
-      "@vue/runtime-core": "3.3.4"
+      "@vue/runtime-core": "3.3.4",
+      "vue": "3.3.4"
     }
   }
 }
