@@ -12,7 +12,7 @@ const labelRef = ref<LabelRef>()
         First name
       </OkuLabel>
       <input
-        id="firstName" class=" text-blackA-900 border bg-none border-gray-400 rounded dark:bg-none dark:border-codGray-600 focus:outline focus:outline-blackA-950 dark:focus:outline-gray-300 p-2 transition duration-300 dark:text-white" type="text"
+        id="firstName" class=" text-blackA-900 border bg-none border-gray-400 rounded dark:border-codGray-600 focus:outline focus:outline-blackA-950 dark:focus:outline-gray-300 p-2 transition duration-300 dark:text-white" type="text"
         value="Emir Uluçay"
       >
     </div>
