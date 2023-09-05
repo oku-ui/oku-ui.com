@@ -18,7 +18,7 @@ const rootDisabled = ref(false)
         @oku-ui 3 repos
       </span>
       <OkuCollapsibleTrigger
-        class="cursor-default rounded-full h-6 w-6 inline-flex items-center justify-center text-black dark:text-gray-300 outline-none dark:bg-codGray-800 dark:data-[state=closed]:bg-codGray-800 data-[state=closed]:bg-white data-[state=open]:bg-white hover:bg-gray-500 focus:outline-blackA-950 dark:focus:outline-gray-300"
+        class="cursor-default rounded-full h-6 w-6 inline-flex items-center justify-center text-black dark:text-grayA-300 outline-none dark:bg-codGray-800 dark:data-[state=closed]:bg-codGray-800 data-[state=closed]:bg-white data-[state=open]:bg-white hover:bg-grayA-500 focus:outline-blackA-950 dark:focus:outline-grayA-300"
       >
         <i v-if="open" class="i-ph-x h-3.5 w-3.5 !text-black dark:!text-white" />
         <i v-else class="i-ph-arrows-out-line-vertical h-3.5 w-3.5 !text-black dark:!text-white" />
@@ -26,15 +26,15 @@ const rootDisabled = ref(false)
     </div>
 
     <div class="bg-white rounded dark:bg-blackA-800 my-[10px] p-[10px]">
-      <span class="text-codGray-700 dark:text-gray-50 text-sm leading-6">@oku-ui/primivites</span>
+      <span class="text-codGray-700 dark:text-grayA-50 text-sm leading-6">@oku-ui/primivites</span>
     </div>
 
     <OkuCollapsibleContent>
       <div key="lorem1" class="bg-white dark:bg-blackA-800 rounded my-[10px] p-[10px]">
-        <span class="text-codGray-700 dark:text-gray-50 text-sm leading-6">@productdevbook</span>
+        <span class="text-codGray-700 dark:text-grayA-50 text-sm leading-6">@productdevbook</span>
       </div>
       <div key="lorem2" class="bg-white dark:bg-blackA-800 rounded my-[10px] p-[10px]">
-        <span class="text-codGray-700 dark:text-gray-50 text-sm leading-6">@huntersofbook</span>
+        <span class="text-codGray-700 dark:text-grayA-50 text-sm leading-6">@huntersofbook</span>
       </div>
     </OkuCollapsibleContent>
   </OkuCollapsible>

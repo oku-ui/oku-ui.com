@@ -7,7 +7,7 @@ import { OkuToggle } from '@oku-ui/toggle'
     <OkuToggle
       id="toggle"
       aria-label="Toggle italic"
-      class="w-10 h-10 font-medium transition duration-300 border-2 rounded focus:outline-blackA-950 focus:outline focus:outline-2 focus:border-blackA-950 dark:focus:outline-codGray-300 text-codGray-600 dark:text-gray-200 dark:border-codGray-500 flex items-center justify-center data-[state=on]:border-oku-500 data-[state=on]:bg-oku-500 data-[state=on]:text-white data-[state=off]:border-gray-400 dark:data-[state=on]:text-white dark:data-[state=on]:bg-oku-500 dark:data-[state=on]:border-oku-500"
+      class="w-10 h-10 font-medium transition duration-300 border-2 rounded focus:outline-blackA-950 focus:outline focus:outline-2 focus:border-blackA-950 dark:focus:outline-codGray-300 text-codGray-600 dark:text-grayA-200 dark:border-codGray-500 flex items-center justify-center data-[state=on]:border-oku-500 data-[state=on]:bg-oku-500 data-[state=on]:text-white data-[state=off]:border-grayA-400 dark:data-[state=on]:text-white dark:data-[state=on]:bg-oku-500 dark:data-[state=on]:border-oku-500"
     >
       I
     </OkuToggle>
