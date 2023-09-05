@@ -13,6 +13,8 @@ export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
 
   modules: [
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
     // https://github.com/productdevbookcom/v-plausible
     'v-plausible',
     // https://github.com/nuxt/devtools
@@ -20,6 +22,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxthq/studio',
+    // '@nuxtseo/module',
     resolve('./app/module'),
 
   ],
@@ -30,6 +33,19 @@ export default defineNuxtConfig({
 
   oku: {
     icons: ['heroicons'],
+  },
+
+
+  googleFonts: {
+    families: {
+      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
   },
 
   components: [
@@ -56,6 +72,7 @@ export default defineNuxtConfig({
     // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
     partytown: false,
   },
+
   routeRules: {
     '/docs/primitives/overview/introduction': {
       redirect: {

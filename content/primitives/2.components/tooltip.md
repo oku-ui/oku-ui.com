@@ -1,5 +1,5 @@
 ---
-title: Toggle
+title: Tooltip
 description: A two-state button that can be either on or off.
 datePublished: 2022-12-07
 dateModified: 2022-12-07
@@ -9,9 +9,9 @@ version: 0.4.0
 
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggle/index.vue"}
+:ContentPreview{src="/primitives/OkuTooltip/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuToggle/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuTooltip/index.vue" lang="vue"} -->
 ::
 
 ## Features

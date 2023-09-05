@@ -1,15 +1,19 @@
 ---
 title: Label
 description: Renders an accessible label associated with controls.
+datePublished: 2022-12-07
+dateModified: 2022-12-07
+readingTime: 3
+version: 0.4.0
 ---
 
-# Label
-Renders an accessible label associated with controls.
-
-::code-group{file="primitives/OkuLabel"}
+::ContentTabs
 #preview
- ::oku-label
+:ContentPreview{src="/primitives/OkuLabel/index.vue"}
+#vue
+<!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
 ::
+
 
 ## Installation
 

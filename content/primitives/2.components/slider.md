@@ -1,5 +1,5 @@
 ---
-title: Toggle
+title: Slider
 description: A two-state button that can be either on or off.
 datePublished: 2022-12-07
 dateModified: 2022-12-07
@@ -9,10 +9,11 @@ version: 0.4.0
 
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggle/index.vue"}
+:ContentPreview{src="/primitives/OkuSlider/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuToggle/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
 ::
+
 
 ## Features
 - Full keyboard navigation.

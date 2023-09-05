@@ -1,15 +1,19 @@
 ---
 title: Checkbox
 description: Renders an accessible checkbox associated with controls.
+datePublished: 2022-12-07
+dateModified: 2022-12-07
+readingTime: 3
+version: 0.4.0
 ---
 
-# Checkbox
-Renders an accessible checkbox associated with controls.
-
-::code-group{file="primitives/OkuCheckbox"}
+::ContentTabs
 #preview
- ::oku-checkbox
+:ContentPreview{src="/primitives/OkuCheckbox/index.vue"}
+#vue
+<!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::
+
 
 ## Features
 
@@ -36,17 +40,11 @@ Import the component.
 import type { CheckboxRef } from '@oku-ui/checkbox'
 import { OkuCheckbox, OkuCheckboxIndicator } from '@oku-ui/checkbox'
 import { onMounted, ref } from 'vue'
-
-const refV = ref<CheckboxRef>()
-
-onMounted(() => {
-  console.log(refV.value?.innerRef)
-})
 </script>
 
 <template>
   <div class="flex items-center justify-center">
-    <OkuCheckbox ref="refV">
+    <OkuCheckbox>
       <OkuCheckboxIndicator />
     </OkuCheckbox>
   </div>

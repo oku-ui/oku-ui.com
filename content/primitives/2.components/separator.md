@@ -1,14 +1,17 @@
 ---
 title: Separator
 description: Visually or semantically separates content.
+datePublished: 2022-12-07
+dateModified: 2022-12-07
+readingTime: 3
+version: 0.4.0
 ---
 
-# Separator
-Visually or semantically separates content.
-
-::code-group{file="primitives/OkuSeparator"}
+::ContentTabs
 #preview
- ::oku-separator
+:ContentPreview{src="/primitives/OkuSeparator/index.vue"}
+#vue
+<!-- Autodocs{src="/primitives/OkuSeparator/index.vue" lang="vue"} -->
 ::
 
 ## Features

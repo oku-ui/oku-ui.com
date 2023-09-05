@@ -1,14 +1,17 @@
 ---
 title: Avatar
 description: An image element with a fallback for representing the user.
+datePublished: 2022-12-07
+dateModified: 2022-12-07
+readingTime: 3
+version: 0.4.0
 ---
 
-# Avatar
-An image element with a fallback for representing the user.
-
-::code-group{file="primitives/OkuAvatar"}
+::ContentTabs
 #preview
- ::oku-avatar
+:ContentPreview{src="/primitives/OkuAvatar/index.vue"}
+#vue
+<!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::
 
 
