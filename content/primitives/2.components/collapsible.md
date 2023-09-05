@@ -7,6 +7,8 @@ readingTime: 3
 version: 0.4.0
 ---
 
+# Collapsible
+An interactive component which expands/collapses a panel.
 
 ::ContentTabs
 #preview
@@ -49,49 +51,126 @@ import { OkuCollapsible, OkuCollapsibleContent, OkuCollapsibleTrigger } from '@o
 
 ## API Reference
 
-### OkuCollapse
-The toggle.
-| Prop | Type | Default |
-| --- | --- | --- |
-| <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
-| <div class="code">defaultOpen</div> | <div class="code">boolean</div> | <div class="code">-</div> |
-| <div class="code">open</div> | <div class="code">boolean</div> | <div class="code">-</div> |
-| <div class="code">onOpenChange</div> | <div class="code">function</div> | <div class="code">-</div> |
-| <div class="code">disabled</div> | <div class="code">boolean</div> | <div class="code">-</div> |
-| Data Attribute | Values |
-| --- | --- |
-| <div class="code">[data-state]</div> | <div class="code">"open" | "close"</div> |
-| <div class="code">[data-disabled]</div> | <div class="code">Present when disabled</div> |
+### OkuCollapsible
+Contains all the parts of a collapsible.
+
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: 'Change the default rendered element for the one passed as a child, merging their props and behavior.<br><br>Read our [Composition](../guides/composition) guide for more details.'
+  - name: defaultOpen
+    type: boolean
+    description: 'The open state of the collapsible when it is initially rendered. Use when you do not need to control its open state.'
+  - name: open
+    type: boolean
+    description: 'The controlled open state of the collapsible. Must be used in conjunction with `onOpenChange`.'
+  - name: onOpenChange
+    type: '(open: boolean) => void'
+    typeSimple: function
+    description: 'Event handler called when the open state of the collapsible changes.'
+  - name: disabled
+    type: boolean
+    description: 'When `true`, prevents the user from interacting with the collapsible.'
+---
+::
+
+::OkuAttributesTable
+---
+data:
+  - attribute: '[data-state]'
+    values:
+      - 'open'
+      - 'closed'
+  - attribute: '[data-disabled]'
+    values: 'Present when disabled'
+---
+::
+
 
 ## OkuCollapsibleTrigger
+The button that toggles the collapsible.
 
-| Key | Description |
-| --- | --- |
-| <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
-| Data Attribute | Values |
-| --- | --- |
-| <div class="code">[data-state]</div> | <div class="code">"open" | "close"</div> |
-| <div class="code">[data-disabled]</div> | <div class="code">Present when disabled</div> |
+
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: 'Change the default rendered element for the one passed as a child, merging their props and behavior.<br><br>Read our [Composition](../guides/composition) guide for more details.'
+---
+::
+
+::OkuAttributesTable
+---
+data:
+  - attribute: '[data-state]'
+    values:
+      - 'open'
+      - 'closed'
+  - attribute: '[data-disabled]'
+    values: 'Present when disabled'
+---
+::
+
 
 ## OkuCollapsibleContent
+The component that contains the collapsible content.
 
-| Key | Description |
-| --- | --- |
-| <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
-| <div class="code">forceMount</div> | <div class="code">boolean</div> | <div class="code">-</div> |
-| Data Attribute | Values |
-| --- | --- |
-| <div class="code">[data-state]</div> | <div class="code">"open" | "close"</div> |
-| <div class="code">[data-disabled]</div> | <div class="code">Present when disabled</div> |
-| CSS Variable | Values |
-| --- | --- |
-| --oku-collapsible-content-height | The height of the content when it opens/closes
-| --oku-collapsible-content-width | The width of the content when it opens/closes
+
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: 'Change the default rendered element for the one passed as a child, merging their props and behavior.<br><br>Read our [Composition](../guides/composition) guide for more details.'
+  - name: forceMount
+    type: boolean
+    description: 'Used to force mounting when more control is needed. Useful when controlling animation with React animation libraries.'
+---
+::
+
+::OkuAttributesTable
+---
+data:
+  - attribute: '[data-state]'
+    values:
+      - 'open'
+      - 'closed'
+  - attribute: '[data-disabled]'
+    values: 'Present when disabled'
+---
+::
+
+::OkuCssVariablesTable
+---
+data:
+  - cssVariable: '--oku-collapsible-content-width'
+    description: 'The width of the content when it opens/closes'
+  - cssVariable: '--oku-collapsible-content-height'
+    description: 'The height of the content when it opens/closes'
+---
+::
+
 
 ## Accessibility
 
 Adheres to the [Disclosure WAI-ARIA design pattern.](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/)
-| Key | Description |
-| --- | --- |
-| Space | Opens/closes the collapsible. |
-| Enter | Opens/closes the collapsible. |
+
+
+::OkuKeyboardTable
+---
+data:
+  - keys: ['Space']
+    description: 'Opens/closes the collapsible.'
+  - keys: ['Enter']
+    description: 'Opens/closes the collapsible.'
+---
+::

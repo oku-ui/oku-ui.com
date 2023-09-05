@@ -7,6 +7,9 @@ readingTime: 3
 version: 0.4.0
 ---
 
+# Label
+Renders an accessible label associated with controls.
+
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuLabel/index.vue"}
@@ -43,12 +46,23 @@ import Label from '@oku-ui/label'
 ```
 
 ## API Reference
-### Root
+
+### OkuLabel
 Contains the content for the label.
 
-| Name | Required | Type | Default | Description |
-| --- | --- | --- | --- | --- |
-| <div class="code">for</div> | <div class="code">false</div> | <div class="code">string</div> | <div class="code">false</div> | The id of the element the label is associated with. |
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: 'Change the default rendered element for the one passed as a child, merging their props and behavior.<br><br>Read our [Composition](../guides/composition) guide for more details.'
+  - name: htmlFor
+    type: string
+    description: 'The id of the element the label is associated with.'
+---
+::
 
 ## Accessibility
 

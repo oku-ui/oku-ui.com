@@ -7,6 +7,9 @@ readingTime: 3
 version: 0.4.0
 ---
 
+# Aspect Ratio
+Displays content within a desired ratio.
+
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuAspectRatio/index.vue"}
@@ -42,7 +45,7 @@ import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
 
 ## API Reference
 
-### Root
+### OkuAspectRatio
 Contains the content you want to constrain to a given ratio.
 
 

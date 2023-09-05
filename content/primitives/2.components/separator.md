@@ -45,14 +45,39 @@ import { OkuSeparator } from '@oku-ui/separator'
 ### Root
 The separator.
 
-| Prop | Type | Default |
-| --- | --- | --- |
-| <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
-| <div class="code">orientation</div> | <div class="code">enum</div> | <div class="code">"horizontal"</div> |
-| <div class="code">decorative</div> | <div class="code">boolean</div> | - |
-| Data Attribute | Values |
-| <div class="code">[data-orientation]</div> | <div class="code">"vertical" | "horizontal"</div> |
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: |
+      Change the default rendered element for the one passed as a child,
+      merging their props and behavior.
+      <br />
+      <br />
+      Read our [Composition](../guides/composition) guide for more details.
+  - name: orientation
+    type: '"horizontal" | "vertical"'
+    default: "horizontal"
+    description: The orientation of the separator.
+  - name: decorative
+    type: boolean
+    description: |
+      When `true`, signifies that it is purely visual, carries no
+      semantic meaning, and ensures it is not present in the accessibility
+      tree.
+---
+::
 
+::OkuAttributesTable
+---
+data:
+  - attribute: '[data-orientation]'
+    values: ['vertical', 'horizontal']
+---
+::
 
 ## Accessibility
 

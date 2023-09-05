@@ -21,18 +21,15 @@ const props = defineProps<PropsTableProps>()
     <thead>
       <ProseTr>
         <ProseTh class="w-[33%]">
-          <span>Prop</span>
+          <span>Emit</span>
         </ProseTh>
         <ProseTh>
           <span>Type</span>
         </ProseTh>
-        <ProseTh>
-          <span>Default</span>
-        </ProseTh>
       </ProseTr>
     </thead>
     <tbody>
-      <ProseTr v-for="(item, index) in props.data" :key="`${item.name}-${index}`">
+      <ProseTr v-for="(item, i) in props.data" :key="`${item.name}-${i}`">
         <ProseTd>
           <div class="flex items-center justify-between">
             <ProseCodeInline class="!text-[12px]">
@@ -80,18 +77,6 @@ const props = defineProps<PropsTableProps>()
               </OkuPopover>
             </template>
           </div>
-        </ProseTd>
-        <ProseTd>
-          <div v-if="item.default" class="flex items-center">
-            <ProseCodeInline>
-              {{ item.default }}
-            </ProseCodeInline>
-          </div>
-          <template v-else>
-            <div as="{AccessibleIcon}" label="No default value">
-              <i class="i-ph-minus" />
-            </div>
-          </template>
         </ProseTd>
       </ProseTr>
     </tbody>
