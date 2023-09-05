@@ -237,15 +237,15 @@ data:
 ::CssVariablesTable
 ---
 data:
-  - cssVariable: '--radix-tooltip-content-transform-origin'
+  - cssVariable: '-oku-tooltip-content-transform-origin'
     description: 'The `transform-origin` computed from the content and arrow positions/offsets.'
-  - cssVariable: '--radix-tooltip-content-available-width'
+  - cssVariable: '-oku-tooltip-content-available-width'
     description: 'The remaining width between the trigger and the boundary edge.'
-  - cssVariable: '--radix-tooltip-content-available-height'
+  - cssVariable: '-oku-tooltip-content-available-height'
     description: 'The remaining height between the trigger and the boundary edge.'
-  - cssVariable: '--radix-tooltip-trigger-width'
+  - cssVariable: '-oku-tooltip-trigger-width'
     description: 'The width of the trigger.'
-  - cssVariable: '--radix-tooltip-trigger-height'
+  - cssVariable: '-oku-tooltip-trigger-height'
     description: 'The height of the trigger.'
 ---
 ::
