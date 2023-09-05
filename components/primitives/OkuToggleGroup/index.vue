@@ -23,6 +23,6 @@ import { OkuToggleGroup, OkuToggleGroupItem } from '@oku-ui/toggle-group'
 
 <style lang="postcss">
 .toggle-group-item {
-  @apply hover:bg-oku-400/10 dark:hover:bg-oku-200/60 text-oku-300 data-[state=on]:bg-oku-500/20 data-[state=on]:text-gray-500 dark:data-[state=on]:bg-oku-400/70 dark:data-[state=on]:text-gray-200 flex h-[35px] w-[35px] items-center justify-center bg-white dark:bg-codGray-800 text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black dark:focus:shadow-white focus:outline-none
+  @apply hover:bg-oku-400/10 dark:hover:bg-oku-200/60 text-oku-300 data-[state=on]:bg-oku-500/20 data-[state=on]:text-grayA-500 dark:data-[state=on]:bg-oku-400/70 dark:data-[state=on]:text-grayA-200 flex h-[35px] w-[35px] items-center justify-center bg-white dark:bg-codGray-800 text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black dark:focus:shadow-white focus:outline-none
 }
 </style>
