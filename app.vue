@@ -13,6 +13,7 @@ useHead({
 
 <template>
   <AppLayout>
+    <NuxtLoadingIndicator />
     <NuxtPage />
   </AppLayout>
 </template>
