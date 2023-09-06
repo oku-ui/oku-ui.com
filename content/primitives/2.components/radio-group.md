@@ -38,12 +38,11 @@ Import the component.
 
 ```vue
 <script setup lang="ts">
-import { 
-  OkuRadioGroup, 
-  OkuRadioGroupItem, 
-  OkuRadioGroupIndicator 
+import {
+  OkuRadioGroup,
+  OkuRadioGroupIndicator,
+  OkuRadioGroupItem
 } from '@oku-ui/radio-group'
-
 </script>
 
 <template>

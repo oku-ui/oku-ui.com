@@ -25,17 +25,17 @@ defineProps<PropsTableProps>()
     <ProseTbody>
       <ProseTr v-for="(item, index) in data" :key="`${item.attribute}-${index}`">
         <ProseTd>
-             <ProseCodeInline class="!text-[12px]">
-                {{ item.attribute }}
-              </ProseCodeInline>
+          <ProseCodeInline class="!text-[12px]">
+            {{ item.attribute }}
+          </ProseCodeInline>
         </ProseTd>
         <ProseTd>
           <ProseCodeInline v-if="Array.isArray(item.values)" class="bg-oku-100">
-              <span v-for="(value, index) in item.values" :key="value">
-                {{ index + 1 !== item.values.length ? `"${value}" | ` : `"${value}"` }}
-              </span>
-            </ProseCodeInline>
-            <span v-else>{{ item.values }}</span>
+            <span v-for="(value, index) in item.values" :key="value">
+              {{ index + 1 !== item.values.length ? `"${value}" | ` : `"${value}"` }}
+            </span>
+          </ProseCodeInline>
+          <span v-else>{{ item.values }}</span>
         </ProseTd>
       </ProseTr>
     </ProseTbody>

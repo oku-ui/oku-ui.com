@@ -40,14 +40,14 @@ Import the component.
 <script setup lang="ts">
 import {
   OkuSlider,
-  OkuSliderTrack,
   OkuSliderRange,
-  OkuSliderThumb
+  OkuSliderThumb,
+  OkuSliderTrack
 } from '@oku-ui/slider'
 </script>
 
 <template>
-   <OkuSlider>
+  <OkuSlider>
     <OkuSliderTrack>
       <OkuSliderRange />
     </OkuSliderTrack>

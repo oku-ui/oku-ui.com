@@ -39,16 +39,16 @@ Import the component.
 
 ```vue
 <script setup lang="ts">
-import { 
-  OkuTabs, 
-  OkuTabsList, 
-  OkuTabsTrigger, 
-  OkuTabsContent 
+import {
+  OkuTabs,
+  OkuTabsContent,
+  OkuTabsList,
+  OkuTabsTrigger
 } from '@oku-ui/tabs'
 </script>
 
 <template>
-   <OkuTabs>
+  <OkuTabs>
     <OkuTabsList>
       <OkuTabsTrigger />
     </OkuTabsList>

@@ -37,12 +37,12 @@ Import the component.
 ```vue
 <script setup lang="ts">
 import {
+  OkuTooltipArrow,
+  OkuTooltipContent,
+  OkuTooltipPortal,
   OkuTooltipProvider,
   OkuTooltipRoot,
-  OkuTooltipTrigger,
-  OkuTooltipPortal,
-  OkuTooltipContent,
-  OkuTooltipArrow
+  OkuTooltipTrigger
 } from '@oku-ui/tooltip'
 </script>
 

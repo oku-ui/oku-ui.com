@@ -37,14 +37,14 @@ Import the component.
 
 ```vue
 <script setup lang="ts">
-import { 
-  OkuSwitch, 
-  OkuSwitchThumb 
+import {
+  OkuSwitch,
+  OkuSwitchThumb
 } from '@oku-ui/switch'
 </script>
 
 <template>
- <OkuSwitch>
+  <OkuSwitch>
     <OkuSwitchThumb />
   </OkuSwitch>
 </template>

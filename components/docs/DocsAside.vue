@@ -11,9 +11,8 @@
         <div class="h-8 bg-gradient-to-b from-white dark:from-gray-900" />
       </div>
 
-      
     </div>
     <DocsAsideLinks />
   </aside> -->
-    <DocsAsideLinks />
+  <DocsAsideLinks />
 </template>

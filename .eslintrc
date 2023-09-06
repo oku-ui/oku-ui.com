@@ -3,6 +3,6 @@
     "rules": {
         "no-console": "warn",
         "@typescript-eslint/ban-ts-comment": "off",
-        "n/prefer-global/process"
+        "n/prefer-global/process": "off"
     }
 }

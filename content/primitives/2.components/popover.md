@@ -43,17 +43,17 @@ Import the component.
 <script setup lang="ts">
 import {
   OkuPopover,
-  OkuPopoverTrigger,
   OkuPopoverAnchor,
-  OkuPopoverPortal,
-  OkuPopoverContent,
+  OkuPopoverArrow,
   OkuPopoverClose,
-  OkuPopoverArrow
+  OkuPopoverContent,
+  OkuPopoverPortal,
+  OkuPopoverTrigger
 } from '@oku-ui/popover'
 </script>
 
 <template>
-   <OkuPopover>
+  <OkuPopover>
     <OkuPopoverTrigger />
     <OkuPopoverAnchor />
     <OkuPopoverPortal>

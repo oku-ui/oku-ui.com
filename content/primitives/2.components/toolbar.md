@@ -36,16 +36,15 @@ Import the component.
 import {
   OkuToolbar,
   OkuToolbarButton,
-  OkuToolbarSeparator,
   OkuToolbarLink,
+  OkuToolbarSeparator,
   OkuToolbarToggleGroup,
   OkuToolbarToggleItem
 } from '@oku-ui/toolbar'
-
 </script>
 
 <template>
-   <OkuToolbar>
+  <OkuToolbar>
     <OkuToolbarButton />
     <OkuToolbarSeparator />
     <OkuToolbarLink />
