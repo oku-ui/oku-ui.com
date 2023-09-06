@@ -1,56 +1,54 @@
 {
-  "name": "docus-starter",
-  "version": "0.1.0",
+  "name": "oku-ui-docs",
   "private": true,
-  "packageManager": "pnpm@8.6.6",
-  "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "lint": "eslint .",
-    "fix": "eslint --fix .",
-    "docs:contributors": "esno scripts/update-contributors.ts",
-    "prefetch": "esno scripts/fetch-avatars.ts"
+  "version": "0.0.0",
+  "description": "Give your JavaScript the ability to speak many languages.",
+  "homepage": "https://github.com/oku-ui/docs",
+  "bugs": "https://github.com/oku-ui/docs/issues",
+  "author": "Mehmet @productdevbook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oku-ui/docs.git"
   },
-  "dependencies": {
-    "@iconify-json/fa-brands": "^1.1.4",
-    "@iconify-json/heroicons": "^1.1.11",
-    "@iconify-json/ph": "^1.1.5",
-    "@nuxthq/studio": "^0.13.4",
-    "@oku-ui/aspect-ratio": "^0.2.3",
-    "@oku-ui/avatar": "^0.2.3",
-    "@oku-ui/checkbox": "^0.2.3",
-    "@oku-ui/collapsible": "^0.2.4",
-    "@oku-ui/label": "^0.2.3",
-    "@oku-ui/progress": "^0.2.3",
-    "@oku-ui/separator": "^0.2.3",
-    "@oku-ui/toggle": "^0.2.3",
-    "@tailwindcss/typography": "^0.5.9",
-    "lodash-es": "^4.17.21"
+  "funding": "https://github.com/sponsors/productdevbook",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.vue .",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.vue . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
-    "@egoist/tailwindcss-icons": "^1.1.0",
-    "@nuxt-themes/docus": "^1.14.4",
-    "@nuxt/devtools": "^0.7.3",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxthq/ui": "^2.7.0",
-    "@types/fs-extra": "^11.0.1",
-    "@types/lodash-es": "^4.17.8",
-    "@types/node": "^20.4.5",
-    "@vueuse/core": "^10.3.0",
-    "@vueuse/nuxt": "^10.3.0",
-    "eslint": "^8.46.0",
-    "fs-extra": "^11.1.1",
-    "nuxt": "^3.6.5",
-    "typescript": "^5.1.6",
-    "v-plausible": "^1.0.2"
+    "@antfu/eslint-config": "^0.39.1",
+    "@iconify-json/mdi": "^1.1.52",
+    "@iconify-json/octicon": "^1.1.39",
+    "@iconify-json/ph": "^1.1.5",
+    "@nuxt/content": "^2.8.2",
+    "@nuxt/devtools": "^0.5.0",
+    "@nuxthq/studio": "^0.14.0",
+    "@nuxthq/ui": "^2.1.0",
+    "@nuxtjs/plausible": "^0.2.1",
+    "@oku-ui/aspect-ratio": "^0.1.0",
+    "@oku-ui/avatar": "^0.1.1",
+    "@oku-ui/progress": "^0.1.0",
+    "@oku-ui/separator": "^0.1.2",
+    "@oku-ui/toggle": "^0.1.0",
+    "@types/node": "^18.16.14",
+    "@unocss/nuxt": "^0.52.1",
+    "@vueuse/core": "^10.1.2",
+    "@vueuse/nuxt": "^10.1.2",
+    "eslint": "8.39.0",
+    "nuxt": "^3.7.1",
+    "typescript": "^5.0.4"
   },
-  "pnpm": {
-    "overrides": {
-      "vue": "3.3.4",
-      "@vue/runtime-core": "3.3.4"
-    }
+  "dependencies": {
+    "@oku-ui/checkbox": "^0.1.4",
+    "@oku-ui/label": "^0.1.0"
   }
 }
