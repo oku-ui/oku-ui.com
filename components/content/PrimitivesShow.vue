@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { data: primitives } = await useAsyncData('primitives-components', () => queryContent('primitives', 'components').sort({ to: -1 }).find())
+const { data: primitives } = await useAsyncData('primitives-components', () => queryContent('primitives', 'components').where({ hide: { $ne: true } }).only([
+  'link',
+  'version',
+  'title',
+  'description',
+  'componentName',
+]).sort({ to: -1 }).find())
 </script>
 
 <template>
