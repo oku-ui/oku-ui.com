@@ -6,6 +6,7 @@ dateModified: 2022-12-07
 readingTime: 3
 version: 0.4.0
 componentName: OkuRadioGroup
+image: 'https://oku-ui.com/og/oku-radio-group.jpg'
 ---
 
 # Radio Group
