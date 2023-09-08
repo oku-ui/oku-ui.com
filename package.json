@@ -34,11 +34,11 @@
     "@oku-ui/slider": "^0.4.0-alpha.8",
     "@oku-ui/switch": "^0.4.0-alpha.8",
     "@oku-ui/tabs": "^0.4.0-alpha.8",
+    "@oku-ui/toast": "^0.4.0-alpha.8",
     "@oku-ui/toggle": "^0.4.0-alpha.8",
     "@oku-ui/toggle-group": "^0.4.0-alpha.8",
     "@oku-ui/toolbar": "^0.4.0-alpha.8",
     "@oku-ui/tooltip": "^0.4.0-alpha.8",
-    "@oku-ui/toast": "^0.4.0-alpha.8",
     "@tailwindcss/typography": "^0.5.9",
     "lodash-es": "^4.17.21"
   },
