@@ -22,23 +22,23 @@
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtseo/module": "2.0.0-beta.15",
-    "@oku-ui/aspect-ratio": "^0.4.0-alpha.8",
-    "@oku-ui/avatar": "^0.4.0-alpha.8",
-    "@oku-ui/checkbox": "^0.4.0-alpha.8",
-    "@oku-ui/collapsible": "^0.4.0-alpha.8",
-    "@oku-ui/label": "^0.4.0-alpha.8",
-    "@oku-ui/popover": "^0.4.0-alpha.8",
-    "@oku-ui/progress": "^0.4.0-alpha.8",
-    "@oku-ui/radio-group": "^0.4.0-alpha.8",
-    "@oku-ui/separator": "^0.4.0-alpha.8",
-    "@oku-ui/slider": "^0.4.0-alpha.8",
-    "@oku-ui/switch": "^0.4.0-alpha.8",
-    "@oku-ui/tabs": "^0.4.0-alpha.8",
-    "@oku-ui/toast": "^0.4.0-alpha.8",
-    "@oku-ui/toggle": "^0.4.0-alpha.8",
-    "@oku-ui/toggle-group": "^0.4.0-alpha.8",
-    "@oku-ui/toolbar": "^0.4.0-alpha.8",
-    "@oku-ui/tooltip": "^0.4.0-alpha.8",
+    "@oku-ui/aspect-ratio": "^0.4.0-alpha.11",
+    "@oku-ui/avatar": "^0.4.0-alpha.11",
+    "@oku-ui/checkbox": "^0.4.0-alpha.11",
+    "@oku-ui/collapsible": "^0.4.0-alpha.11",
+    "@oku-ui/label": "^0.4.0-alpha.11",
+    "@oku-ui/popover": "^0.4.0-alpha.11",
+    "@oku-ui/progress": "^0.4.0-alpha.11",
+    "@oku-ui/radio-group": "^0.4.0-alpha.11",
+    "@oku-ui/separator": "^0.4.0-alpha.11",
+    "@oku-ui/slider": "^0.4.0-alpha.11",
+    "@oku-ui/switch": "^0.4.0-alpha.11",
+    "@oku-ui/tabs": "^0.4.0-alpha.11",
+    "@oku-ui/toast": "^0.4.0-alpha.11",
+    "@oku-ui/toggle": "^0.4.0-alpha.11",
+    "@oku-ui/toggle-group": "^0.4.0-alpha.11",
+    "@oku-ui/toolbar": "^0.4.0-alpha.11",
+    "@oku-ui/tooltip": "^0.4.0-alpha.11",
     "@tailwindcss/typography": "^0.5.9",
     "lodash-es": "^4.17.21"
   },
@@ -64,7 +64,8 @@
   "pnpm": {
     "overrides": {
       "vue": "3.3.4",
-      "@vue/runtime-core": "3.3.4"
+      "@vue/runtime-core": "3.3.4",
+      "node-fetch-native": "1.4.0"
     }
   }
 }
