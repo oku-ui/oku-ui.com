@@ -69,6 +69,13 @@ const plainTeamMembers: CoreTeam[] = [
     desc: 'Core team member of productdevbook & oku',
   },
   {
+    avatar: contributorsAvatars.kbrkiras,
+    name: 'Kubra KIRAS',
+    github: 'kbrkiras',
+    title: 'Full Stack Developer',
+    desc: 'Core team member of Oku',
+  },
+  {
     avatar: contributorsAvatars.dammy001,
     name: 'Anjorin Damilare',
     github: 'dammy001',
