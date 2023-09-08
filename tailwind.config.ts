@@ -5,7 +5,8 @@ import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 
 import Typography from '@tailwindcss/typography'
 
-import { blackA, codGray, grayA, oku } from './colors'
+import { blackA, cyan, grass, green, indigo, mauve, purple, red, teal, violet } from '@radix-ui/colors'
+import { blackOA, codGray, grayOA, oku } from './colors'
 
 export default <Partial<Config>>{
   darkMode: 'class',
@@ -19,11 +20,11 @@ export default <Partial<Config>>{
         // sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        blackA: {
-          ...blackA,
+        blackOA: {
+          ...blackOA,
         },
-        grayA: {
-          ...grayA,
+        grayOA: {
+          ...grayOA,
         },
         oku: {
           ...oku,
@@ -31,6 +32,16 @@ export default <Partial<Config>>{
         codGray: {
           ...codGray,
         },
+        ...blackA,
+        ...mauve,
+        ...violet,
+        ...green,
+        ...red,
+        ...grass,
+        ...teal,
+        ...cyan,
+        ...indigo,
+        ...purple,
       },
       typography: {
         DEFAULT: {

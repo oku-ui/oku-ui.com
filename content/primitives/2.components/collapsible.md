@@ -12,13 +12,23 @@ image: 'https://oku-ui.com/og/oku-collapsible.jpg'
 # Collapsible
 An interactive component which expands/collapses a panel.
 
+
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuCollapsible/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/index.vue" lang="vue"} -->
 ::
-
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuCollapsible/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuCollapsible/radix.vue" lang="vue"} -->
+::
+::
 
 ## Features
 - Full keyboard navigation.
