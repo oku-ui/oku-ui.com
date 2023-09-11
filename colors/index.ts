@@ -1,4 +1,4 @@
-export const grayA = {
+export const grayOA = {
   50: 'hsl(0, 0%, 96%)',
   100: 'hsl(0, 0%, 91%)',
   200: 'hsl(0, 0%, 82%)',
@@ -25,7 +25,7 @@ export const oku = {
   900: 'hsl(211, 54%, 24%)',
   950: 'hsl(213, 53%, 16%)',
 }
-export const blackA = {
+export const blackOA = {
   50: 'hsl(0, 0%, 96%)',
   100: 'hsl(0, 0%, 91%)',
   200: 'hsl(0, 0%, 82%)',
