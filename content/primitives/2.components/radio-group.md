@@ -75,6 +75,9 @@ Contains all the parts of a radio group.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: string
+    description: 'The controlled value of the radio item to check. Should be used in conjunction with <Code>onValueChange</Code>.'
   - name: asChild
     required: false
     type: boolean

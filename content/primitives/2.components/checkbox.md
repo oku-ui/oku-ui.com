@@ -75,6 +75,9 @@ Contains all the parts of a checkbox. An input will also render when used within
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: 'The controlled checked state of the checkbox. Must be used in conjunction with `onCheckedChange`.'
   - name: asChild
     required: false
     type: boolean

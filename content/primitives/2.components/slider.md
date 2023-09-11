@@ -77,6 +77,11 @@ Contains all the parts of a slider. It will render an `input` for each thumb whe
 ::OkuTable
 ---
 data:
+  - name: v-model
+    required: false
+    type: number[]
+    description: |
+      The controlled value of the slider. Must be used in conjunction with `onValueChange`.
   - name: asChild
     required: false
     type: boolean

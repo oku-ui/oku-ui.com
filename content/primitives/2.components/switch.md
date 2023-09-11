@@ -71,6 +71,10 @@ Contains all the parts of a switch. An `input` will also render when used within
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: |
+      The controlled state of the switch. Must be used in conjunction with `onCheckedChange`.
   - name: asChild
     required: false
     type: boolean

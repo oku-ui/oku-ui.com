@@ -85,6 +85,10 @@ Contains all the parts of a hover card.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: |
+      The controlled open state of the hover card. Must be used in
   - name: defaultOpen
     type: boolean
     description: |

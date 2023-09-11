@@ -77,6 +77,11 @@ Contains all the tabs component parts.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    required: false
+    type: string
+    description: |
+      The controlled value of the tab to activate. Should be used in conjunction with `onValueChange`.
   - name: asChild
     required: false
     type: boolean

@@ -72,6 +72,11 @@ Contains all the parts of a toggle group.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    required: false
+    type: string
+    description: |
+      The controlled value of the pressed item when `type` is "single". Must be used in conjunction with `onValueChange`.
   - name: asChild
     required: false
     type: boolean

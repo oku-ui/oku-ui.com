@@ -103,6 +103,9 @@ Contains all the parts of a tooltip.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: 'The controlled open state of the tooltip. Must be used in conjunction with `onOpenChange`.'
   - name: defaultOpen
     type: boolean
     description: 'The open state of the tooltip when it is initially rendered. Use when you do not need to control its open state.'

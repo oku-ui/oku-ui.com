@@ -65,6 +65,9 @@ Contains all of the progress parts.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: 'number | null'
+    description: 'The progress value.'
   - name: asChild
     required: false
     type: boolean

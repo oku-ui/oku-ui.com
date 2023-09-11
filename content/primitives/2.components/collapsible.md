@@ -69,6 +69,9 @@ Contains all the parts of a collapsible.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: 'The controlled open state of the collapsible. Must be used in conjunction with `onOpenChange`.'
   - name: asChild
     required: false
     type: boolean

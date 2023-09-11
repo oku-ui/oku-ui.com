@@ -86,6 +86,10 @@ Contains all the parts of a dialog.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: |
+      The controlled open state of the dialog. Must be used in conjunction with `onOpenChange`.
   - name: defaultOpen
     type: boolean
     description: |

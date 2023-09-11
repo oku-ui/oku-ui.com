@@ -89,6 +89,9 @@ Contains all the parts of a popover.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: 'The controlled open state of the popover. Must be used in conjunction with `onOpenChange`.'
   - name: defaultOpen
     type: boolean
     description: 'The open state of the popover when it is initially rendered. Use when you do not need to control its open state.'

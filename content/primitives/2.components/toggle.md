@@ -65,6 +65,9 @@ The toggle.
 ::OkuTable
 ---
 data:
+  - name: v-model
+    type: boolean
+    description: 'The controlled pressed state of the toggle. Must be used in conjunction with `onPressedChange`.'
   - name: asChild
     required: false
     type: boolean
