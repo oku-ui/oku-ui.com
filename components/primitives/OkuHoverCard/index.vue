@@ -31,31 +31,31 @@ import { OkuHoverCard, OkuHoverCardArrow, OkuHoverCardContent, OkuHoverCardPorta
           >
           <div className="flex flex-col gap-[15px]">
             <div>
-              <div className="text-blackA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
+              <div className="text-blackOA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
                 Oku
               </div>
-              <div className="text-blackA-600 dark:text-grayA-300 m-0 text-[15px] leading-[1.5]">
+              <div className="text-blackOA-600 dark:text-grayOA-300 m-0 text-[15px] leading-[1.5]">
                 @oku_ui
               </div>
             </div>
-            <div className="text-blackA-600 dark:text-grayA-300 m-0 text-[15px] leading-[1.5]">
+            <div className="text-blackOA-600 dark:text-grayOA-300 m-0 text-[15px] leading-[1.5]">
               Components, icons, colors, and templates for building high-quality, accessible UI.
               Free and open-source.
             </div>
             <div className="flex gap-[15px]">
               <div className="flex gap-[5px]">
-                <div className="text-blackA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
+                <div className="text-blackOA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
                   0
                 </div>
-                <div className="text-blackA-600 dark:text-grayA-300 m-0 text-[15px] leading-[1.5]">
+                <div className="text-blackOA-600 dark:text-grayOA-300 m-0 text-[15px] leading-[1.5]">
                   Following
                 </div>
               </div>
               <div className="flex gap-[5px]">
-                <div className="text-blackA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
+                <div className="text-blackOA-900 dark:text-white m-0 text-[15px] font-medium leading-[1.5]">
                   2,900
                 </div>
-                <div className="text-blackA-600 dark:text-grayA-300 m-0 text-[15px] leading-[1.5]">
+                <div className="text-blackOA-600 dark:text-grayOA-300 m-0 text-[15px] leading-[1.5]">
                   Followers
                 </div>
               </div>
