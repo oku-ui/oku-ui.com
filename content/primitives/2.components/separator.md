@@ -1,14 +1,29 @@
 ---
 title: Separator
 description: Visually or semantically separates content.
+datePublished: 2022-12-07
+dateModified: 2022-12-07
+readingTime: 3
+version: 0.4.0
+componentName: OkuSeparator
+image: 'https://oku-ui.com/og/oku-separator.jpg'
 ---
 
-# Separator
-Visually or semantically separates content.
-
-::code-group{file="primitives/OkuSeparator"}
+::ContentDesignTabs
+#oku
+::ContentTabs
 #preview
- ::oku-separator
+:ContentPreview{src="/primitives/OkuSeparator/index.vue"}
+#vue
+<!-- Autodocs{src="/primitives/OkuSeparator/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuSeparator/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuSeparator/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features
@@ -42,14 +57,39 @@ import { OkuSeparator } from '@oku-ui/separator'
 ### Root
 The separator.
 
-| Prop | Type | Default |
-| --- | --- | --- |
-| <div class="code">asChild</div> | <div class="code">boolean</div> | <div class="code">false</div> |
-| <div class="code">orientation</div> | <div class="code">enum</div> | <div class="code">"horizontal"</div> |
-| <div class="code">decorative</div> | <div class="code">boolean</div> | - |
-| Data Attribute | Values |
-| <div class="code">[data-orientation]</div> | <div class="code">"vertical" | "horizontal"</div> |
+::OkuTable
+---
+data:
+  - name: asChild
+    required: false
+    type: boolean
+    default: false
+    description: |
+      Change the default rendered element for the one passed as a child,
+      merging their props and behavior.
+      <br />
+      <br />
+      Read our [Composition](../guides/composition) guide for more details.
+  - name: orientation
+    type: '"horizontal" | "vertical"'
+    default: "horizontal"
+    description: The orientation of the separator.
+  - name: decorative
+    type: boolean
+    description: |
+      When `true`, signifies that it is purely visual, carries no
+      semantic meaning, and ensures it is not present in the accessibility
+      tree.
+---
+::
 
+::OkuAttributesTable
+---
+data:
+  - attribute: '[data-orientation]'
+    values: ['vertical', 'horizontal']
+---
+::
 
 ## Accessibility
 

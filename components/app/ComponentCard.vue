@@ -1,12 +1,15 @@
 <script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
 export interface CardProps {
   data: {
     link: string
     version: string
     title: string
     description: string
-    component: string
-  }
+    componentName: string
+  } & ParsedContent
+  radix?: boolean
 }
 
 defineProps<CardProps>()
@@ -17,13 +20,16 @@ defineProps<CardProps>()
     <div
       class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#DEDEDE] dark:border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
     >
-      <div class="relative">
-        <component :is="data.component" class="py-10" />
+      <div class="relative w-full">
+        <component :is="data.componentName" v-if="!radix" class="py-10" />
+        <component :is="`${data.componentName}Radix`" v-else class="py-10" />
       </div>
-      <div class="">
+      <div>
         <span class="text-xs px-2 py-1 border border-[#DEDEDE] dark:border-[#222] rounded-full text-[#676767] inline">{{ data.version }}</span>
       </div>
-      <span class="text-[#111] dark:text-white font-medium">{{ data.title }}</span>
+      <NuxtLink :to="data._path" class="text-[#111] group-hover:text-oku-500 dark:text-white font-medium">
+        {{ data.title }}
+      </NuxtLink>
       <p class="text-[#6D6D6D] text-sm md:text-base line-clamp-2">
         {{ data.description }}
       </p>
