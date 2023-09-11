@@ -12,12 +12,25 @@ image: 'https://oku-ui.com/og/oku-popover.jpg'
 # Popover
 Displays rich content in a portal, triggered by a button.
 
+
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuPopover/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/index.vue" lang="vue"} -->
 ::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuPopover/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuPopover/radix.vue" lang="vue"} -->
+::
+::
+
+
 
 ## Features
 - Can be controlled or uncontrolled.

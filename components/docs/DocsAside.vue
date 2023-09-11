@@ -14,7 +14,7 @@ function onChange(value: string) {
 
 <template>
   <div class="w-full">
-    <div class="w-full px-2">
+    <div class="w-full px-2 mb-10">
       <OkuToggleGroup
         v-model="active"
         class="inline-flex rounded w-full"

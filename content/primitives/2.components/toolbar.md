@@ -9,11 +9,21 @@ componentName: OkuToolbar
 image: 'https://oku-ui.com/og/oku-toolbar.jpg'
 ---
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuToolbar/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToolbar/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuToolbar/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuToolbar/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

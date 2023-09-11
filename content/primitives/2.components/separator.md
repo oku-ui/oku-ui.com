@@ -9,11 +9,21 @@ componentName: OkuSeparator
 image: 'https://oku-ui.com/og/oku-separator.jpg'
 ---
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuSeparator/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSeparator/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuSeparator/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuSeparator/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

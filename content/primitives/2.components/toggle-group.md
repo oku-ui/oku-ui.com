@@ -12,11 +12,21 @@ image: 'https://oku-ui.com/og/oku-toggle-group.jpg'
 # Toggle Group
 A set of two-state buttons that can be toggled on or off.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuToggleGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuToggleGroup/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuToggleGroup/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features
