@@ -14,9 +14,9 @@ For sighted users to preview content available behind a link.
 
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuLabel/index.vue"}
+:ContentPreview{src="/primitives/OkuHoverCard/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::
   'Can be controlled or uncontrolled.',
     'Customize side, alignment, offsets, collision handling.',
