@@ -14,9 +14,9 @@ A window overlaid on either the primary window or another dialog window, renderi
 
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/index.vue"}
+:ContentPreview{src="/primitives/OkuDialog/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuDialog/index.vue" lang="vue"} -->
 ::
 
 ## Features

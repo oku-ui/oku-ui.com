@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<Props>(), {
   off: '',
 })
 
-const dynamicComponent = ref<Component | undefined>(() =>
+const dynamicComponent = shallowRef<Component | undefined>(() =>
   h(
     'div',
     {
