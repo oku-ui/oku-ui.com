@@ -26,6 +26,8 @@
     "@oku-ui/avatar": "^0.4.0-alpha.13",
     "@oku-ui/checkbox": "^0.4.0-alpha.13",
     "@oku-ui/collapsible": "^0.4.0-alpha.13",
+    "@oku-ui/dialog": "^0.4.0-alpha.13",
+    "@oku-ui/hover-card": "^0.4.0-alpha.13",
     "@oku-ui/label": "^0.4.0-alpha.13",
     "@oku-ui/popover": "^0.4.0-alpha.13",
     "@oku-ui/progress": "^0.4.0-alpha.13",
@@ -39,8 +41,6 @@
     "@oku-ui/toggle-group": "^0.4.0-alpha.14",
     "@oku-ui/toolbar": "^0.4.0-alpha.13",
     "@oku-ui/tooltip": "^0.4.0-alpha.13",
-    "@oku-ui/dialog": "^0.4.0-alpha.13",
-    "@oku-ui/hover-card": "^0.4.0-alpha.13",
     "@radix-ui/colors": "^2.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "lodash-es": "^4.17.21"
