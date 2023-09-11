@@ -7,7 +7,7 @@ import { OkuTooltip, OkuTooltipArrow, OkuTooltipContent, OkuTooltipPortal, OkuTo
     <OkuTooltip>
       <OkuTooltipTrigger as-child>
         <button class="text-violet11 shadow-blackA7 hover:bg-violet3 inline-flex h-[35px] w-[35px] items-center justify-center rounded-full bg-white shadow-[0_2px_10px] outline-none focus:shadow-[0_0_0_2px] focus:shadow-black">
-          <span class="i-ic-baseline-plus text-codGray-500 w-5 h-5" />
+          <span class="i-ic-baseline-plus text-violet11 w-5 h-5" />
         </button>
       </OkuTooltipTrigger>
       <OkuTooltipPortal>

@@ -41,9 +41,11 @@
     "@oku-ui/toggle-group": "^0.4.0-alpha.14",
     "@oku-ui/toolbar": "^0.4.0-alpha.13",
     "@oku-ui/tooltip": "^0.4.0-alpha.13",
+    "@pinia/nuxt": "^0.4.11",
     "@radix-ui/colors": "^2.1.0",
     "@tailwindcss/typography": "^0.5.9",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.1.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.8",

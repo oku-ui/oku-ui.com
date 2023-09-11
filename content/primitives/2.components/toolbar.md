@@ -9,6 +9,9 @@ componentName: OkuToolbar
 image: 'https://oku-ui.com/og/oku-toolbar.jpg'
 ---
 
+# Toolbar
+A two-state button that can be either on or off.
+
 ::ContentDesignTabs
 #oku
 ::ContentTabs

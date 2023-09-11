@@ -22,10 +22,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@nuxthq/studio',
+    '@pinia/nuxt',
     // '@nuxtseo/module',
     resolve('./app/module'),
 
   ],
+  imports: {
+    dirs: ['stores'],
+  },
 
   pinceau: {
     preflight: false,

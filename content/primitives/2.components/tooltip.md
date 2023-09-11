@@ -9,6 +9,9 @@ componentName: OkuTooltip
 image: 'https://oku-ui.com/og/oku-tooltip.jpg'
 ---
 
+# Tooltip
+A two-state button that can be either on or off.
+
 ::ContentDesignTabs
 #oku
 ::ContentTabs

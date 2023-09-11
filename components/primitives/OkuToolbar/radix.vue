@@ -19,21 +19,21 @@ import {
         value="bold"
         aria-label="Bold"
       >
-        <span class="i-ic-baseline-format-bold text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-bold text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
       <OkuToolbarToggleItem
         class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-violet3 hover:text-violet11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-violet7 first:ml-0 data-[state=on]:bg-violet5 data-[state=on]:text-violet11"
         value="italic"
         aria-label="Italic"
       >
-        <span class="i-ic-baseline-format-italic text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-italic text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
       <OkuToolbarToggleItem
         class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-violet3 hover:text-violet11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-violet7 first:ml-0 data-[state=on]:bg-violet5 data-[state=on]:text-violet11"
         value="strikethrough"
         aria-label="Strike through"
       >
-        <span class="i-ic-baseline-format-strikethrough text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-strikethrough text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
     </OkuToolbarToggleGroup>
     <OkuToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
@@ -43,21 +43,21 @@ import {
         value="left"
         aria-label="Left aligned"
       >
-        <span class="i-ic-baseline-format-align-left text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-align-left text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
       <OkuToolbarToggleItem
         class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-violet3 hover:text-violet11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-violet7 first:ml-0 data-[state=on]:bg-violet5 data-[state=on]:text-violet11"
         value="center"
         aria-label="Center aligned"
       >
-        <span class="i-ic-baseline-format-align-center text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-align-center text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
       <OkuToolbarToggleItem
         class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-violet3 hover:text-violet11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-violet7 first:ml-0 data-[state=on]:bg-violet5 data-[state=on]:text-violet11"
         value="right"
         aria-label="Right aligned"
       >
-        <span class="i-ic-baseline-format-align-right text-violet6 w-5 h-5" />
+        <span class="i-ic-baseline-format-align-right text-violet11 w-5 h-5" />
       </OkuToolbarToggleItem>
     </OkuToolbarToggleGroup>
     <OkuToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
