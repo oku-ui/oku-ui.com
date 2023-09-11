@@ -26,6 +26,8 @@
     "@oku-ui/avatar": "^0.4.0-alpha.11",
     "@oku-ui/checkbox": "^0.4.0-alpha.11",
     "@oku-ui/collapsible": "^0.4.0-alpha.11",
+    "@oku-ui/dialog": "0.4.0-alpha.13",
+    "@oku-ui/hover-card": "0.4.0-alpha.13",
     "@oku-ui/label": "^0.4.0-alpha.11",
     "@oku-ui/popover": "^0.4.0-alpha.11",
     "@oku-ui/progress": "^0.4.0-alpha.11",
