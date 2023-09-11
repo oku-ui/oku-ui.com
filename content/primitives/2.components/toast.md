@@ -12,11 +12,21 @@ image: 'https://oku-ui.com/og/oku-label.jpg'
 # Toast
 Renders an accessible label associated with controls.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuToast/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuToast/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuToast/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

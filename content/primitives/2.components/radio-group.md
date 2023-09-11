@@ -12,12 +12,23 @@ image: 'https://oku-ui.com/og/oku-radio-group.jpg'
 # Radio Group
 A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuRadioGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/index.vue" lang="vue"} -->
 ::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuRadioGroup/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuRadioGroup/radix.vue" lang="vue"} -->
+::
+::
+
 
 ## Features
 - Full keyboard navigation.

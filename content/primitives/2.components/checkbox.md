@@ -12,12 +12,24 @@ image: 'https://oku-ui.com/og/oku-checkbox.jpg'
 # Checkbox
 Renders an accessible checkbox associated with controls.
 
+
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuCheckbox/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuCheckbox/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuCheckbox/radix.vue" lang="vue"} -->
+::
+::
+
 
 
 ## Features

@@ -9,11 +9,21 @@ componentName: OkuTooltip
 image: 'https://oku-ui.com/og/oku-tooltip.jpg'
 ---
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuTooltip/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuTooltip/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuTooltip/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

@@ -12,11 +12,21 @@ image: 'https://oku-ui.com/og/oku-tabs.jpg'
 # Tabs
 A set of layered sections of content—known as tab panels—that are displayed one at a time.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuTabs/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuTabs/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuTabs/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features
