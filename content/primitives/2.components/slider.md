@@ -9,11 +9,21 @@ componentName: OkuSlider
 image: 'https://oku-ui.com/og/oku-slider.jpg'
 ---
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuSlider/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuSlider/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuSlider/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

@@ -12,11 +12,21 @@ image: 'https://oku-ui.com/og/oku-toggle.jpg'
 # Toggle
 A two-state button that can be either on or off.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuToggle/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggle/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuToggle/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuToggle/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

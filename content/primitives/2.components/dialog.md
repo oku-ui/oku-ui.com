@@ -12,11 +12,22 @@ image: 'https://oku-ui.com/og/oku-dialog.jpg'
 # Dialog
 A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
 
+
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/index.vue"}
+:ContentPreview{src="/primitives/OkuDialog/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuDialog/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuDialog/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuDialog/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

@@ -12,11 +12,22 @@ image: 'https://oku-ui.com/og/oku-progress.jpg'
 # Progress
 Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
 
+
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuProgress/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/index.vue" lang="vue"} -->
+::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuProgress/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuProgress/radix.vue" lang="vue"} -->
+::
 ::
 
 ## Features

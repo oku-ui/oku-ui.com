@@ -12,12 +12,23 @@ image: 'https://oku-ui.com/og/oku-label.jpg'
 # Label
 Renders an accessible label associated with controls.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
 :ContentPreview{src="/primitives/OkuLabel/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
 ::
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuLabel/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuLabel/radix.vue" lang="vue"} -->
+::
+::
+
 
 
 ## Installation

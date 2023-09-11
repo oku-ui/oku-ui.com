@@ -12,18 +12,24 @@ image: 'https://oku-ui.com/og/oku-label.jpg'
 # Hover Card
 For sighted users to preview content available behind a link.
 
+::ContentDesignTabs
+#oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuLabel/index.vue"}
+:ContentPreview{src="/primitives/OkuHoverCard/index.vue"}
 #vue
-<!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::
-  'Can be controlled or uncontrolled.',
-    'Customize side, alignment, offsets, collision handling.',
-    'Optionally render a pointing arrow.',
-    'Supports custom open and close delays.',
-    'Opens on hover only.',
-    'Ignored by screen readers.',
+#radix
+::ContentTabs
+#preview
+:ContentPreview{src="/primitives/OkuHoverCard/radix.vue" design="radix"}
+#vue
+<!-- Autodocs{src="/primitives/OkuHoverCard/radix.vue" lang="vue"} -->
+::
+::
+
+
 
 
 ## Features
