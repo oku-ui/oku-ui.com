@@ -16,13 +16,13 @@ const toggleGroupItemClasses = ref('hover:bg-violet3 color-mauve11 data-[state=o
     aria-label="Text alignment"
   >
     <OkuToggleGroupItem :class="toggleGroupItemClasses" value="left" aria-label="Left aligned">
-      <span class="i-ic-baseline-format-align-left text-violet6 w-5 h-5" />
+      <span class="i-ic-baseline-format-align-left text-violet11 w-5 h-5" />
     </OkuToggleGroupItem>
     <OkuToggleGroupItem :class="toggleGroupItemClasses" value="center" aria-label="Center aligned">
-      <span class="i-ic-baseline-format-align-center text-violet6 w-5 h-5" />
+      <span class="i-ic-baseline-format-align-center text-violet11 w-5 h-5" />
     </OkuToggleGroupItem>
     <OkuToggleGroupItem :class="toggleGroupItemClasses" value="right" aria-label="Right aligned">
-      <span class="i-ic-baseline-format-align-right text-violet6 w-5 h-5" />
+      <span class="i-ic-baseline-format-align-right text-violet11 w-5 h-5" />
     </OkuToggleGroupItem>
   </OkuToggleGroup>
 </template>

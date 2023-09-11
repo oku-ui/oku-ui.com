@@ -1,27 +1,23 @@
 <script setup lang="ts">
 import { OkuToggleGroup, OkuToggleGroupItem } from '@oku-ui/toggle-group'
 
-const active = ref('oku')
+const useGlobal = useGlobalStore()
 
 onMounted(() => {
-  active.value = localStorage.getItem('oku-select-theme') || 'oku'
+  localStorage.getItem('oku-design')
 })
-
-function onChange(value: string) {
-  localStorage.setItem('oku-select-theme', value)
-}
 </script>
 
 <template>
   <div class="w-full">
     <div class="w-full px-2 mb-10">
       <OkuToggleGroup
-        v-model="active"
+        v-model="useGlobal.design"
         class="inline-flex rounded w-full"
         type="single"
         default-value="center"
         aria-label="Text alignment"
-        @value-change="onChange"
+        @value-change="useGlobal.setDesign"
       >
         <OkuToggleGroupItem class="toggle-group-item" value="oku" aria-label="Left aligned">
           Oku
@@ -33,21 +29,6 @@ function onChange(value: string) {
     </div>
     <DocsAsideLinks />
   </div>
-  <!-- <aside
-    class="hidden py-8 overflow-y-auto lg:block lg:self-start lg:top-16 lg:max-h-[calc(100vh-65px)] lg:sticky lg:pr-8 lg:pl-[2px]"
-  >
-    <div class="relative">
-      <div class="sticky top-0 pointer-events-none z-[1]">
-        <div class="h-8 bg-white dark:bg-gray-900" />
-        <div class="bg-white dark:bg-gray-900 relative pointer-events-auto">
-          <DocsSearchButton class="w-full" />
-        </div>
-        <div class="h-8 bg-gradient-to-b from-white dark:from-gray-900" />
-      </div>
-
-    </div>
-    <DocsAsideLinks />
-  </aside> -->
 </template>
 
 <style lang="postcss">

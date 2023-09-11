@@ -9,6 +9,12 @@ useHead({
     { rel: 'prefetch', href: '/sponsors/productdevbook.svg' },
   ],
 })
+
+const useGlobal = useGlobalStore()
+
+onMounted(() => {
+  useGlobal.loadDesign()
+})
 </script>
 
 <template>

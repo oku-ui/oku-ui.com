@@ -9,6 +9,7 @@ export interface CardProps {
     description: string
     componentName: string
   } & ParsedContent
+  radix?: boolean
 }
 
 defineProps<CardProps>()
@@ -19,8 +20,9 @@ defineProps<CardProps>()
     <div
       class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#DEDEDE] dark:border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
     >
-      <div class="relative">
-        <component :is="data.componentName" class="py-10" />
+      <div class="relative w-full">
+        <component :is="data.componentName" v-if="!radix" class="py-10" />
+        <component :is="`${data.componentName}Radix`" v-else class="py-10" />
       </div>
       <div>
         <span class="text-xs px-2 py-1 border border-[#DEDEDE] dark:border-[#222] rounded-full text-[#676767] inline">{{ data.version }}</span>

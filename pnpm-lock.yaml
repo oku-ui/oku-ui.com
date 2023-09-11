@@ -91,6 +91,9 @@ dependencies:
   '@oku-ui/tooltip':
     specifier: ^0.4.0-alpha.13
     version: 0.4.0-alpha.13(vue@3.3.4)
+  '@pinia/nuxt':
+    specifier: ^0.4.11
+    version: 0.4.11(rollup@3.26.2)(typescript@5.1.6)(vue@3.3.4)
   '@radix-ui/colors':
     specifier: ^2.1.0
     version: 2.1.0
@@ -100,6 +103,9 @@ dependencies:
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
+  pinia:
+    specifier: ^2.1.6
+    version: 2.1.6(typescript@5.1.6)(vue@3.3.4)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -2576,6 +2582,19 @@ packages:
       vue: 3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
+    dev: false
+
+  /@pinia/nuxt@0.4.11(rollup@3.26.2)(typescript@5.1.6)(vue@3.3.4):
+    resolution: {integrity: sha512-bhuNFngJpmBCdAqWguezNJ/oJFR7wvKieqiZrmmdmPR07XjsidAw8RLXHMZE9kUm32M9E6T057OBbG/22jERTg==}
+    dependencies:
+      '@nuxt/kit': 3.7.1(rollup@3.26.2)
+      pinia: 2.1.6(typescript@5.1.6)(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
@@ -9844,6 +9863,24 @@ packages:
       - sass
       - supports-color
     dev: true
+
+  /pinia@2.1.6(typescript@5.1.6)(vue@3.3.4):
+    resolution: {integrity: sha512-bIU6QuE5qZviMmct5XwCesXelb5VavdOWKWaB17ggk++NUwQWWbP5YnsONTk3b752QkW9sACiR81rorpeOMSvQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: 3.3.4
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+      typescript: 5.1.6
+      vue: 3.3.4
+      vue-demi: 0.14.5(vue@3.3.4)
+    dev: false
 
   /pinkie-promise@2.0.1:
     resolution: {integrity: sha512-0Gni6D4UcLTbv9c57DfxDGdr41XfgUjqWZu492f0cIGr16zDU06BWP/RAEvOuo7CQ0CNjHaLlM59YJJFm3NWlw==}
