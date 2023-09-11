@@ -33,6 +33,6 @@ onMounted(() => {
 
 <style lang="postcss">
 .toggle-group-item {
-  @apply hover:bg-oku-400/10 dark:hover:bg-oku-200/60 text-oku-900 data-[state=on]:bg-oku-500 data-[state=on]:text-white dark:data-[state=on]:bg-oku-400/70 dark:data-[state=on]:text-white flex h-[35px] w-full items-center justify-center bg-oku-200 dark:bg-codGray-800 text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black dark:focus:shadow-white focus:outline-none
+  @apply hover:bg-yellow-500 dark:hover:bg-yellow-500 text-oku-900 dark:text-oku-50 data-[state=on]:bg-oku-500 data-[state=on]:text-white dark:data-[state=on]:bg-oku-400 dark:data-[state=on]:text-white flex h-[35px] w-full items-center justify-center bg-oku-200 dark:bg-oku-800 text-base leading-4 first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black dark:focus:shadow-white focus:outline-none
 }
 </style>
