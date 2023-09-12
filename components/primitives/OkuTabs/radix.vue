@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {
   OkuTabs,
+  OkuTabsContent,
   OkuTabsList,
   OkuTabsTrigger,
 } from '@oku-ui/tabs'
