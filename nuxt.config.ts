@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
 
   // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
+  extends: ['@nuxt-themes/docus', './share-layer'],
 
   modules: [
     '@nuxtjs/fontaine',
