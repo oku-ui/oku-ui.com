@@ -17,26 +17,12 @@ const dynamicComponent = shallowRef<Component | undefined>(() =>
     h('div', {}, 'Loading...'),
   ),
 )
+const pathParts = computed(() => props.src.split('/').slice(1))
 
 onMounted(async () => {
   try {
-    const _path = props.src.split('/').slice(1)
-
-    dynamicComponent.value = defineAsyncComponent({
-      loader: () => import(`../../../components/${_path.join('/')}`),
-      loadingComponent: () =>
-        h(
-          'div',
-          {
-            class: 'content-preview-loader',
-          },
-          h('div', {}, 'Loading...'),
-        ),
-      onError: (error) => {
-        console.error(error)
-        dynamicComponent.value = () => h('div', {}, 'Not found')
-      },
-      delay: 0,
+    dynamicComponent.value = defineAsyncComponent(() => {
+      return import(`@/components/primitives/${pathParts.value[1]}/${pathParts.value[2].split('.')[0]}.vue`)
     })
   }
   catch (error) {

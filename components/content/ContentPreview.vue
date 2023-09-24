@@ -3,6 +3,8 @@ interface Props {
   src: string
   off?: string
   design?: 'oku' | 'radix'
+  project?: 'primitives'
+  lang?: string
 }
 const props = withDefaults(defineProps<Props>(), {
   off: '',
@@ -17,17 +19,32 @@ const dynamicComponent = shallowRef<Component | undefined>(() =>
     h('div', {}, 'Loading...'),
   ),
 )
-const pathParts = computed(() => props.src.split('/').slice(1))
 
 onMounted(async () => {
   try {
-    dynamicComponent.value = defineAsyncComponent(() => {
-      return import(`@/components/primitives/${pathParts.value[1]}/${pathParts.value[2].split('.')[0]}.vue`)
-    })
+    const path = `${props.project}/${props.src}`
+
+    if (path) {
+      dynamicComponent.value = defineAsyncComponent({
+        loader: async () => await import(`./../${path}`),
+        loadingComponent: () =>
+          h(
+            'div',
+            {
+              class: 'content-preview-loader',
+            },
+            h('div', {}, 'Loading...'),
+          ),
+        onError: (error) => {
+          console.error(error)
+          dynamicComponent.value = () => h('div', {}, 'Not found')
+        },
+        delay: 0,
+      })
+    }
+
   }
   catch (error) {
-    console.error(error)
-
     dynamicComponent.value = () => h('div', {}, 'Not found')
   }
 })
@@ -35,7 +52,8 @@ onMounted(async () => {
 
 <template>
   <div class="overflow-hidden">
-    <div class="rounded-lg w-full relative items-center justify-center flex" :class="props.design === 'radix' ? 'HeroCodeBlock' : 'componentBackground'">
+    <div class="rounded-lg w-full relative items-center justify-center flex"
+      :class="props.design === 'radix' ? 'HeroCodeBlock' : 'componentBackground'">
       <div class="w-full max-w-xl flex flex-col items-center justify-center px-4 py-20">
         <component :is="dynamicComponent" />
       </div>
@@ -57,7 +75,7 @@ onMounted(async () => {
 }
 
 .HeroCodeBlock {
-  background-image: linear-gradient(330deg,#8e4ec6 0,#3e63dd 100%);
+  background-image: linear-gradient(330deg, #8e4ec6 0, #3e63dd 100%);
   padding-block: 100px;
   border-top-left-radius: var(--radius-4);
   border-top-right-radius: var(--radius-4);

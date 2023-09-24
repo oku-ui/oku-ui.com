@@ -1,141 +1,76 @@
 import { createResolver } from '@nuxt/kit'
+import pkg from './package.json'
 
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [{ rel: 'icon', type: 'image/svg', href: '/icon.svg' }],
-    },
-  },
-
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
-
+  extends: ['@nuxt/ui-pro'],
+  devtools: { enabled: true, componentInspector: false, viteInspect: false },
   modules: [
+    '@nuxt/content',
+    'nuxt-og-image',
+    '@nuxt/ui',
+    '@nuxtlabs/github-module',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
-    // https://github.com/productdevbookcom/v-plausible
-    'v-plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools',
-    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    '@nuxthq/studio',
-    '@pinia/nuxt',
     '@oku-ui/primitives-nuxt',
-    // '@nuxtseo/module',
-    resolve('./app/module'),
-
+    '@pinia/nuxt',
   ],
-  imports: {
-    dirs: ['stores'],
-  },
-
-  pinceau: {
-    preflight: false,
-  },
-
-  oku: {
-    icons: ['heroicons'],
-  },
-
-  googleFonts: {
-    families: {
-      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-    },
-  },
 
   primitives: {
     // All components install
     installComponents: true,
   },
 
+  imports: {
+    dirs: ['stores'],
+  },
+
+  runtimeConfig: {
+    public: {
+      version: pkg.version,
+    },
+  },
+  ui: {
+    icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar'],
+  },
+  fontMetrics: {
+    fonts: ['DM Sans'],
+  },
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      'DM+Sans': [400, 500, 600, 700],
+    },
+  },
   nitro: {
     prerender: {
-      crawlLinks: true,
+      routes: ['/', '/getting-started', '/api/search.json'],
     },
   },
-
-  components: [
-    {
-      global: true,
-      path: '~/components/primitives',
-    },
-    {
-      global: true,
-      path: '~/components/app',
-    },
-    {
-      global: true,
-      path: '~/components/docs',
-      prefix: '',
-    },
-  ],
-
-  plausible: {
-    init: {
-      domain: 'oku-ui.com',
-      apiHost: 'https://rapor.vucod.com',
-    },
-    // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
-    partytown: false,
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
   },
-
-  routeRules: {
-    '/docs/primitives/overview/introduction': {
-      redirect: {
-        to: '/primitives/introduction/introduction',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/aspet-ratio': {
-      redirect: {
-        to: '/primitives/components/aspect-ratio',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/avatar': {
-      redirect: {
-        to: '/primitives/components/avatar',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/checkbox': {
-      redirect: {
-        to: '/primitives/components/checkbox',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/label': {
-      redirect: {
-        to: '/primitives/components/label',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/progress': {
-      redirect: {
-        to: '/primitives/components/progress',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/separator': {
-      redirect: {
-        to: '/primitives/components/separator',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/toggle': {
-      redirect: {
-        to: '/primitives/components/toggle',
-        statusCode: 301,
-      },
-    },
-    '/about/we': {
-      redirect: {
-        to: '/oku',
-        statusCode: 301,
-      },
-    },
+  typescript: {
+    strict: false,
+    includeWorkspace: true,
   },
+  github: {
+    owner: 'oku-ui',
+    repo: 'primitives',
+    branch: 'main',
+  },
+  hooks: {
+    // Related to https://github.com/nuxt/nuxt/pull/22558
+    // Adding all global components to the main entry
+    // To avoid lagging during page navigation on client-side
+    'components:extend': function (components) {
+      for (const comp of components) {
+        if (comp.global) { comp.global = 'sync' }
+      }
+    }
+  }
 })

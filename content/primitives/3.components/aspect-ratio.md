@@ -9,22 +9,18 @@ componentName: OkuAspectRatio
 image: 'https://oku-ui.com/og/oku-aspect-ratio.jpg'
 ---
 
-# Aspect Ratio
-Displays content within a desired ratio.
-
-
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/index.vue"}
+:ContentPreview{src="OkuAspectRatio/index" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/radix.vue" design="radix"}
+:ContentPreview{src="OkuAspectRatio/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
 ::

@@ -9,22 +9,18 @@ componentName: OkuAvatar
 image: 'https://oku-ui.com/og/oku-avatar.jpg'
 ---
 
-# Avatar
-An image element with a fallback for representing the user.
-
-
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/index.vue"}
+:ContentPreview{src="OkuAvatar/index" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/radix.vue" design="radix"}
+:ContentPreview{src="OkuAvatar/radix" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/radix.vue" lang="vue"} -->
 ::
