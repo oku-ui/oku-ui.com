@@ -42,7 +42,7 @@ useSeoMeta({
         A collection of high-quality, unstyled components for creating beautiful emails using Vue and TypeScript.
       </template>
       <template #links>
-        <UButton to="/primitives/getting-started/installation" icon="i-ph-rocket-launch-duotone" size="xl">
+        <UButton to="/primitives/getting-started" icon="i-ph-rocket-launch-duotone" size="xl">
           Get started
         </UButton>
         <!-- <UInput aria-label="Copy code to get started" :model-value="source" name="get-started" disabled autocomplete="off"
