@@ -31,7 +31,7 @@ const availableTabs = computed(() => tabs.value.filter(tab => !!slots[tab.name])
       v-model="active"
       class="flex flex-col"
     >
-      <OkuTabsList class="shrink-0 flex border rounded-md border-grayOA-100" aria-label="Manage your account">
+      <OkuTabsList class="shrink-0 flex border rounded-md border-grayOA-100 dark:border-codGray-800" aria-label="Manage your account">
         <OkuTabsTrigger
           v-for="tab in availableTabs"
           :key="tab.name"

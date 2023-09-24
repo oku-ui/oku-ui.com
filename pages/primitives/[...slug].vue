@@ -81,7 +81,7 @@ const links = computed(() => [
     <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
 
     <UPageBody prose>
-      <RadixOku />
+      <RadixOku v-if="page.componentName" />
       <ContentRenderer v-if="page.body" :value="page" />
 
       <UDivider v-if="surround?.length" />
