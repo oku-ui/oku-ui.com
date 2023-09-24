@@ -50,7 +50,7 @@ const links = computed(() => [
   {
     icon: 'i-ph-pencil-duotone',
     label: 'Edit this page',
-    to: `https://github.com/oku-ui/docs/edit/main/content/${page?.value?._file.split('/').slice(1).join('/')}`,
+    to: `https://github.com/oku-ui/docs/edit/main/content/primitives/${page?.value?._file.split('/').slice(1).join('/')}`,
     target: '_blank',
   },
   {
