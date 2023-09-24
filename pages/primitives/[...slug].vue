@@ -72,7 +72,7 @@ const links = computed(() => [
     label: 'Sponsor on GitHub',
     to: 'https://github.com/sponsors/productdevbook',
     target: '_blank',
-  }
+  },
 ])
 </script>
 
@@ -81,7 +81,7 @@ const links = computed(() => [
     <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
 
     <UPageBody prose>
-      <RadixOku/>
+      <RadixOku />
       <ContentRenderer v-if="page.body" :value="page" />
 
       <UDivider v-if="surround?.length" />

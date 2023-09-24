@@ -5,7 +5,7 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  devtools: { enabled: true},
+  devtools: { enabled: true },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/','/primitives', '/primitives/getting-started', '/api/search.json'],
+      routes: ['/', '/primitives', '/primitives/getting-started', '/api/search.json'],
     },
   },
 
@@ -73,11 +73,11 @@ export default defineNuxtConfig({
     // To avoid lagging during page navigation on client-side
     'components:extend': function (components) {
       for (const comp of components) {
-        if (comp.global) { comp.global = 'sync' }
+        if (comp.global)
+          comp.global = 'sync'
       }
-    }
+    },
   },
-
 
   plausible: {
     init: {

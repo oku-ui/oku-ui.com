@@ -5,13 +5,13 @@ const { metaSymbol } = useShortcuts()
 
 const navigation = ref<NavItem[]>([
   {
-  title: 'Primitives',
-  _path: '/primitives',
-},
-{
-  title: 'About',
-  _path: '/oku',
-}
+    title: 'Primitives',
+    _path: '/primitives',
+  },
+  {
+    title: 'About',
+    _path: '/oku',
+  },
 ])
 const links = inject<Ref<any[]>>('links')
 </script>
@@ -49,9 +49,9 @@ const links = inject<Ref<any[]>>('links')
 
     <template #panel>
       <UNavigationTree
-                :links="mapContentNavigation(navigation)
-                  "
-              />
+        :links="mapContentNavigation(navigation)
+        "
+      />
     </template>
   </UHeader>
 </template>

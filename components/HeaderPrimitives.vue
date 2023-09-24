@@ -40,9 +40,9 @@ const links = inject<Ref<any[]>>('links')
 
     <template #panel>
       <UNavigationTree
-                :links="mapContentNavigation(navigation.find((item) => item._path === '/primitives')?.children || [])
-                  "
-              />
+        :links="mapContentNavigation(navigation.find((item) => item._path === '/primitives')?.children || [])
+        "
+      />
     </template>
   </UHeader>
 </template>

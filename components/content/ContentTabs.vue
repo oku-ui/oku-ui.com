@@ -18,7 +18,7 @@ const tabs = ref([
   { name: 'vue', title: 'Component.vue' },
   { name: 'scss', title: 'style.scss' },
   { name: 'output', title: 'Output' },
-  { name: 'tailwind', title: 'tailwind.config.ts'}
+  { name: 'tailwind', title: 'tailwind.config.ts' },
 ])
 
 const availableTabs = computed(() => tabs.value.filter(tab => !!slots[tab.name]))

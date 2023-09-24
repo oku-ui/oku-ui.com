@@ -11,7 +11,6 @@ const useGlobal = useGlobalStore()
 onMounted(() => {
   localStorage.getItem('oku-design')
 })
-
 </script>
 
 <template>

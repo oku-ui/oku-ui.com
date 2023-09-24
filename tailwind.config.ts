@@ -3,8 +3,6 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 
-import Typography from '@tailwindcss/typography'
-
 import { blackA, cyan, grass, green, indigo, mauve, purple, red, teal, violet } from '@radix-ui/colors'
 import { blackOA, codGray, grayOA, oku } from './colors'
 

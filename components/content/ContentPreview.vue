@@ -42,7 +42,6 @@ onMounted(async () => {
         delay: 0,
       })
     }
-
   }
   catch (error) {
     dynamicComponent.value = () => h('div', {}, 'Not found')
@@ -52,8 +51,10 @@ onMounted(async () => {
 
 <template>
   <div class="overflow-hidden">
-    <div class="rounded-lg w-full relative items-center justify-center flex"
-      :class="props.design === 'radix' ? 'HeroCodeBlock' : 'componentBackground'">
+    <div
+      class="rounded-lg w-full relative items-center justify-center flex"
+      :class="props.design === 'radix' ? 'HeroCodeBlock' : 'componentBackground'"
+    >
       <div class="w-full max-w-xl flex flex-col items-center justify-center px-4 py-20">
         <component :is="dynamicComponent" />
       </div>

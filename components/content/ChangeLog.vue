@@ -8,7 +8,9 @@
           </NuxtLink>
         </div>
         <div class="content">
-          <h3 class="sr-only">Description</h3>
+          <h3 class="sr-only">
+            Description
+          </h3>
 
           <ContentRenderer :value="release">
             <template #empty>

@@ -11,7 +11,6 @@ useSeoMeta({
   ogImage: 'https://oku-ui.com/primitives-og-image.png',
   twitterImage: 'https://oku-ui.com/primitives-og-image.png',
 })
-
 </script>
 
 <template>
@@ -20,10 +19,10 @@ useSeoMeta({
 
     <ULandingHero orientation="horizontal" class="!py-18 md:py-0 md:!pt-32 relative" :ui="{ container: 'flex lg:gap-4' }">
       <div class="hidden lg:block relative w-[500px]">
-      <Illustration class="h-[480px]" />
+        <Illustration class="h-[480px]" />
       </div>
       <template #title>
-         <span class="text-primary-400">1:1 </span> Radix UI / Primitives components for Vue 
+        <span class="text-primary-400">1:1 </span> Radix UI / Primitives components for Vue
       </template>
       <template #description>
         Unstyled, accessible components for building high‑quality design systems and web apps in React.Unstyled, accessible components for building high‑quality design systems and web apps in Vue.
@@ -53,7 +52,6 @@ useSeoMeta({
       </template>
       <PrimitivesShow />
     </ULandingSection>
-
   </div>
 </template>
 
