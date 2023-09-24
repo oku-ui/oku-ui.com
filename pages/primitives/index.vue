@@ -1,19 +1,6 @@
 <script setup lang="ts">
-
-const { data: module } = await useFetch<{
-  stats: {
-    downloads: number
-    stars: number
-  }
-  contributors: {
-    username: string
-  }[]
-}>('https://api.nuxt.com/modules/vue-email', {
-  transform: ({ stats, contributors }) => ({ stats, contributors }),
-})
-
 const title = '1:1 Radix UI components for Vue'
-const desc = 'A collection of high-quality, unstyled components for creating beautiful emails using Vue and TypeScript.'
+const desc = 'Unstyled, accessible components for building high‑quality design systems and web apps in React.Unstyled, accessible components for building high‑quality design systems and web apps in Vue.'
 
 useSeoMeta({
   titleTemplate: '',
@@ -21,8 +8,8 @@ useSeoMeta({
   ogTitle: title,
   description: desc,
   ogDescription: desc,
-  ogImage: 'https://oku-ui.com/social-preview.jpg',
-  twitterImage: 'https://oku-ui.com/social-preview.jpg',
+  ogImage: 'https://oku-ui.com/primitives-og-image.png',
+  twitterImage: 'https://oku-ui.com/primitives-og-image.png',
 })
 
 </script>
@@ -39,7 +26,7 @@ useSeoMeta({
          <span class="text-primary-400">1:1 </span> Radix UI / Primitives components for Vue 
       </template>
       <template #description>
-        A collection of high-quality, unstyled components for creating beautiful emails using Vue and TypeScript.
+        Unstyled, accessible components for building high‑quality design systems and web apps in React.Unstyled, accessible components for building high‑quality design systems and web apps in Vue.
       </template>
       <template #links>
         <UButton to="/primitives/getting-started" icon="i-ph-rocket-launch-duotone" size="xl">

@@ -16,7 +16,7 @@ const links = inject<Ref<any[]>>('links')
     }"
   >
     <template #left>
-      <NuxtLink to="/" class="flex items-center gap-1.5 font-bold text-xl text-gray-900 dark:text-white" aria-label="Vue Email">
+      <NuxtLink to="/" class="flex items-center gap-1.5 font-bold text-xl text-gray-900 dark:text-white" aria-label="Oku">
         <Logo class="w-auto h-6" />
       </NuxtLink>
     </template>

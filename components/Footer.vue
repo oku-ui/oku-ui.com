@@ -16,7 +16,7 @@ const links = inject<Ref<any[]>>('links')
 
     <template #right>
       <UColorModeButton v-if="!$colorMode.forced" />
-      <UButton aria-label="Vue Email on GitHub" icon="i-simple-icons-github" to="https://github.com/oku-ui/primitives" target="_blank" color="gray" variant="ghost" />
+      <UButton aria-label="Oku on GitHub" icon="i-simple-icons-github" to="https://github.com/oku-ui/primitives" target="_blank" color="gray" variant="ghost" />
     </template>
   </UFooter>
 </template>
