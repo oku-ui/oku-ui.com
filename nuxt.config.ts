@@ -5,7 +5,7 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  devtools: { enabled: true, componentInspector: false, viteInspect: false },
+  devtools: { enabled: true},
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
@@ -14,8 +14,8 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
-    '@oku-ui/primitives-nuxt',
     '@pinia/nuxt',
+    '@oku-ui/primitives-nuxt',
   ],
 
   primitives: {
@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     },
   },
   ui: {
+    global: true,
     icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar'],
   },
   fontMetrics: {
