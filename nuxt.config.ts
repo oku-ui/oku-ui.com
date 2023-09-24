@@ -73,5 +73,5 @@ export default defineNuxtConfig({
         if (comp.global) { comp.global = 'sync' }
       }
     }
-  }
+  },
 })

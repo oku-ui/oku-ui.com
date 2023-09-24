@@ -12,7 +12,27 @@ export interface CardProps {
   radix?: boolean
 }
 
-defineProps<CardProps>()
+const props = defineProps<CardProps>()
+const dynamicComponent = shallowRef<Component | undefined>(() =>
+  h(
+    'div',
+    {
+      class: 'content-preview-loader',
+    },
+    h('div', {}, 'Loading...'),
+  ),
+)
+
+onMounted(async () => {
+  try {
+    dynamicComponent.value = defineAsyncComponent(() => {
+      return import(`../primitives/${props.data.componentName}/index.vue`)
+    })
+  }
+  catch (error) {
+    dynamicComponent.value = () => h('div', {}, 'Not found')
+  }
+})
 </script>
 
 <template>
@@ -21,7 +41,7 @@ defineProps<CardProps>()
       class="w-full p-4 rounded-2xl flex-col gap-2 backdrop-blur-sm bg-[#575757]/10 border border-[#DEDEDE] dark:border-[#303030] inline-flex min-h-[138px] sm:min-h-[146px]"
     >
       <div class="relative w-full">
-        <component :is="data.componentName" v-if="!radix" class="py-10" />
+        <component :is="dynamicComponent" v-if="!radix" class="py-10" />
         <component :is="`${data.componentName}Radix`" v-else class="py-10" />
       </div>
       <div>

@@ -1,4 +1,4 @@
-const { grayOA, oku, blck } = require('./colors')
+// const { grayOA, oku, blck } = require('./colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],

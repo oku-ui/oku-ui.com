@@ -36,7 +36,7 @@ const srcBroken = 'https://broken.link.com/broken-pic.jpg'
     </OkuAvatar>
 
     <OkuAvatar class="w-14 h-14 bg-codGray-900 dark:bg-grayOA-400 items-center inline-block overflow-hidden rounded-full">
-      <OkuAvatarImage class="w-full h-full object-cover" :src="srcBroken" :on-loading-status-change="consoleLog" />
+      <OkuAvatarImage class="w-full h-full object-cover" :src="srcBroken" />
     </OkuAvatar>
   </div>
 </template>

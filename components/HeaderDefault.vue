@@ -10,7 +10,7 @@ const navigation = ref<NavItem[]>([
 },
 {
   title: 'About',
-  _path: '/about',
+  _path: '/oku',
 }
 ])
 const links = inject<Ref<any[]>>('links')
@@ -21,7 +21,7 @@ const links = inject<Ref<any[]>>('links')
     :links="links"
     :class="{
       'border-codGray-200/75 dark:border-codGray-900/50': $route.path === '/',
-      'border-codGray-900 dark:border-codGray-800': $route.path !== '/',
+      'border-codGray-200 dark:border-codGray-800': $route.path !== '/',
     }"
   >
     <template #left>
