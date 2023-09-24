@@ -14,7 +14,19 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
+    '@oku-ui/primitives-nuxt',
+    '@pinia/nuxt',
   ],
+
+  primitives: {
+    // All components install
+    installComponents: true,
+  },
+
+  imports: {
+    dirs: ['stores'],
+  },
+
   runtimeConfig: {
     public: {
       version: pkg.version,
@@ -53,11 +65,17 @@ export default defineNuxtConfig({
   },
   components: [
     {
-      global: true,
-      path: '~/components/primitives',
+      path: '~/components',
     },
     {
-      path: '~/components',
+      global: true,
+      path: '~/components/primitives',
+      priority: 1,
+    },
+    {
+      global: true,
+      path: '~/components/content',
+      priority: 1,
     },
   ],
 })

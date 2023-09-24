@@ -15,7 +15,7 @@ defineProps<{
 <template>
   <div>
     <FieldGroup>
-      <Field v-for="prop in meta" :key="prop.name" v-bind="prop"></Field>
+      <Field v-for="prop in meta" :key="prop.name" v-bind="prop" />
     </FieldGroup>
   </div>
 </template>

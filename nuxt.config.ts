@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxthq/studio',
     '@pinia/nuxt',
+    '@oku-ui/primitives-nuxt',
     // '@nuxtseo/module',
     resolve('./app/module'),
 
@@ -43,6 +44,11 @@ export default defineNuxtConfig({
     families: {
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
+  },
+
+  primitives: {
+    // All components install
+    installComponents: true,
   },
 
   nitro: {
