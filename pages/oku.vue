@@ -16,6 +16,19 @@ const kapadokyaImage = computed(() => {
 })
 
 const { teamMembers: teams } = useContributors()
+
+useSeoMeta({
+  title: 'Oku About',
+  ogTitle: 'Oku About - Vue and Nuxt',
+  description: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  ogDescription: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  ogImage: 'https://oku-ui.com/oku-og.png',
+  twitterTitle: 'Oku About - Vue and Nuxt',
+  twitterDescription: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  twitterImage: 'https://oku-ui.com/oku-og.png',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@oku_ui',
+})
 </script>
 
 <template>

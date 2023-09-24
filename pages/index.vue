@@ -45,6 +45,19 @@ const data = [
     active: false,
   },
 ]
+
+useSeoMeta({
+  title: 'Oku',
+  ogTitle: 'Oku - Vue and Nuxt',
+  description: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  ogDescription: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  ogImage: 'https://oku-ui.com/oku-og.png',
+  twitterTitle: 'Oku - Vue and Nuxt',
+  twitterDescription: 'Oku is a brand and community focused on Vue and Nuxt ecosystem.',
+  twitterImage: 'https://oku-ui.com/oku-og.png',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@oku_ui',
+})
 </script>
 
 <template>

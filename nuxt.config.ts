@@ -64,7 +64,7 @@ export default defineNuxtConfig({
   },
   github: {
     owner: 'oku-ui',
-    repo: 'primitives',
+    repo: 'docs',
     branch: 'main',
   },
   hooks: {

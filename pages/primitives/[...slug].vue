@@ -38,11 +38,11 @@ useSeoMeta({
   twitterSite: '@oku_ui',
 })
 
-defineOgImage({
-  component: 'Docs',
-  title: page.value.title,
-  description: page.value.description,
-})
+// defineOgImage({
+//   component: 'Docs',
+//   title: page.value.title,
+//   description: page.value.description,
+// })
 
 const headline = computed(() => findPageHeadline(page.value))
 
@@ -50,7 +50,7 @@ const links = computed(() => [
   {
     icon: 'i-ph-pencil-duotone',
     label: 'Edit this page',
-    to: `https://github.com/oku-ui/primitives/edit/main/docs/content/${page?.value?._file.split('/').slice(1).join('/')}`,
+    to: `https://github.com/oku-ui/docs/edit/main/content/${page?.value?._file.split('/').slice(1).join('/')}`,
     target: '_blank',
   },
   {
