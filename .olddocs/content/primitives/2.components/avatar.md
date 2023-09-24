@@ -17,14 +17,14 @@ An image element with a fallback for representing the user.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuAvatar/index.vue"}
+:ContentPreview{componentSrc="OkuAvatar/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuAvatar" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/radix.vue" lang="vue"} -->
 ::

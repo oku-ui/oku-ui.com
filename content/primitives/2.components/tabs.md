@@ -15,14 +15,14 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuTabs/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuTabs" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuTabs/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuTabs" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/radix.vue" lang="vue"} -->
 ::

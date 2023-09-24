@@ -9,14 +9,14 @@ image: 'https://oku-ui.com/og/oku-toast.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuToast/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuToast" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuToast/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuToast" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/radix.vue" lang="vue"} -->
 ::

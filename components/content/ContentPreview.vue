@@ -22,23 +22,16 @@ const dynamicComponent = shallowRef<Component | undefined>(() =>
 
 onMounted(async () => {
   try {
-    const component = `./../${props.componentSrc}`
-    dynamicComponent.value = defineAsyncComponent({
-      loader: async () => await import(component),
-      loadingComponent: () =>
-        h(
-          'div',
-          {
-            class: 'content-preview-loader',
-          },
-          h('div', {}, 'Loading...'),
-        ),
-      onError: (error) => {
-        console.error(error)
-        dynamicComponent.value = () => h('div', {}, 'Not found')
-      },
-      delay: 0,
-    })
+    if (props.design === 'radix') {
+      dynamicComponent.value = defineAsyncComponent(() => {
+        return import(`./../primitives/${props.componentSrc}/radix.vue`)
+      })
+    }
+    else {
+      dynamicComponent.value = defineAsyncComponent(() => {
+        return import(`./../primitives/${props.componentSrc}/index.vue`)
+      })
+    }
   }
   catch (error) {
     dynamicComponent.value = () => h('div', {}, 'Not found')

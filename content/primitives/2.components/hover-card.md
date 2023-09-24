@@ -14,14 +14,14 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuHoverCard/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuHoverCard" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuHoverCard/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuHoverCard" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/radix.vue" lang="vue"} -->
 ::

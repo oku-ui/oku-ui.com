@@ -14,14 +14,14 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuSlider/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuSlider" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuSlider/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuSlider" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/radix.vue" lang="vue"} -->
 ::

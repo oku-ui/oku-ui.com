@@ -16,14 +16,14 @@ A control that allows the user to toggle between checked and not checked.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuSwitch/index.vue"}
+:ContentPreview{componentSrc="OkuSwitch/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSwitch/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSwitch/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuSwitch" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSwitch/radix.vue" lang="vue"} -->
 ::

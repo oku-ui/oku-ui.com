@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuAspectRatio/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
 #tailwind
@@ -23,7 +23,7 @@ links:
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuAspectRatio/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAspectRatio" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
 ::

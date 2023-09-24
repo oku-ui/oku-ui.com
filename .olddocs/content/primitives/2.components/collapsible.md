@@ -17,14 +17,14 @@ An interactive component which expands/collapses a panel.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuCollapsible/index.vue"}
+:ContentPreview{componentSrc="OkuCollapsible/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCollapsible/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuCollapsible" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/radix.vue" lang="vue"} -->
 ::

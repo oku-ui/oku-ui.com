@@ -16,14 +16,14 @@ A set of checkable buttons—known as radio buttons—where no more than one of 
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuRadioGroup/index.vue"}
+:ContentPreview{componentSrc="OkuRadioGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuRadioGroup/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuRadioGroup" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/radix.vue" lang="vue"} -->
 ::

@@ -17,14 +17,14 @@ Displays rich content in a portal, triggered by a button.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuPopover/index.vue"}
+:ContentPreview{componentSrc="OkuPopover/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuPopover/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuPopover" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/radix.vue" lang="vue"} -->
 ::

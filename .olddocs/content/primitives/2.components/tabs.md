@@ -16,14 +16,14 @@ A set of layered sections of content—known as tab panels—that are displayed 
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuTabs/index.vue"}
+:ContentPreview{componentSrc="OkuTabs/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuTabs" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/radix.vue" lang="vue"} -->
 ::

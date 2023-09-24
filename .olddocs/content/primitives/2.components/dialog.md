@@ -17,14 +17,14 @@ A window overlaid on either the primary window or another dialog window, renderi
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuDialog/index.vue"}
+:ContentPreview{componentSrc="OkuDialog/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuDialog/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuDialog/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuDialog" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuDialog/radix.vue" lang="vue"} -->
 ::

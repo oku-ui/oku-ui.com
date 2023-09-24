@@ -16,14 +16,14 @@ For sighted users to preview content available behind a link.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuHoverCard/index.vue"}
+:ContentPreview{componentSrc="OkuHoverCard/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuHoverCard/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuHoverCard" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/radix.vue" lang="vue"} -->
 ::

@@ -16,14 +16,14 @@ A set of two-state buttons that can be toggled on or off.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuToggleGroup/index.vue"}
+:ContentPreview{componentSrc="OkuToggleGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggleGroup/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuToggleGroup" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/radix.vue" lang="vue"} -->
 ::

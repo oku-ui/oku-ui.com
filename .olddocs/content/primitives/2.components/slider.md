@@ -13,14 +13,14 @@ image: 'https://oku-ui.com/og/oku-slider.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuSlider/index.vue"}
+:ContentPreview{componentSrc="OkuSlider/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSlider/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuSlider" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/radix.vue" lang="vue"} -->
 ::

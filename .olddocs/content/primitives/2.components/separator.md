@@ -13,14 +13,14 @@ image: 'https://oku-ui.com/og/oku-separator.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuSeparator/index.vue"}
+:ContentPreview{componentSrc="OkuSeparator/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSeparator/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSeparator/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuSeparator" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSeparator/radix.vue" lang="vue"} -->
 ::

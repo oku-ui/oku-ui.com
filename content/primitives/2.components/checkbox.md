@@ -14,14 +14,14 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives/OkuCheckbox/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuCheckbox" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuCheckbox/radix.vue" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuCheckbox" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/radix.vue" lang="vue"} -->
 ::

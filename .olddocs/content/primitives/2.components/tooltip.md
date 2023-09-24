@@ -16,14 +16,14 @@ A two-state button that can be either on or off.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuTooltip/index.vue"}
+:ContentPreview{componentSrc="OkuTooltip/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTooltip/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuTooltip" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/radix.vue" lang="vue"} -->
 ::

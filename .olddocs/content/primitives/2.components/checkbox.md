@@ -17,14 +17,14 @@ Renders an accessible checkbox associated with controls.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuCheckbox/index.vue"}
+:ContentPreview{componentSrc="OkuCheckbox/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCheckbox/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuCheckbox" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/radix.vue" lang="vue"} -->
 ::

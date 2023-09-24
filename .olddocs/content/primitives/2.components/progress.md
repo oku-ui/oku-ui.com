@@ -17,14 +17,14 @@ Displays an indicator showing the completion progress of a task, typically displ
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuProgress/index.vue"}
+:ContentPreview{componentSrc="OkuProgress/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuProgress/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuProgress" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/radix.vue" lang="vue"} -->
 ::

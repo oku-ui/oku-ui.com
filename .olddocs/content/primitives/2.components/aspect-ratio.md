@@ -17,14 +17,14 @@ Displays content within a desired ratio.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuAspectRatio/index.vue"}
+:ContentPreview{componentSrc="OkuAspectRatio/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuAspectRatio" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
 ::

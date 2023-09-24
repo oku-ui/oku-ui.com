@@ -16,14 +16,14 @@ Renders an accessible label associated with controls.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="primitives//primitives/OkuToast/index.vue"}
+:ContentPreview{componentSrc="OkuToast/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToast/radix.vue" design="radix"}
+:ContentPreview{componentSrc="/primitives/OkuToast" design="radix"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/radix.vue" lang="vue"} -->
 ::
