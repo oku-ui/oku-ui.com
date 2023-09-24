@@ -5,6 +5,7 @@ const navigation = inject<NavItem[]>('navigation')
 </script>
 
 <template>
+  <HeaderPrimitives />
   <UMain>
     <UContainer>
       <UPage>

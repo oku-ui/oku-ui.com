@@ -29,7 +29,7 @@ const links = inject<Ref<any[]>>('links')
       <UColorModeButton />
 
       <UButton
-        to="https://github.com/Dave136/vue-email"
+        to="https://github.com/oku-ui/primitives"
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="GitHub"
@@ -39,7 +39,10 @@ const links = inject<Ref<any[]>>('links')
     </template>
 
     <template #panel>
-      <UNavigationTree :links="mapContentNavigation(navigation)" />
+      <UNavigationTree
+                :links="mapContentNavigation(navigation.find((item) => item._path === '/primitives')?.children || [])
+                  "
+              />
     </template>
   </UHeader>
 </template>

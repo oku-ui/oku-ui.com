@@ -3,7 +3,7 @@
     <GithubReleases v-slot="{ releases }">
       <div v-for="release in releases" :key="release.name" class="release">
         <div class="release-name">
-          <NuxtLink :to="`https://github.com/Dave136/vue-email/releases/tag/${release.name}`" external target="_blank">
+          <NuxtLink :to="`https://github.com/oku-ui/primitives/releases/tag/${release.name}`" external target="_blank">
             {{ release.name }}
           </NuxtLink>
         </div>
