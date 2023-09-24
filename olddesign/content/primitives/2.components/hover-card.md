@@ -16,7 +16,7 @@ For sighted users to preview content available behind a link.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuHoverCard/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuHoverCard/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::

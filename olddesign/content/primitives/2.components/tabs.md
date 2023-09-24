@@ -16,7 +16,7 @@ A set of layered sections of content—known as tab panels—that are displayed 
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuTabs/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
 ::

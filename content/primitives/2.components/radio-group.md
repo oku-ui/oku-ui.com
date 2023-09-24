@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuRadioGroup/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuRadioGroup/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/index.vue" lang="vue"} -->
 ::

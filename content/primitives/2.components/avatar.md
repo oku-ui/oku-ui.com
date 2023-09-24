@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuAvatar/index" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuAvatar/index" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::

@@ -16,7 +16,7 @@ Renders an accessible label associated with controls.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToast/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuToast/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
 ::

@@ -16,7 +16,7 @@ A set of checkable buttons—known as radio buttons—where no more than one of 
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuRadioGroup/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuRadioGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/index.vue" lang="vue"} -->
 ::

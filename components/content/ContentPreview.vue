@@ -1,10 +1,10 @@
 <script setup lang="ts">
 interface Props {
-  src: string
   off?: string
   design?: 'oku' | 'radix'
   project?: 'primitives'
   lang?: string
+  componentSrc: string
 }
 const props = withDefaults(defineProps<Props>(), {
   off: '',
@@ -22,26 +22,23 @@ const dynamicComponent = shallowRef<Component | undefined>(() =>
 
 onMounted(async () => {
   try {
-    const path = `${props.project}/${props.src}`
-
-    if (path) {
-      dynamicComponent.value = defineAsyncComponent({
-        loader: async () => await import(`./../${path}`),
-        loadingComponent: () =>
-          h(
-            'div',
-            {
-              class: 'content-preview-loader',
-            },
-            h('div', {}, 'Loading...'),
-          ),
-        onError: (error) => {
-          console.error(error)
-          dynamicComponent.value = () => h('div', {}, 'Not found')
-        },
-        delay: 0,
-      })
-    }
+    const component = `./../${props.componentSrc}`
+    dynamicComponent.value = defineAsyncComponent({
+      loader: async () => await import(component),
+      loadingComponent: () =>
+        h(
+          'div',
+          {
+            class: 'content-preview-loader',
+          },
+          h('div', {}, 'Loading...'),
+        ),
+      onError: (error) => {
+        console.error(error)
+        dynamicComponent.value = () => h('div', {}, 'Not found')
+      },
+      delay: 0,
+    })
   }
   catch (error) {
     dynamicComponent.value = () => h('div', {}, 'Not found')

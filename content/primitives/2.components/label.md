@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuLabel/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuLabel/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
 ::

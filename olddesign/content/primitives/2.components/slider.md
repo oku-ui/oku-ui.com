@@ -13,7 +13,7 @@ image: 'https://oku-ui.com/og/oku-slider.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSlider/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuSlider/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
 ::

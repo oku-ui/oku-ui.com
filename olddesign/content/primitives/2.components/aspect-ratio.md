@@ -17,7 +17,7 @@ Displays content within a desired ratio.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuAspectRatio/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
 ::

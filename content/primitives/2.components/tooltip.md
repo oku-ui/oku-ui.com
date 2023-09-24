@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuTooltip/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuTooltip/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/index.vue" lang="vue"} -->
 ::

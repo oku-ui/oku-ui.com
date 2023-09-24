@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuHoverCard/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuHoverCard/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::

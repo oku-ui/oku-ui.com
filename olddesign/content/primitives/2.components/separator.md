@@ -13,7 +13,7 @@ image: 'https://oku-ui.com/og/oku-separator.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSeparator/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuSeparator/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSeparator/index.vue" lang="vue"} -->
 ::

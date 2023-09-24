@@ -5,7 +5,7 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  devtools: { enabled: true },
+  // devtools: { enabled: true },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',

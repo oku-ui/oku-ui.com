@@ -16,7 +16,7 @@ A two-state button that can be either on or off.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToolbar/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuToolbar/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToolbar/index.vue" lang="vue"} -->
 ::

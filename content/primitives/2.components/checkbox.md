@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuCheckbox/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuCheckbox/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::

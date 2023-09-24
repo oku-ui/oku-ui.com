@@ -17,7 +17,7 @@ Renders an accessible checkbox associated with controls.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCheckbox/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuCheckbox/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCheckbox/index.vue" lang="vue"} -->
 ::

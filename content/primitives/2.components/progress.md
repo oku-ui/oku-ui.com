@@ -14,7 +14,7 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuProgress/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuProgress/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/index.vue" lang="vue"} -->
 ::

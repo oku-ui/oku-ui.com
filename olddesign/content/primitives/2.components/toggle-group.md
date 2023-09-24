@@ -16,7 +16,7 @@ A set of two-state buttons that can be toggled on or off.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggleGroup/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuToggleGroup/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/index.vue" lang="vue"} -->
 ::

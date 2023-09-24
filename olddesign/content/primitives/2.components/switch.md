@@ -16,7 +16,7 @@ A control that allows the user to toggle between checked and not checked.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSwitch/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuSwitch/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSwitch/index.vue" lang="vue"} -->
 ::

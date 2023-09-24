@@ -17,7 +17,7 @@ Displays rich content in a portal, triggered by a button.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuPopover/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuPopover/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/index.vue" lang="vue"} -->
 ::

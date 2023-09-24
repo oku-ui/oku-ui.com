@@ -17,7 +17,7 @@ An interactive component which expands/collapses a panel.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCollapsible/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuCollapsible/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/index.vue" lang="vue"} -->
 ::

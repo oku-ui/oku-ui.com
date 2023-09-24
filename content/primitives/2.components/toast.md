@@ -9,7 +9,7 @@ image: 'https://oku-ui.com/og/oku-toast.jpg'
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="OkuToast/index.vue" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="primitives/OkuToast/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
 ::

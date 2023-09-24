@@ -17,7 +17,7 @@ An image element with a fallback for representing the user.
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuAvatar/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::

@@ -17,7 +17,7 @@ Displays an indicator showing the completion progress of a task, typically displ
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuProgress/index.vue"}
+:ContentPreview{componentSrc="primitives//primitives/OkuProgress/index.vue"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/index.vue" lang="vue"} -->
 ::
