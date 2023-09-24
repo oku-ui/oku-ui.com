@@ -1,30 +1,27 @@
 ---
 title: Progress
 description: Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuProgress
 image: 'https://oku-ui.com/og/oku-progress.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/progress
+    title: OkuProgress
 ---
-
-# Progress
-Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuProgress/index.vue"}
+:ContentPreview{src="OkuProgress/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuProgress/radix.vue" design="radix"}
+:ContentPreview{src="OkuProgress/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuProgress/radix.vue" lang="vue"} -->
 ::
@@ -37,9 +34,22 @@ Displays an indicator showing the completion progress of a task, typically displ
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/progress
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/progress
 ```
+
+```bash [yarn]
+yarn add @oku-ui/progress
+```
+
+```bash [npm]
+npm install @oku-ui/progress
+```
+
+::
+
 
 ## Anatomy
 

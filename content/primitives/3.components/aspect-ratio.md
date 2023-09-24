@@ -1,20 +1,13 @@
 ---
 title: Aspect Ratio
 description: Displays content within a desired ratio.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuAspectRatio
 image: 'https://oku-ui.com/og/oku-aspect-ratio.jpg'
 links:
   - label: NPM - 0.4.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/aspect-ratio
-    version: 0.4.0
     title: OkuAspectRatio
-navigation:
-  badge: New
 ---
 
 ::ContentDesignTabs

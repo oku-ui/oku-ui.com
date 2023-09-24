@@ -1,30 +1,27 @@
 ---
 title: Collapsible
 description: An interactive component which expands/collapses a panel.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuCollapsible
 image: 'https://oku-ui.com/og/oku-collapsible.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/collapsible
+    title: OkuCollapsible
 ---
-
-# Collapsible
-An interactive component which expands/collapses a panel.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCollapsible/index.vue"}
+:ContentPreview{src="OkuCollapsible/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuCollapsible/radix.vue" design="radix"}
+:ContentPreview{src="OkuCollapsible/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuCollapsible/radix.vue" lang="vue"} -->
 ::
@@ -35,14 +32,25 @@ An interactive component which expands/collapses a panel.
 - Can be controlled or uncontrolled.
 
 
-
 ## Installation
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/collapsible
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/collapsible
 ```
+
+```bash [yarn]
+yarn add @oku-ui/collapsible
+```
+
+```bash [npm]
+npm install @oku-ui/collapsible
+```
+
+::
 
 ## Anatomy
 

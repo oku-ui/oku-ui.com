@@ -1,12 +1,13 @@
 ---
 title: Avatar
 description: An image element with a fallback for representing the user.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuAvatar
 image: 'https://oku-ui.com/og/oku-avatar.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/avatar
+    title: OkuAvatar
 ---
 
 ::ContentDesignTabs
@@ -37,9 +38,21 @@ image: 'https://oku-ui.com/og/oku-avatar.jpg'
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/avatar
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/avatar
 ```
+
+```bash [yarn]
+yarn add @oku-ui/avatar
+```
+
+```bash [npm]
+npm install @oku-ui/avatar
+```
+
+::
 
 ## Anatomy
 

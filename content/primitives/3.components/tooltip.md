@@ -1,29 +1,27 @@
 ---
 title: Tooltip
 description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuTooltip
 image: 'https://oku-ui.com/og/oku-tooltip.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/tooltip
+    title: OkuTooltip
 ---
-
-# Tooltip
-A two-state button that can be either on or off.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTooltip/index.vue"}
+:ContentPreview{src="OkuTooltip/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTooltip/radix.vue" design="radix"}
+:ContentPreview{src="OkuTooltip/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTooltip/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +39,23 @@ A two-state button that can be either on or off.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/toolip
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/toolip
 ```
+
+```bash [yarn]
+yarn add @oku-ui/toolip
+```
+
+```bash [npm]
+npm install @oku-ui/toolip
+```
+
+::
+
+
 
 ## Anatomy
 

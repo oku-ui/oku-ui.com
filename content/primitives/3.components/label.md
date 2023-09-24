@@ -1,29 +1,27 @@
 ---
 title: Label
 description: Renders an accessible label associated with controls.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuLabel
 image: 'https://oku-ui.com/og/oku-label.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/label
+    title: OkuLabel
 ---
-
-# Label
-Renders an accessible label associated with controls.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuLabel/index.vue"}
+:ContentPreview{src="OkuLabel/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuLabel/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuLabel/radix.vue" design="radix"}
+:ContentPreview{src="OkuLabel/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuLabel/radix.vue" lang="vue"} -->
 ::
@@ -35,9 +33,21 @@ Renders an accessible label associated with controls.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/label
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/label
 ```
+
+```bash [yarn]
+yarn add @oku-ui/label
+```
+
+```bash [npm]
+npm install @oku-ui/label
+```
+
+::
 
 ## Anatomy
 

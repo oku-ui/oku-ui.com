@@ -1,29 +1,27 @@
 ---
 title: Toggle Group
 description: A set of two-state buttons that can be toggled on or off.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuToggleGroup
 image: 'https://oku-ui.com/og/oku-toggle-group.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/toggle-group
+    title: OkuToggleGroup
 ---
-
-# Toggle Group
-A set of two-state buttons that can be toggled on or off.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggleGroup/index.vue"}
+:ContentPreview{src="OkuToggleGroup/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToggleGroup/radix.vue" design="radix"}
+:ContentPreview{src="OkuToggleGroup/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToggleGroup/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +39,23 @@ A set of two-state buttons that can be toggled on or off.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/toggle-group
+
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/toggle-group
 ```
+
+```bash [yarn]
+yarn add @oku-ui/toggle-group
+```
+
+```bash [npm]
+npm install @oku-ui/toggle-group
+```
+
+::
+
 
 ## Anatomy
 

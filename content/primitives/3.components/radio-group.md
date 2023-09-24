@@ -1,29 +1,27 @@
 ---
 title: Radio Group
 description: A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuRadioGroup
 image: 'https://oku-ui.com/og/oku-radio-group.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/radio-group
+    title: OkuRadioGroup
 ---
-
-# Radio Group
-A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuRadioGroup/index.vue"}
+:ContentPreview{src="OkuRadioGroup/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuRadioGroup/radix.vue" design="radix"}
+:ContentPreview{src="OkuRadioGroup/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuRadioGroup/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +39,21 @@ A set of checkable buttons—known as radio buttons—where no more than one of 
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/radio-group
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/radio-group
 ```
+
+```bash [yarn]
+yarn add @oku-ui/radio-group
+```
+
+```bash [npm]
+npm install @oku-ui/radio-group
+```
+
+::
 
 ## Anatomy
 

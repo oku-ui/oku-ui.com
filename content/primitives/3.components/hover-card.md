@@ -1,29 +1,27 @@
 ---
 title: Hover Card
 description: For sighted users to preview content available behind a link.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuHoverCard
 image: 'https://oku-ui.com/og/oku-hover-card.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/hover-card
+    title: OkuHoverCard
 ---
-
-# Hover Card
-For sighted users to preview content available behind a link.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuHoverCard/index.vue"}
+:ContentPreview{src="OkuHoverCard/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuHoverCard/radix.vue" design="radix"}
+:ContentPreview{src="OkuHoverCard/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuHoverCard/radix.vue" lang="vue"} -->
 ::
@@ -45,9 +43,21 @@ For sighted users to preview content available behind a link.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/hover-card
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/hover-card
 ```
+
+```bash [yarn]
+yarn add @oku-ui/hover-card
+```
+
+```bash [npm]
+npm install @oku-ui/hover-card
+```
+
+::
 
 ## Anatomy
 

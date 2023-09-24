@@ -1,29 +1,28 @@
 ---
 title: Tabs
 description: A set of layered sections of content—known as tab panels—that are displayed one at a time.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuTabs
 image: 'https://oku-ui.com/og/oku-tabs.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/tabs
+    title: OkuTabs
 ---
 
-# Tabs
-A set of layered sections of content—known as tab panels—that are displayed one at a time.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/index.vue"}
+:ContentPreview{src="OkuTabs/index.vue" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuTabs/radix.vue" design="radix"}
+:ContentPreview{src="OkuTabs/radix.vue" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuTabs/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +40,21 @@ A set of layered sections of content—known as tab panels—that are displayed 
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/tabs
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/tabs
 ```
+
+```bash [yarn]
+yarn add @oku-ui/tabs
+```
+
+```bash [npm]
+npm install @oku-ui/tabs
+```
+
+::
 
 ## Anatomy
 
