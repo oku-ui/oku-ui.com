@@ -123,6 +123,5 @@ export default <Partial<Config>>{
       // Select the icon collections you want to use
       collections: getIconCollections(['fa-brands', 'heroicons', 'ph', 'ic']),
     }),
-    Typography,
   ],
 }
