@@ -55,6 +55,7 @@ provide('links', links)
 <template>
   <div>
     <NuxtLayout>
+      <NuxtLoadingIndicator />
       <NuxtPage />
     </NuxtLayout>
 
