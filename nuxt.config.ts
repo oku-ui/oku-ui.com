@@ -143,5 +143,17 @@ export default defineNuxtConfig({
         statusCode: 301,
       },
     },
+    '/primitives/introduction/nuxt': {
+      redirect: {
+        to: '/primitives/getting-started/nuxt',
+        statusCode: 301,
+      },
+    },
+    '/primitives/introduction/introduction': {
+      redirect: {
+        to: '/primitives/getting-started',
+        statusCode: 301,
+      },
+    },
   },
 })
