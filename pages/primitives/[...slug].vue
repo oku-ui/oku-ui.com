@@ -25,11 +25,17 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Vue Email',
+  titleTemplate: '%s - Primitives',
   title: page.value.title,
-  ogTitle: `${page.value.title} - Vue Email`,
+  ogTitle: `${page.value.title} - Primitives`,
   description: page.value.description,
   ogDescription: page.value.description,
+  ogImage: page.value.image,
+  twitterTitle: `${page.value.title} - Primitives`,
+  twitterDescription: page.value.description,
+  twitterImage: page.value.image,
+  twitterCard: 'summary_large_image',
+  twitterSite: '@oku_ui',
 })
 
 defineOgImage({
@@ -42,17 +48,31 @@ const headline = computed(() => findPageHeadline(page.value))
 
 const links = computed(() => [
   {
-    icon: 'i-heroicons-pencil-square',
+    icon: 'i-ph-pencil-duotone',
     label: 'Edit this page',
-    to: `https://github.com/Dave136/vue-email/edit/main/docs/content/${page?.value?._file.split('/').slice(1).join('/')}`,
+    to: `https://github.com/oku-ui/primitives/edit/main/docs/content/${page?.value?._file.split('/').slice(1).join('/')}`,
     target: '_blank',
   },
   {
-    icon: 'i-heroicons-star',
+    icon: 'i-ph-star-duotone',
     label: 'Star on GitHub',
-    to: 'https://github.com/Dave136/vue-email',
+    to: 'https://github.com/oku-ui/primitives',
     target: '_blank',
   },
+  {
+    // discord
+    icon: 'i-ic-twotone-discord',
+    label: 'Chat on Discord',
+    to: 'https://chat.oku-ui.com',
+    target: '_blank',
+  },
+  {
+    // sponsors
+    icon: 'i-ph-heart-duotone',
+    label: 'Sponsor on GitHub',
+    to: 'https://github.com/sponsors/productdevbook',
+    target: '_blank',
+  }
 ])
 </script>
 

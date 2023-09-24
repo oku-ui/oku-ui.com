@@ -7,6 +7,14 @@ readingTime: 3
 version: 0.4.0
 componentName: OkuAspectRatio
 image: 'https://oku-ui.com/og/oku-aspect-ratio.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/aspect-ratio
+    version: 0.4.0
+    title: OkuAspectRatio
+navigation:
+  badge: New
 ---
 
 ::ContentDesignTabs
@@ -34,15 +42,31 @@ image: 'https://oku-ui.com/og/oku-aspect-ratio.jpg'
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/aspect-ratio
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/aspect-ratio
 ```
+
+```bash [yarn]
+yarn add @oku-ui/aspect-ratio
+```
+
+```bash [npm]
+npm install @oku-ui/aspect-ratio
+```
+
+::
+
+
 
 ## Anatomy
 
 Import the component.
 
-```vue
+::code-group
+
+```vue [o.vue]
 <script setup lang="ts">
 import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
 </script>
@@ -51,6 +75,7 @@ import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
   <OkuAspectRatio :ratio="1 / 2" />
 </template>
 ```
+::
 
 ## API Reference
 

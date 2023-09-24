@@ -31,12 +31,12 @@ defineProps({
     />
     <div>
       <h1 class="text-8xl mb-4 text-white">
-        {{ title }}
+        {{ title }} - asdasdasdasdaasd
       </h1>
       <p class="text-5xl text-gray-200 leading-tight pr-10">
         {{ description }}
       </p>
     </div>
-    <Logo class="h-[100px] w-[100px] text-white" />
+    <Logo class="h-[100px] w-[250px] text-white" />
   </div>
 </template>

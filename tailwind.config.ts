@@ -67,18 +67,6 @@ export default <Partial<Config>>{
       gridRow: {
         'span-8': 'span 8 / span 8',
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            pre: {
-              backgroundColor: 'transparent',
-              margin: 0,
-              padding: 0,
-            },
-          },
-        },
-      },
       keyframes: {
         overlayShow: {
           from: { opacity: '0' },

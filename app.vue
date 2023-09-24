@@ -16,25 +16,11 @@ const navigation = computed(() => nav.value)
 const links = computed(() => {
   return [
     {
-      label: 'Documentation',
+      label: 'Projects',
       icon: 'i-heroicons-book-open-solid',
-      to: '/getting-started',
+      to: '/',
     },
-    {
-      label: 'Examples',
-      icon: 'i-heroicons-square-3-stack-3d',
-      to: '/getting-started/examples',
-    },
-    {
-      label: 'Playground',
-      icon: 'i-simple-icons-stackblitz',
-      to: '/playground',
-    },
-    {
-      label: 'Releases',
-      icon: 'i-heroicons-rocket-launch-solid',
-      to: '/changelog',
-    },
+
   ]
 })
 const color = computed(() => (colorMode.value === 'dark' ? '#18181b' : 'white'))
@@ -56,12 +42,11 @@ useHead({
 })
 
 useServerSeoMeta({
-  ogSiteName: 'Vue Email',
+  ogSiteName: 'Oku',
   twitterCard: 'summary_large_image',
 })
 
 // Provide
-
 provide('navigation', navigation)
 provide('files', files)
 provide('links', links)
