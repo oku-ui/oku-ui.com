@@ -1,30 +1,27 @@
 ---
 title: Dialog
 description: A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuDialog
 image: 'https://oku-ui.com/og/oku-dialog.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/dialog
+    title: OkuDialog
 ---
-
-# Dialog
-A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuDialog/index.vue"}
+:ContentPreview{componentSrc="OkuDialog" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuDialog/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuDialog/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuDialog" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuDialog/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +38,23 @@ A window overlaid on either the primary window or another dialog window, renderi
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/dialog
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/dialog
 ```
+
+```bash [yarn]
+yarn add @oku-ui/dialog
+```
+
+```bash [npm]
+npm install @oku-ui/dialog
+```
+
+::
+
+
 
 ## Anatomy
 

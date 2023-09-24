@@ -20,6 +20,15 @@ const data = [
     buttonText: 'See Docs',
   },
   {
+    to: 'izlek',
+    title: 'izlek',
+    description: 'Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.',
+    active: true,
+    theme: 'red',
+    image: 'command',
+    buttonText: 'See Docs',
+  },
+  {
     to: '#',
     title: 'Notification',
     description: 'in the future.',
@@ -44,9 +53,7 @@ const data = [
       Oku focuses on the smallest detail.
     </h1>
     <div class="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 max-w-[1200px] mt-12">
-      <div v-for="item in data" :key="item.title" class="!aspect-square w-full flex items-center justify-center">
-        <ShowcaseCard :data="{ ...item }" />
-      </div>
+      <ThemeProductCard v-for="item in data" :key="item.title" :data="item" />
     </div>
     <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
       <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
@@ -54,7 +61,7 @@ const data = [
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-stretch gap-4 w-full lg:grid-cols-4">
         <template v-for="item in teamMembers" :key="item.github">
-          <TeamCard
+          <ThemeTeamCard
             :data="{
               image: item.avatar,
               name: item.name,
@@ -75,7 +82,8 @@ const data = [
       <p class="text-lg max-w-200 text-center leading-7 mt-10">
         <Contributors />
         <br>
-        <a class="text-oku-500 font-bold" href="https://chat.productdevbook.com" rel="noopener noreferrer">Join the community</a> and get involved!
+        <a class="text-oku-500 font-bold" href="https://chat.productdevbook.com" rel="noopener noreferrer">Join the
+          community</a> and get involved!
       </p>
     </div>
 
@@ -85,16 +93,17 @@ const data = [
       </h2>
       <div class="mx-auto mt-10 flex justify-center items-center max-w-none ">
         <div class="flex flex-col items-center">
-          <a class="text-lg font-semibold text-oku-600" href="https://github.com/sponsors/productdevbook" rel="noopener noreferrer">productdevbook's Sponsors</a>
-          <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg" target="_blank" rel="noopener noreferrer">
+          <a
+            class="text-lg font-semibold text-oku-600" href="https://github.com/sponsors/productdevbook"
+            rel="noopener noreferrer"
+          >productdevbook's Sponsors</a>
+          <a
+            href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg" target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              crossorigin="anonymous"
-              inline-block
-              width="768" height="1464"
-              class="resizable-img"
-              loading="lazy"
-              src="/sponsors/productdevbook.svg"
-              alt="Anthony Fu's sponsors"
+              crossorigin="anonymous" inline-block width="768" height="1464" class="resizable-img" loading="lazy"
+              src="/sponsors/productdevbook.svg" alt="Anthony Fu's sponsors"
             >
           </a>
         </div>
@@ -103,6 +112,4 @@ const data = [
   </div>
 </template>
 
-<style lang="postcss">
-
-</style>
+<style lang="postcss"></style>

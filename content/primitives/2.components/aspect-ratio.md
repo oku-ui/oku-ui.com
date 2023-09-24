@@ -1,30 +1,29 @@
 ---
 title: Aspect Ratio
 description: Displays content within a desired ratio.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuAspectRatio
 image: 'https://oku-ui.com/og/oku-aspect-ratio.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/aspect-ratio
+    title: OkuAspectRatio
 ---
-
-# Aspect Ratio
-Displays content within a desired ratio.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/index.vue"}
+:ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
+#tailwind
+<!-- Autodocs{src="/primitives/OkuAspectRatio/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAspectRatio/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuAspectRatio" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
 ::
@@ -38,15 +37,31 @@ Displays content within a desired ratio.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/aspect-ratio
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/aspect-ratio
 ```
+
+```bash [yarn]
+yarn add @oku-ui/aspect-ratio
+```
+
+```bash [npm]
+npm install @oku-ui/aspect-ratio
+```
+
+::
+
+
 
 ## Anatomy
 
 Import the component.
 
-```vue
+::code-group
+
+```vue [o.vue]
 <script setup lang="ts">
 import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
 </script>
@@ -55,6 +70,7 @@ import { OkuAspectRatio } from '@oku-ui/aspect-ratio'
   <OkuAspectRatio :ratio="1 / 2" />
 </template>
 ```
+::
 
 ## API Reference
 

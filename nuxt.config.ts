@@ -1,71 +1,83 @@
 import { createResolver } from '@nuxt/kit'
+import pkg from './package.json'
 
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [{ rel: 'icon', type: 'image/svg', href: '/icon.svg' }],
-    },
-  },
-
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
-
+  extends: ['@nuxt/ui-pro'],
+  // devtools: { enabled: true },
   modules: [
+    '@nuxt/content',
+    'nuxt-og-image',
+    '@nuxt/ui',
+    '@nuxtlabs/github-module',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
-    // https://github.com/productdevbookcom/v-plausible
-    'v-plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools',
-    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    '@nuxthq/studio',
     '@pinia/nuxt',
-    // '@nuxtseo/module',
-    resolve('./app/module'),
-
+    '@oku-ui/primitives-nuxt',
+    'v-plausible',
   ],
+
+  primitives: {
+    // All components install
+    installComponents: true,
+  },
+
   imports: {
     dirs: ['stores'],
   },
 
-  pinceau: {
-    preflight: false,
+  runtimeConfig: {
+    public: {
+      version: pkg.version,
+    },
   },
-
-  oku: {
-    icons: ['heroicons'],
+  ui: {
+    global: true,
+    icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar'],
   },
-
+  fontMetrics: {
+    fonts: ['DM Sans'],
+  },
   googleFonts: {
+    display: 'swap',
+    download: true,
     families: {
-      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      'DM+Sans': [400, 500, 600, 700],
     },
   },
 
   nitro: {
     prerender: {
-      crawlLinks: true,
+      routes: ['/', '/primitives', '/primitives/getting-started', '/api/search.json'],
     },
   },
 
-  components: [
-    {
-      global: true,
-      path: '~/components/primitives',
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
+  typescript: {
+    strict: false,
+    includeWorkspace: true,
+  },
+  github: {
+    owner: 'oku-ui',
+    repo: 'primitives',
+    branch: 'main',
+  },
+  hooks: {
+    // Related to https://github.com/nuxt/nuxt/pull/22558
+    // Adding all global components to the main entry
+    // To avoid lagging during page navigation on client-side
+    'components:extend': function (components) {
+      for (const comp of components) {
+        if (comp.global)
+          comp.global = 'sync'
+      }
     },
-    {
-      global: true,
-      path: '~/components/app',
-    },
-    {
-      global: true,
-      path: '~/components/docs',
-      prefix: '',
-    },
-  ],
+  },
 
   plausible: {
     init: {

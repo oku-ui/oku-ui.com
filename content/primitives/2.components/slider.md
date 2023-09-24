@@ -1,26 +1,27 @@
 ---
 title: Slider
 description: An input where the user selects a value from within a given range.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuSlider
 image: 'https://oku-ui.com/og/oku-slider.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/slider
+    title: OkuSlider
 ---
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSlider/index.vue"}
+:ContentPreview{componentSrc="OkuSlider" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuSlider/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuSlider" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuSlider/radix.vue" lang="vue"} -->
 ::
@@ -40,9 +41,21 @@ image: 'https://oku-ui.com/og/oku-slider.jpg'
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/slider
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/slider
 ```
+
+```bash [yarn]
+yarn add @oku-ui/slider
+```
+
+```bash [npm]
+npm install @oku-ui/slider
+```
+
+::
 
 ## Anatomy
 

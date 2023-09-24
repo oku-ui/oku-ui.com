@@ -1,29 +1,27 @@
 ---
 title: Toolbar
 description: A container for grouping a set of controls, such as buttons, toggle groups or dropdown menus.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuToolbar
 image: 'https://oku-ui.com/og/oku-toolbar.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/toolbar
+    title: OkuToolbar
 ---
-
-# Toolbar
-A two-state button that can be either on or off.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToolbar/index.vue"}
+:ContentPreview{componentSrc="OkuToolbar" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToolbar/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToolbar/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuToolbar" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToolbar/radix.vue" lang="vue"} -->
 ::
@@ -38,9 +36,21 @@ A two-state button that can be either on or off.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/toolbar
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/toolbar
 ```
+
+```bash [yarn]
+yarn add @oku-ui/toolbar
+```
+
+```bash [npm]
+npm install @oku-ui/toolbar
+```
+
+::
 
 ## Anatomy
 

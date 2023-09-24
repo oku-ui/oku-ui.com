@@ -1,8 +1,8 @@
 <script setup lang="ts">
-interface CardProps {
+export interface CardProps {
   data: {
     to: string
-    theme: 'orange' | 'blue' | 'purple' | 'green'
+    theme: 'orange' | 'blue' | 'purple' | 'green' | 'red'
     title: string
     description: string
     active?: boolean
@@ -15,7 +15,7 @@ defineProps<CardProps>()
 </script>
 
 <template>
-  <NuxtLink :class="{ 'opacity-50 !pointer-events-none cursor-default': !data.active }" :to="data.to" class="w-full h-full">
+  <NuxtLink :class="{ 'opacity-50 !pointer-events-none cursor-default': !data.active }" :to="data.to" class="w-full h-[220px] lg:h-[300px]">
     <div :class="[{ [data.theme]: true }]" class="w-full h-full group flex flex-col items-center justify-center border overflow-hidden rounded-lg border-[#cccccc] dark:border-[#303030] text-center backdrop-blur-sm dark:bg-[#6C6C6C] bg-[#bdbdbd] bg-opacity-20 dark:bg-opacity-10 relative p-2 md:p-4">
       <div class="shadow-1 shadow group-hover:opacity-100" />
       <div class="shadow-2 shadow group-hover:opacity-100" />
@@ -231,6 +231,39 @@ defineProps<CardProps>()
   }
   .shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(168, 255, 139, 0.10) 0%, rgba(179, 255, 153, 0.00) 100%);
+    left: -108px;
+    top: -80px;
+  }
+}
+
+.dark .red {
+  .title {
+    color: #FF7777;
+  }
+
+  .card-text {
+    color: #967474;
+  }
+
+  .coming-soon {
+    border: 1px solid #3F3831;
+    color: #9D8569;
+  }
+
+  .shadow-1 {
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
+    right: -61px;
+    top: -60px;
+  }
+
+  .shadow-2 {
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
+    right: 20px;
+    bottom: -100px;
+  }
+
+  .shadow-3 {
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
     left: -108px;
     top: -80px;
   }

@@ -46,5 +46,6 @@ pnpm run preview
 - [Vue](https://vuejs.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Radix Primitives](https://radix-ui.com/primitives/docs/primitives)
+- [Vue Email](https://github.com/Dave136/vue-email)
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.

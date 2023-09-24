@@ -3,21 +3,14 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 
-import Typography from '@tailwindcss/typography'
-
 import { blackA, cyan, grass, green, indigo, mauve, purple, red, teal, violet } from '@radix-ui/colors'
 import { blackOA, codGray, grayOA, oku } from './colors'
 
 export default <Partial<Config>>{
-  darkMode: 'class',
-  content: [
-    './components/**/*.vue',
-  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'Inter fallback', ...defaultTheme.fontFamily.sans],
-        // sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         blackOA: {
@@ -42,18 +35,35 @@ export default <Partial<Config>>{
         ...cyan,
         ...indigo,
         ...purple,
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            pre: {
-              backgroundColor: 'transparent',
-              margin: 0,
-              padding: 0,
-            },
-          },
+        green: {
+          50: '#EFFDF5',
+          100: '#D9FBE8',
+          200: '#B3F5D1',
+          300: '#75EDAE',
+          400: '#00DC82',
+          500: '#00C16A',
+          600: '#00A155',
+          700: '#007F45',
+          800: '#016538',
+          900: '#0A5331',
+          950: '#052E16',
         },
+        slate: {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+          950: '#020420',
+        },
+      },
+      gridRow: {
+        'span-8': 'span 8 / span 8',
       },
       keyframes: {
         overlayShow: {
@@ -89,7 +99,7 @@ export default <Partial<Config>>{
           to: { transform: 'translateX(0)' },
         },
         swipeOut: {
-          from: { transform: 'translateX(var(--radix-toast-swipe-end-x))' },
+          from: { transform: 'translateX(var(--oku-toast-swipe-end-x))' },
           to: { transform: 'translateX(calc(100% + var(--viewport-padding)))' },
         },
       },
@@ -111,6 +121,5 @@ export default <Partial<Config>>{
       // Select the icon collections you want to use
       collections: getIconCollections(['fa-brands', 'heroicons', 'ph', 'ic']),
     }),
-    Typography,
   ],
 }

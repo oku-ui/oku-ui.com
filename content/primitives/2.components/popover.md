@@ -1,30 +1,27 @@
 ---
 title: Popover
 description: Displays rich content in a portal, triggered by a button.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuPopover
 image: 'https://oku-ui.com/og/oku-popover.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/popover
+    title: OkuPopover
 ---
-
-# Popover
-Displays rich content in a portal, triggered by a button.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuPopover/index.vue"}
+:ContentPreview{componentSrc="OkuPopover" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuPopover/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuPopover" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuPopover/radix.vue" lang="vue"} -->
 ::
@@ -46,9 +43,21 @@ Displays rich content in a portal, triggered by a button.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/popover
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/popover
 ```
+
+```bash [yarn]
+yarn add @oku-ui/popover
+```
+
+```bash [npm]
+npm install @oku-ui/popover
+```
+
+::
 
 ## Anatomy
 

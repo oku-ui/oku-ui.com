@@ -1,29 +1,22 @@
 ---
 title: Toast
 description: Renders an accessible label associated with controls.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuToast
 image: 'https://oku-ui.com/og/oku-toast.jpg'
 ---
-
-# Toast
-Renders an accessible label associated with controls.
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToast/index.vue"}
+:ContentPreview{componentSrc="OkuToast" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuToast/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuToast" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuToast/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +34,21 @@ Renders an accessible label associated with controls.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/label
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/toast
 ```
+
+```bash [yarn]
+yarn add @oku-ui/toast
+```
+
+```bash [npm]
+npm install @oku-ui/toast
+```
+
+::
 
 ## Anatomy
 

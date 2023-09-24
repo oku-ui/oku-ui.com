@@ -1,30 +1,27 @@
 ---
 title: Avatar
 description: An image element with a fallback for representing the user.
-datePublished: 2022-12-07
-dateModified: 2022-12-07
-readingTime: 3
-version: 0.4.0
 componentName: OkuAvatar
 image: 'https://oku-ui.com/og/oku-avatar.jpg'
+links:
+  - label: NPM - 0.4.0
+    icon: i-simple-icons-npm
+    to: https://www.npmjs.com/package/@oku-ui/avatar
+    title: OkuAvatar
 ---
-
-# Avatar
-An image element with a fallback for representing the user.
-
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/index.vue"}
+:ContentPreview{componentSrc="OkuAvatar" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/index.vue" lang="vue"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{src="/primitives/OkuAvatar/radix.vue" design="radix"}
+:ContentPreview{componentSrc="OkuAvatar/radix" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/radix.vue" lang="vue"} -->
 ::
@@ -41,9 +38,21 @@ An image element with a fallback for representing the user.
 
 Install the component from your command line.
 
-```bash
-pnpm install @oku-ui/avatar
+::code-group
+
+```sh [pnpm]
+pnpm i @oku-ui/avatar
 ```
+
+```bash [yarn]
+yarn add @oku-ui/avatar
+```
+
+```bash [npm]
+npm install @oku-ui/avatar
+```
+
+::
 
 ## Anatomy
 
