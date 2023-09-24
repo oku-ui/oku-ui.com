@@ -20,6 +20,15 @@ const data = [
     buttonText: 'See Docs',
   },
   {
+    to: 'izlek',
+    title: 'izlek',
+    description: 'Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.',
+    active: true,
+    theme: 'red',
+    image: 'command',
+    buttonText: 'See Docs',
+  },
+  {
     to: '#',
     title: 'Notification',
     description: 'in the future.',
@@ -44,9 +53,7 @@ const data = [
       Oku focuses on the smallest detail.
     </h1>
     <div class="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 max-w-[1200px] mt-12">
-      <div v-for="item in data" :key="item.title" class="!aspect-square w-full flex items-center justify-center">
-        <ThemeProductCard :data="{ ...item }" />
-      </div>
+      <ThemeProductCard :data="item" v-for="item in data" :key="item.title" />
     </div>
     <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
       <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
