@@ -4,7 +4,7 @@ description: A set of layered sections of content—known as tab panels—that a
 componentName: OkuTabs
 image: 'https://oku-ui.com/og/oku-tabs.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/tabs
     title: OkuTabs

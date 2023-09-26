@@ -4,7 +4,7 @@ description: An image element with a fallback for representing the user.
 componentName: OkuAvatar
 image: 'https://oku-ui.com/og/oku-avatar.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/avatar
     title: OkuAvatar
@@ -21,7 +21,7 @@ links:
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAvatar/radix" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAvatar" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/radix.vue" lang="vue"} -->
 ::

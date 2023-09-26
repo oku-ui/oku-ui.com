@@ -4,7 +4,7 @@ description: A window overlaid on either the primary window or another dialog wi
 componentName: OkuDialog
 image: 'https://oku-ui.com/og/oku-dialog.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/dialog
     title: OkuDialog

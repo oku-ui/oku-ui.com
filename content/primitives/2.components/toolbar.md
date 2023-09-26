@@ -4,7 +4,7 @@ description: A container for grouping a set of controls, such as buttons, toggle
 componentName: OkuToolbar
 image: 'https://oku-ui.com/og/oku-toolbar.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/toolbar
     title: OkuToolbar

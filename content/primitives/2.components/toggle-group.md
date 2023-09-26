@@ -4,7 +4,7 @@ description: A set of two-state buttons that can be toggled on or off.
 componentName: OkuToggleGroup
 image: 'https://oku-ui.com/og/oku-toggle-group.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/toggle-group
     title: OkuToggleGroup

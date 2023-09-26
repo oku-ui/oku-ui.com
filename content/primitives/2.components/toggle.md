@@ -4,7 +4,7 @@ description: A two-state button that can be either on or off.
 componentName: OkuToggle
 image: 'https://oku-ui.com/og/oku-toggle.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/toggle
     title: OkuToggle

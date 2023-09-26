@@ -12,6 +12,8 @@ const links = inject<Ref<any[]>>('links')
   <UFooter :links="links" :ui="{ bottom: { container: 'lg:py-4' } }">
     <template #left>
       <span class="text-sm"> Published under <NuxtLink to="https://github.com/oku-ui/primitives" target="_blank" class="underline"> MIT License </NuxtLink> </span>
+    
+      <NuxtLink to="https://ui.nuxt.com"  class="underline">   Built with Nuxt UI </NuxtLink>
     </template>
 
     <template #right>
