@@ -18,6 +18,10 @@ const data = [
     value: 'v-3'
   },
 ]
+
+defineOptions({
+  inheritAttrs: false,
+})
 </script>
 
 <template>
@@ -32,7 +36,8 @@ const data = [
       <OkuAccordionHeader class="flex">
         <OkuAccordionTrigger class="text-grayOA-950 dark:text-white shadow-grayOA-300 hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between bg-white dark:bg-grayOA-950 px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none">
           {{item.title}}
-          <div>ikon</div>
+         <i class="i-ic-baseline-keyboard-arrow-down h-3.5 w-3.5 !text-black dark:!text-white" />
+
         </OkuAccordionTrigger>
       </OkuAccordionHeader>
       <OkuAccordionContent 
@@ -44,4 +49,4 @@ const data = [
     </OkuAccordionItem>
   </template>
   </OkuAccordion>
-  </template>
+</template>

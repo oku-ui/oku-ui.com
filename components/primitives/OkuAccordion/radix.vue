@@ -32,8 +32,8 @@ const data = [
           <OkuAccordionTrigger
             class="text-violet11 shadow-mauve6 hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none">
             {{ item.title }}
-            <div>ikon</div>
-          </OkuAccordionTrigger>
+           <i class="i-ic-baseline-keyboard-arrow-down h-3.5 w-3.5 !text-black dark:!text-white" />
+            </OkuAccordionTrigger>
         </OkuAccordionHeader>
         <OkuAccordionContent
           class="text-mauve11 bg-mauve2 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-[15px]">
