@@ -4,10 +4,12 @@ description: A vertically stacked set of interactive headings that each reveal a
 componentName: OkuAccordion
 image: 'https://oku-ui.com/og/oku-accordion.png'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/accordion
     title: OkuAccordion
+navigation:
+  badge: New
 ---
 
 ::ContentDesignTabs

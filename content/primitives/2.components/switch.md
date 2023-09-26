@@ -4,7 +4,7 @@ description: A control that allows the user to toggle between checked and not ch
 componentName: OkuSwitch
 image: 'https://oku-ui.com/og/oku-switch.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/switch
     title: OkuSwitch

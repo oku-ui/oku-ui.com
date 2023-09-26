@@ -4,10 +4,12 @@ description: A modal dialog that interrupts the user with important content and 
 componentName: OkuAlertDialog
 image: 'https://oku-ui.com/og/oku-alert-dialog.png'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/alert-dialog
     title: OkuAlertDialog
+navigation:
+  badge: New
 ---
 
 ::ContentDesignTabs

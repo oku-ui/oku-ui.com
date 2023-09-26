@@ -4,7 +4,7 @@ description: An input where the user selects a value from within a given range.
 componentName: OkuSlider
 image: 'https://oku-ui.com/og/oku-slider.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/slider
     title: OkuSlider

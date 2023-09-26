@@ -4,7 +4,7 @@ description: For sighted users to preview content available behind a link.
 componentName: OkuHoverCard
 image: 'https://oku-ui.com/og/oku-hover-card.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/hover-card
     title: OkuHoverCard

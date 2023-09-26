@@ -4,7 +4,7 @@ description: Displays an indicator showing the completion progress of a task, ty
 componentName: OkuProgress
 image: 'https://oku-ui.com/og/oku-progress.jpg'
 links:
-  - label: NPM - 0.4.0
+  - label: NPM - 0.5.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/progress
     title: OkuProgress
