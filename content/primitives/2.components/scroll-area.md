@@ -1,7 +1,7 @@
 ---
 title: ScrollArea
 description: A vertically stacked set of interactive headings that each reveal an associated section of content.
-componentName: OkuAspectRatio
+componentName: OkuScrollArea
 image: 'https://oku-ui.com/og/oku-scroll-area.png'
 links:
   - label: NPM - 0.4.0
@@ -14,18 +14,18 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuScrollArea" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuScrollArea/index.vue" lang="vue"} -->
 #tailwind
-<!-- Autodocs{src="/primitives/OkuAspectRatio/tailwind.js" lang="ts"} -->
+<!-- Autodocs{src="/primitives/OkuScrollArea/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuScrollArea" design="radix" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuScrollArea/radix.vue" lang="vue"} -->
 ::
 ::
 

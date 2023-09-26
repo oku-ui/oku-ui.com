@@ -1,31 +1,31 @@
 ---
 title: Accordion
 description: A vertically stacked set of interactive headings that each reveal an associated section of content.
-componentName: OkuAspectRatio
+componentName: OkuAccordion
 image: 'https://oku-ui.com/og/oku-accordion.png'
 links:
   - label: NPM - 0.4.0
     icon: i-simple-icons-npm
     to: https://www.npmjs.com/package/@oku-ui/accordion
-    title: OkuAspectRatio
+    title: OkuAccordion
 ---
 
 ::ContentDesignTabs
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAccordion" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuAccordion/index.vue" lang="vue"} -->
 #tailwind
-<!-- Autodocs{src="/primitives/OkuAspectRatio/tailwind.js" lang="ts"} -->
+<!-- Autodocs{src="/primitives/OkuAccordion/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAccordion" design="radix" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuAccordion/radix.vue" lang="vue"} -->
 ::
 ::
 

@@ -1,7 +1,7 @@
 ---
 title: Alert Dialog
 description: A modal dialog that interrupts the user with important content and expects a response.
-componentName: OkuAspectRatio
+componentName: OkuAlertDialog
 image: 'https://oku-ui.com/og/oku-alert-dialog.png'
 links:
   - label: NPM - 0.4.0
@@ -14,18 +14,18 @@ links:
 #oku
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAlertDialog" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuAlertDialog/index.vue" lang="vue"} -->
 #tailwind
-<!-- Autodocs{src="/primitives/OkuAspectRatio/tailwind.js" lang="ts"} -->
+<!-- Autodocs{src="/primitives/OkuAlertDialog/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAspectRatio" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAlertDialog" design="radix" lang="vue" project="primitives"}
 #vue
-<!-- Autodocs{src="/primitives/OkuAspectRatio/radix.vue" lang="vue"} -->
+<!-- Autodocs{src="/primitives/OkuAlertDialog/radix.vue" lang="vue"} -->
 ::
 ::
 
