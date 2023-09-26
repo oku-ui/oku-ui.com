@@ -21,7 +21,7 @@ links:
 #radix
 ::ContentTabs
 #preview
-:ContentPreview{componentSrc="OkuAvatar/radix" design="radix" lang="vue" project="primitives"}
+:ContentPreview{componentSrc="OkuAvatar" design="radix" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAvatar/radix.vue" lang="vue"} -->
 ::
