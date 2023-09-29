@@ -6,7 +6,7 @@ import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import { blackA, cyan, grass, green, indigo, mauve, purple, red, teal, violet } from '@radix-ui/colors'
 import { blackOA, codGray, grayOA, oku } from './colors'
 
-export default <Partial<Config>>{
+export default <Partial<any>>{
   theme: {
     extend: {
       fontFamily: {
@@ -102,8 +102,18 @@ export default <Partial<Config>>{
           from: { transform: 'translateX(var(--oku-toast-swipe-end-x))' },
           to: { transform: 'translateX(calc(100% + var(--viewport-padding)))' },
         },
+        slideDown: {
+          from: { height: 0 },
+          to: { height: 'var(--oku-accordion-content-height)' },
+        },
+        slideUp: {
+          from: { height: 'var(--oku-accordion-content-height)' },
+          to: { height: 0 },
+        }
       },
       animation: {
+        slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
         overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         contentShow: 'contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',

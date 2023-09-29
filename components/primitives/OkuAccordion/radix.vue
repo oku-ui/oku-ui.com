@@ -22,7 +22,7 @@ const data = [
 
 <template>
   <OkuAccordion
-    class="bg-white dark:bg-grayOA-950 w-[300px] rounded-md shadow-[0_2px_10px] shadow-grayOA-200 dark:shadow-grayOA-900"
+    class="bg-mauve6 w-[300px] rounded-md shadow-[0_2px_10px] shadow-black/5"
     type="single" defaultValue="item-1" collapsible>
     <template v-for="(item, index) in data" :key="index">
       <OkuAccordionItem
@@ -30,9 +30,9 @@ const data = [
         :value="item.value">
         <OkuAccordionHeader class="flex">
           <OkuAccordionTrigger
-            class="text-violet11 shadow-mauve6 hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none">
+            class="text-violet11 group shadow-mauve6 hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none">
             {{ item.title }}
-           <i class="i-ic-baseline-keyboard-arrow-down h-3.5 w-3.5 !text-black dark:!text-white" />
+           <i class="i-ic-baseline-keyboard-arrow-down h-3.5 w-3.5 text-violet10 ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180" />
             </OkuAccordionTrigger>
         </OkuAccordionHeader>
         <OkuAccordionContent
