@@ -13,7 +13,7 @@ import { OkuHoverCard, OkuHoverCardArrow, OkuHoverCardContent, OkuHoverCardPorta
           rel="noreferrer noopener"
         >
           <img
-            class="block h-[45px] w-[45px] rounded-full"
+            class="block !h-[45px] w-[45px] rounded-full"
             src="/mini-oku-logo.jpg"
             alt="Oku UI"
           >
@@ -63,7 +63,7 @@ import { OkuHoverCard, OkuHoverCardArrow, OkuHoverCardContent, OkuHoverCardPorta
               </div>
             </div>
           </div>
-          <OkuHoverCardArrow class="fill-white" />
+          <OkuHoverCardArrow class="fill-white dark:fill-codGray-950" />
         </OkuHoverCardContent>
       </OkuHoverCardPortal>
     </OkuHoverCard>

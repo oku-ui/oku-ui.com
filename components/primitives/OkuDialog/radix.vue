@@ -33,8 +33,8 @@ import {
           </label>
           <input
             id="name"
-            class="text-violet11 shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
-            default-value="Pedro Duarte"
+            class="text-violet11 bg-white shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
+            value="Pedro Duarte"
           >
         </fieldset>
         <fieldset class="mb-[15px] flex items-center gap-5">
@@ -43,8 +43,8 @@ import {
           </label>
           <input
             id="username"
-            class="text-violet11 shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
-            default-value="@peduarte"
+            class="text-violet11 bg-white shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
+            value="@peduarte"
           >
         </fieldset>
         <div class="mt-[25px] flex justify-end">
