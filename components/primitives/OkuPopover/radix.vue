@@ -27,7 +27,7 @@ import { OkuPopover, OkuPopoverArrow, OkuPopoverClose, OkuPopoverContent, OkuPop
             </label>
             <input
               id="width"
-              class="w-full inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
+              class="w-full bg-white inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
               value="100%"
             >
           </fieldset>
@@ -37,7 +37,7 @@ import { OkuPopover, OkuPopoverArrow, OkuPopoverClose, OkuPopoverContent, OkuPop
             </label>
             <input
               id="maxWidth"
-              class="w-full inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
+              class="w-full bg-white inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
               value="300px"
             >
           </fieldset>
@@ -47,7 +47,7 @@ import { OkuPopover, OkuPopoverArrow, OkuPopoverClose, OkuPopoverContent, OkuPop
             </label>
             <input
               id="height"
-              class="w-full inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
+              class="w-full bg-white inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
               value="25px"
             >
           </fieldset>
@@ -57,7 +57,7 @@ import { OkuPopover, OkuPopoverArrow, OkuPopoverClose, OkuPopoverContent, OkuPop
             </label>
             <input
               id="maxHeight"
-              class="w-full inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
+              class="w-full bg-white inline-flex items-center justify-center flex-1 rounded px-2.5 text-[13px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 h-[25px] focus:shadow-[0_0_0_2px] focus:shadow-violet8 outline-none"
               value="none"
             >
           </fieldset>
