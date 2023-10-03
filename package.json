@@ -1,9 +1,9 @@
 {
   "name": "oku-docs",
+  "type": "module",
   "version": "0.3.0",
   "private": true,
   "packageManager": "pnpm@8.7.6",
-  "type": "module",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",

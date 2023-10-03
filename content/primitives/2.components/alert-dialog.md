@@ -70,14 +70,14 @@ Import the component.
 <script setup lang="ts">
 import {
   OkuAlertDialog,
-  OkuAlertDialogTrigger,
-  OkuAlertDialogPortal,
-  OkuAlertDialogOverlay,
-  OkuAlertDialogContent,
-  OkuAlertDialogTitle,
-  OkuAlertDialogDescription,
-  OkuAlertDialogCancel,
   OkuAlertDialogAction,
+  OkuAlertDialogCancel,
+  OkuAlertDialogContent,
+  OkuAlertDialogDescription,
+  OkuAlertDialogOverlay,
+  OkuAlertDialogPortal,
+  OkuAlertDialogTitle,
+  OkuAlertDialogTrigger,
 } from '@oku-ui/alert-dialog'
 </script>
 

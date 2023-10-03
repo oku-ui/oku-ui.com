@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import { OkuScrollArea, OkuScrollAreaViewport, OkuScrollAreaScrollbar,OkuScrollAreaThumb, OkuScrollAreaCorner } from '@oku-ui/scroll-area'
+import { OkuScrollArea, OkuScrollAreaCorner, OkuScrollAreaScrollbar, OkuScrollAreaThumb, OkuScrollAreaViewport } from '@oku-ui/scroll-area'
 
-const TAGS = Array.from({length: 50}).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
+const TAGS = Array.from({ length: 50 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`)
 </script>
 
 <template>
- <OkuScrollArea class="w-[200px] h-[225px] rounded overflow-hidden shadow-[0_2px_10px] shadow-grayOA-200 bg-white dark:bg-grayOA-950 dark:shadow-grayOA-900">
+  <OkuScrollArea class="w-[200px] h-[225px] rounded overflow-hidden shadow-[0_2px_10px] shadow-grayOA-200 bg-white dark:bg-grayOA-950 dark:shadow-grayOA-900">
     <OkuScrollAreaViewport class="w-full h-full rounded">
       <div class="py-[15px] px-5">
-        <div class="text-grayOA-950 dark:text-white text-[15px] leading-[18px] font-medium">Tags</div>
-        <template v-for="(tag) in TAGS" :key="index">
+        <div class="text-grayOA-950 dark:text-white text-[15px] leading-[18px] font-medium">
+          Tags
+        </div>
+        <template v-for="(tag, index) in TAGS" :key="index">
           <div
             class="text-grayOA-700 dark:text-grayOA-200 text-[13px] leading-[18px] mt-2.5 pt-2.5 border-t border-t-grayOA-200 dark:border-t-grayOA-800"
           >
-            {{tag}}
+            {{ tag }}
           </div>
         </template>
       </div>

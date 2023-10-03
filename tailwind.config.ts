@@ -1,4 +1,3 @@
-import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
@@ -109,7 +108,7 @@ export default <Partial<any>>{
         slideUp: {
           from: { height: 'var(--oku-accordion-content-height)' },
           to: { height: 0 },
-        }
+        },
       },
       animation: {
         slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',

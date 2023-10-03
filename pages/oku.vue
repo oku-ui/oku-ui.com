@@ -3,7 +3,7 @@ const dark = useColorMode()
 
 const isDark = ref('dark')
 
-watch(dark, (val) => {
+watch(dark, () => {
   isDark.value = dark.value
 })
 

@@ -6,7 +6,6 @@ const { data: primitives } = await useAsyncData('primitives-components', () => q
   'description',
   'componentName',
 ]).sort({ to: -1 }).find())
-const useGlobal = useGlobalStore()
 
 onMounted(() => {
   localStorage.getItem('oku-design')

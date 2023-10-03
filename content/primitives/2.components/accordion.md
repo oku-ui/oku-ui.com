@@ -70,15 +70,15 @@ Import the component.
 <script setup lang="ts">
 import {
   OkuAccordion,
-  OkuAccordionItem,
+  OkuAccordionContent,
   OkuAccordionHeader,
-  OkuAccordionTrigger,
-  OkuAccordionContent
+  OkuAccordionItem,
+  OkuAccordionTrigger
 } from '@oku-ui/accordion'
 </script>
 
 <template>
-   <OkuAccordion>
+  <OkuAccordion>
     <OkuAccordionItem>
       <OkuAccordionHeader>
         <OkuAccordionTrigger />

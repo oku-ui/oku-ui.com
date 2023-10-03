@@ -67,11 +67,11 @@ Import the component.
 <script setup lang="ts">
 import {
   OkuScrollArea,
-  OkuScrollAreaViewport,
+  OkuScrollAreaCorner,
   OkuScrollAreaScrollbar,
   OkuScrollAreaThumb,
-  OkuScrollAreaCorner,
-} from '@oku-ui/scroll-area';
+  OkuScrollAreaViewport,
+} from '@oku-ui/scroll-area'
 </script>
 
 <template>

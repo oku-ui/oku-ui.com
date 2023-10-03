@@ -1,10 +1,7 @@
-import { createResolver } from '@nuxt/kit'
 import pkg from './package.json'
 
-const { resolve } = createResolver(import.meta.url)
-
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui-pro'],
+
   // devtools: { enabled: true },
   modules: [
     '@nuxt/content',
@@ -19,13 +16,17 @@ export default defineNuxtConfig({
     'v-plausible',
   ],
 
+  imports: {
+    dirs: ['stores'],
+  },
+
+  extends: [
+    '@nuxt/ui-pro',
+  ],
+
   primitives: {
     // All components install
     installComponents: true,
-  },
-
-  imports: {
-    dirs: ['stores'],
   },
 
   runtimeConfig: {

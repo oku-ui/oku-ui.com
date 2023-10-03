@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialogContent,OkuAlertDialogDescription,OkuAlertDialogOverlay,OkuAlertDialogPortal,OkuAlertDialogTitle,OkuAlertDialogTrigger} from '@oku-ui/alert-dialog'
+import { OkuAlertDialog, OkuAlertDialogAction, OkuAlertDialogCancel, OkuAlertDialogContent, OkuAlertDialogDescription, OkuAlertDialogOverlay, OkuAlertDialogPortal, OkuAlertDialogTitle, OkuAlertDialogTrigger } from '@oku-ui/alert-dialog'
 </script>
 
 <template>
-   <OkuAlertDialog>
-    <OkuAlertDialogTrigger asChild>
+  <OkuAlertDialog>
+    <OkuAlertDialogTrigger as-child>
       <button class="text-grayOA-950 dark:text-white hover:bg-grayOA-50 dark:hover:bg-grayOA-900 dark:bg-grayOA-950 shadow-grayOA-200 dark:shadow-grayOA-900 inline-flex h-[35px] items-center justify-center rounded-[4px] bg-white px-[15px] font-medium leading-none shadow-[0_2px_10px] outline-none focus:shadow-[0_0_0_2px] focus:shadow-black dark:focus:shadow-grayOA-100">
         Delete account
       </button>
@@ -20,12 +20,12 @@ import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialog
           data from our servers.
         </OkuAlertDialogDescription>
         <div class="flex justify-end gap-[25px]">
-          <OkuAlertDialogCancel asChild>
+          <OkuAlertDialogCancel as-child>
             <button class="text-grayOA-900 dark:text-grayOA-100 dark:bg-grayOA-900 bg-grayOA-100 hover:bg-grayOA-50 focus:shadow-grayOA-800 dark:focus:shadow-grayOA-400 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
               Cancel
             </button>
           </OkuAlertDialogCancel>
-          <OkuAlertDialogAction asChild>
+          <OkuAlertDialogAction as-child>
             <button class="text-red-600 dark:text-red-300 dark:bg-red-400/20 bg-red-100 hover:bg-red-100/80 dark:hover:bg-red-400/30 focus:shadow-red-400 dark:focus:shadow-red-300 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
               Yes, delete account
             </button>
@@ -33,4 +33,5 @@ import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialog
         </div>
       </OkuAlertDialogContent>
     </OkuAlertDialogPortal>
-  </OkuAlertDialog></template>
+  </OkuAlertDialog>
+</template>

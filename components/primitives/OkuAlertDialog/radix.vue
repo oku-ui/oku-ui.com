@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialogContent,OkuAlertDialogDescription,OkuAlertDialogOverlay,OkuAlertDialogPortal,OkuAlertDialogTitle,OkuAlertDialogTrigger} from '@oku-ui/alert-dialog'
+import { OkuAlertDialog, OkuAlertDialogAction, OkuAlertDialogCancel, OkuAlertDialogContent, OkuAlertDialogDescription, OkuAlertDialogOverlay, OkuAlertDialogPortal, OkuAlertDialogTitle, OkuAlertDialogTrigger } from '@oku-ui/alert-dialog'
 </script>
 
 <template>
-   <OkuAlertDialog>
-    <OkuAlertDialogTrigger asChild>
+  <OkuAlertDialog>
+    <OkuAlertDialogTrigger as-child>
       <button class="text-violet11 hover:bg-mauve3 shadow-blackA7 inline-flex h-[35px] items-center justify-center rounded-[4px] bg-white px-[15px] font-medium leading-none shadow-[0_2px_10px] outline-none focus:shadow-[0_0_0_2px] focus:shadow-black">
         Delete account
       </button>
@@ -20,12 +20,12 @@ import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialog
           data from our servers.
         </OkuAlertDialogDescription>
         <div class="flex justify-end gap-[25px]">
-          <OkuAlertDialogCancel asChild>
+          <OkuAlertDialogCancel as-child>
             <button class="text-mauve11 bg-mauve4 hover:bg-mauve5 focus:shadow-mauve7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
               Cancel
             </button>
           </OkuAlertDialogCancel>
-          <OkuAlertDialogAction asChild>
+          <OkuAlertDialogAction as-child>
             <button class="text-red11 bg-red4 hover:bg-red5 focus:shadow-red7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
               Yes, delete account
             </button>
@@ -33,4 +33,5 @@ import { OkuAlertDialog,OkuAlertDialogAction,OkuAlertDialogCancel,OkuAlertDialog
         </div>
       </OkuAlertDialogContent>
     </OkuAlertDialogPortal>
-  </OkuAlertDialog></template>
+  </OkuAlertDialog>
+</template>
