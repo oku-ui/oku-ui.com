@@ -34,8 +34,10 @@ useSeoMeta({
       </template>
     </ULandingHero>
 
-      <ULandingSection>
-      <template #title> Powerful, flexible, and extensible <br /><span class="text-primary-400"> Nuxt Application.</span> </template>
+    <ULandingSection>
+      <template #title>
+        Powerful, flexible, and extensible <br><span class="text-primary-400"> Nuxt Application.</span>
+      </template>
       <UPageGrid>
         <ULandingCard
           to="/getting-started/ssr"
@@ -76,7 +78,6 @@ useSeoMeta({
         />
       </UPageGrid>
     </ULandingSection>
-
   </div>
 </template>
 
