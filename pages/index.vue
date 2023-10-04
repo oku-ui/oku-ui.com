@@ -25,7 +25,7 @@ const data = [
     description: 'Full Stack Nuxt Application. It contains the necessary toolkits for a software developer and a fast, clean, tested toolkit.',
     active: true,
     theme: 'orange',
-    image: 'command',
+    image: 'pergel',
     buttonText: 'See Docs',
   },
   {
