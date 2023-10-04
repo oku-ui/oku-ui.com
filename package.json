@@ -45,15 +45,23 @@
     "@vueuse/nuxt": "^10.4.1",
     "eslint": "8.50.0",
     "eslint-plugin-antfu": "1.0.0-beta.10",
+    "lint-staged": "^14.0.1",
     "lodash-es": "^4.17.21",
     "nuxt": "^3.7.4",
     "nuxt-og-image": "^2.0.28",
     "sass": "^1.68.0",
+    "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "v-plausible": "^1.2.0"
   },
   "resolutions": {
     "h3": "^1.8.1",
     "vue": "^3.3.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
