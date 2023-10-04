@@ -18,9 +18,9 @@ useSeoMeta({
     <span class="gradient" />
 
     <ULandingHero orientation="horizontal" class="!py-18 md:py-0 md:!pt-32 relative" :ui="{ container: 'flex lg:gap-4' }">
-      <div class="hidden lg:block relative w-[500px]">
+      <!-- <div class="hidden lg:block relative w-[500px]">
         <Illustration class="h-[480px]" />
-      </div>
+      </div> -->
       <template #title>
         <span class="text-primary-400">Pergel</span> is a full stack Nuxt application.
       </template>
