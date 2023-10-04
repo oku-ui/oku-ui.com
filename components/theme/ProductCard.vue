@@ -22,8 +22,8 @@ defineProps<CardProps>()
       <div class="oku-shadow-3 oku-shadow group-hover:opacity-100" />
       <img class="absolute -left-6 top-1/2 -translate-y-1/2 z-10" :src="`${data.image}.svg`" alt="oku" width="160" height="160">
       <div class="flex items-center justify-between flex-col relative w-full h-full">
-       <div class="mt-10">
-         <div class="absolute bottom-16 lg:bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
+        <div class="mt-10">
+          <div class="absolute bottom-16 lg:bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
             COMING SOON
           </div>
           <h2 class="text-lg md:text-2xl font-medium title">
@@ -33,7 +33,7 @@ defineProps<CardProps>()
           <div class="text-base md:text-base card-text">
             {{ data.description }}
           </div>
-       </div>
+        </div>
         <div :class="{ '!hidden': !data.buttonText }" class="card-button px-3 py-1 flex items-center justify-center gap-1 rounded-md border">
           {{ data.buttonText }}
           <span class="i-heroicons-arrow-small-right w-4 h-4 transition-all duration-300 group-hover:translate-x-1" />
