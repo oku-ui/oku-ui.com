@@ -76,11 +76,11 @@ useSeoMeta({
           description="Nuxt 3 layer structures and components"
         />
         <ULandingCard
-            to="/components/tailwind"
-            title="...more"
-            icon="i-ph-palette-duotone"
-            description="Much more in the future"
-          />
+          to="/components/tailwind"
+          title="...more"
+          icon="i-ph-palette-duotone"
+          description="Much more in the future"
+        />
       </UPageGrid>
     </ULandingSection>
   </div>
