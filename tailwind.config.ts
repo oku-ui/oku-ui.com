@@ -128,7 +128,7 @@ export default <Partial<any>>{
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(['fa-brands', 'heroicons', 'ph', 'ic']),
+      collections: getIconCollections(['fa-brands', 'heroicons', 'ph', 'ic', 'logos']),
     }),
   ],
 }

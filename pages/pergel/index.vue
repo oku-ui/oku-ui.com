@@ -28,7 +28,7 @@ useSeoMeta({
         It contains the necessary toolkits for a software developer and a fast, clean, tested toolkit. Authentication, authorization, user management, role management, and more.
       </template>
       <template #links>
-        <UButton to="https://github.com/oku-ui/izlek" icon="i-ph-rocket-launch-duotone" size="xl">
+        <UButton to="/pergel/getting-started" icon="i-ph-rocket-launch-duotone" size="xl">
           Read the Docs
         </UButton>
       </template>
@@ -41,41 +41,46 @@ useSeoMeta({
       <UPageGrid>
         <ULandingCard
           to="/getting-started/ssr"
-          title="SSR Support"
-          icon="i-solar-server-2-bold-duotone"
-          description="Streamline the process of rendering and dispatching emails directly from your server."
+          title="System Setup"
+          icon="i-ph-computer-tower-duotone"
+          description="Automatic installation of required software on your computer"
         />
         <ULandingCard
           to="/getting-started/i18n"
-          title="i18n Support"
+          title="Auth"
           icon="i-solar-globus-bold-duotone"
-          description="Sprinkle some global flavor onto your vue email templates with our new i18n feature!"
+          description="Authentication and authorization system"
         />
         <ULandingCard
           to="/components/html"
-          title="15+ Components"
-          icon="i-ph-plug-duotone"
-          description="Simplify email creation by providing ready-made components, eliminating the need for table-based layouts and outdated markup."
+          title="Mobile App"
+          icon="i-solar-smartphone-line-duotone"
+          description="Ionic + Capacitor mobile application"
         />
         <ULandingCard
           to="/integrations/mailersend"
           title="Integrations"
-          icon="i-solar-bolt-line-duotone"
-          description="Use your favorite email provider with VueEmail. Any Node.js email provider can be used with VueEmail."
+          icon="i-solar-plug-line-duotone"
+          description="Simple institution cli service with important libraries for the project"
         />
         <ULandingCard
           to="/getting-started/devtools"
-          title="Nuxt Devtools"
-          icon="i-ph-magic-wand-duotone"
-          description="Inspect your email templates and send test emails from your app directly."
+          title="Web App"
+          icon="i-ph-browser-duotone"
+          description="Website with initial settings prepared."
         />
         <ULandingCard
           to="/components/tailwind"
           title="Tailwind CSS"
-          icon="i-solar-palette-round-line-duotone"
-          description="
-      Deliver visually stunning email templates with the incredible power of Tailwind CSS."
+          icon="i-ph-palette-duotone"
+          description="Nuxt 3 layer structures and components"
         />
+        <ULandingCard
+            to="/components/tailwind"
+            title="...more"
+            icon="i-ph-palette-duotone"
+            description="Much more in the future"
+          />
       </UPageGrid>
     </ULandingSection>
   </div>
@@ -87,7 +92,7 @@ useSeoMeta({
   top: 25vh;
   width: 100%;
   height: 30vh;
-  background: radial-gradient(50% 50% at 50% 50%, #03445e 0%, rgba(0, 220, 130, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #eec264 0%, rgba(0, 220, 130, 0) 100%);
   filter: blur(180px);
   opacity: 0.6;
   z-index: -1;

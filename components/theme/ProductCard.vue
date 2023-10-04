@@ -17,9 +17,9 @@ defineProps<CardProps>()
 <template>
   <NuxtLink :class="{ 'opacity-50 !pointer-events-none cursor-default': !data.active }" :to="data.to" class="w-full h-[220px] lg:h-[300px]">
     <div :class="[{ [data.theme]: true }]" class="w-full h-full group flex flex-col items-center justify-center border overflow-hidden rounded-lg border-[#cccccc] dark:border-[#303030] text-center backdrop-blur-sm dark:bg-[#6C6C6C] bg-[#bdbdbd] bg-opacity-20 dark:bg-opacity-10 relative p-2 md:p-4">
-      <div class="shadow-1 shadow group-hover:opacity-100" />
-      <div class="shadow-2 shadow group-hover:opacity-100" />
-      <div class="shadow-3 shadow group-hover:opacity-100" />
+      <div class="oku-shadow-1 oku-shadow group-hover:opacity-100" />
+      <div class="oku-shadow-2 oku-shadow group-hover:opacity-100" />
+      <div class="oku-shadow-3 oku-shadow group-hover:opacity-100" />
       <img class="absolute -left-6 top-1/2 -translate-y-1/2 z-10" :src="`${data.image}.svg`" alt="oku" width="160" height="160">
       <div class="flex items-center flex-col gap-4 relative w-full">
         <div class="absolute bottom-16 lg:bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
@@ -42,7 +42,7 @@ defineProps<CardProps>()
 </template>
 
 <style lang="postcss">
-.shadow {
+.oku-shadow {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -79,17 +79,17 @@ defineProps<CardProps>()
     color: #DA9C54;
   }
 
-  .shadow-1 {
+  .oku-shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 232, 139, 0.1) 0%, rgba(255, 235, 153, 0.00) 100%);
     right: -61px;
     top: -60px;
   }
-  .shadow-2 {
+  .oku-shadow-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 213, 139, 0.1) 0%, rgba(187, 153, 255, 0.00) 100%, rgba(255, 218, 153, 0.00) 100%);
     right: 20px;
     bottom: -100px;
   }
-  .shadow-3 {
+  .oku-shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 193, 139, 0.1) 0%, rgba(255, 201, 153, 0.00) 100%);
     left: -108px;
     top: -80px;
@@ -126,17 +126,17 @@ defineProps<CardProps>()
     border-color: rgba(96, 149, 255, .2);
   }
 
-  .shadow-1 {
+  .oku-shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(139, 255, 248, 0.10) 0%, rgba(153, 255, 249, 0.00) 100%);
     right: -61px;
     top: -60px;
   }
-  .shadow-2 {
+  .oku-shadow-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(139, 213, 255, 0.10) 0%, rgba(153, 218, 255, 0.00) 100%);
     right: 20px;
     bottom: -100px;
   }
-  .shadow-3 {
+  .oku-shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(139, 172, 255, 0.10) 0%, rgba(153, 182, 255, 0.00) 100%);
     left: -108px;
     top: -80px;
@@ -173,17 +173,17 @@ defineProps<CardProps>()
     background: rgba(186, 96, 255, .18);
     border-color: rgba(186, 96, 255, .2);
   }
-  .shadow-1 {
+  .oku-shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(207, 139, 255, 0.10) 0%, rgba(212, 153, 255, 0.00) 100%);
     right: -61px;
     top: -60px;
   }
-  .shadow-2 {
+  .oku-shadow-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(178, 139, 255, 0.10) 0%, rgba(187, 153, 255, 0.00) 100%);
     right: 20px;
     bottom: -100px;
   }
-  .shadow-3 {
+  .oku-shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(142, 139, 255, 0.10) 0%, rgba(155, 153, 255, 0.00) 100%);
     left: -108px;
     top: -80px;
@@ -219,17 +219,17 @@ defineProps<CardProps>()
     border: 1px solid #a4db9f;
     color: #55ca4b;
   }
-  .shadow-1 {
+  .oku-shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(139, 255, 149, 0.10) 0%, rgba(153, 255, 161, 0.00) 100%);
     right: -61px;
     top: -60px;
   }
-  .shadow-2 {
+  .oku-shadow-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(149, 255, 139, 0.10) 0%, rgba(187, 153, 255, 0.00) 100%, rgba(255, 218, 153, 0.00) 100%, rgba(162, 255, 153, 0.00) 100%);
     right: 20px;
     bottom: -100px;
   }
-  .shadow-3 {
+  .oku-shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(168, 255, 139, 0.10) 0%, rgba(179, 255, 153, 0.00) 100%);
     left: -108px;
     top: -80px;
@@ -250,19 +250,19 @@ defineProps<CardProps>()
     color: #9D8569;
   }
 
-  .shadow-1 {
+  .oku-shadow-1 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
     right: -61px;
     top: -60px;
   }
 
-  .shadow-2 {
+  .oku-shadow-2 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
     right: 20px;
     bottom: -100px;
   }
 
-  .shadow-3 {
+  .oku-shadow-3 {
     background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 139, 139, 0.10) 0%, rgba(255, 153, 153, 0.00) 100%);
     left: -108px;
     top: -80px;
