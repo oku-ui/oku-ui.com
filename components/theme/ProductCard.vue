@@ -21,17 +21,19 @@ defineProps<CardProps>()
       <div class="oku-shadow-2 oku-shadow group-hover:opacity-100" />
       <div class="oku-shadow-3 oku-shadow group-hover:opacity-100" />
       <img class="absolute -left-6 top-1/2 -translate-y-1/2 z-10" :src="`${data.image}.svg`" alt="oku" width="160" height="160">
-      <div class="flex items-center flex-col gap-4 relative w-full">
-        <div class="absolute bottom-16 lg:bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
-          COMING SOON
-        </div>
-        <h2 class="text-lg md:text-2xl font-medium title">
-          {{ data.title }}
-        </h2>
+      <div class="flex items-center justify-between flex-col relative w-full h-full">
+       <div class="mt-10">
+         <div class="absolute bottom-16 lg:bottom-20 flex px-2 py-1 text-xs rounded-full coming-soon" :class="{ '!hidden': data.active }">
+            COMING SOON
+          </div>
+          <h2 class="text-lg md:text-2xl font-medium title">
+            {{ data.title }}
+          </h2>
 
-        <div class="text-sm md:text-base card-text">
-          {{ data.description }}
-        </div>
+          <div class="text-base md:text-base card-text">
+            {{ data.description }}
+          </div>
+       </div>
         <div :class="{ '!hidden': !data.buttonText }" class="card-button px-3 py-1 flex items-center justify-center gap-1 rounded-md border">
           {{ data.buttonText }}
           <span class="i-heroicons-arrow-small-right w-4 h-4 transition-all duration-300 group-hover:translate-x-1" />
@@ -60,6 +62,16 @@ defineProps<CardProps>()
     color: #968774;
   }
 
+  .card-button {
+    color: #FFA500;
+    background: rgba(255, 149, 96, .1);
+    border-color: rgba(255, 149, 96, .12);
+  }
+
+  .card-text {
+    color: #968774;
+  }
+
   .coming-soon {
     border: 1px solid #3F3831;
     color: #9D8569;
@@ -72,6 +84,12 @@ defineProps<CardProps>()
   }
   .card-text {
     color: #C68C48;
+  }
+
+  .card-button {
+    color: #FFA500;
+    background: rgba(255, 149, 96, .18);
+    border-color: rgba(255, 149, 96, .2);
   }
 
   .coming-soon {
@@ -215,6 +233,12 @@ defineProps<CardProps>()
     color: #51C447;
   }
 
+  .card-button {
+    color: #4AFF4A;
+    background: rgba(96, 255, 96, .18);
+    border-color: rgba(96, 255, 96, .2);
+  }
+
   .coming-soon {
     border: 1px solid #a4db9f;
     color: #55ca4b;
@@ -243,6 +267,12 @@ defineProps<CardProps>()
 
   .card-text {
     color: #967474;
+  }
+
+  .card-button {
+    color: #FF4A4A;
+    background: rgba(255, 96, 96, .1);
+    border-color: rgba(255, 96, 96, .12);
   }
 
   .coming-soon {
