@@ -5,7 +5,7 @@
   ],
   "rebaseWhen": "conflicted",
   "schedule": [
-    "before 6am on the first day of the month"
+    "every 8 months on the first day of the month"
   ],
   "baseBranches": [
     "main"
@@ -17,20 +17,33 @@
   ],
   "packageRules": [
     {
+      "enabled": false,
+      "matchDepTypes": [
+        "peerDependencies"
+      ]
+    },
+    {
       "groupName": "root",
-      "matchFiles": [
-        "package.json"
-      ],
       "matchUpdateTypes": [
         "patch",
         "minor",
         "major"
+      ],
+      "ignorePaths": [
+        "**/playground/**"
+      ],
+      "matchDatasources": [
+        "npm",
+        "github-actions"
       ],
       "labels": [
         "dependencies"
       ],
       "addLabels": [
         "dependencies"
+      ],
+      "matchFiles": [
+        "package.json"
       ]
     }
   ]
