@@ -44,7 +44,7 @@ jobs:
       - name: 🚀 Build
         run: pnpm build
         env:
-          NUXT_UI_PRO_TOKEN: ${{ secrets.NUXT_UI_PRO_TOKEN }}
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
 
       # - name: 🧪 Test
       #   run: pnpm test
