@@ -14,110 +14,117 @@ links:
 
 Beekeeper Studio is an open source SQL editor and database management app that is both powerful and easy to use. It works with PostgreSQL, MySQL, SQLite, SQL Server, Redis & more.
 
-<br>
 
-# Installation
+## Requirements
 
-### 1) Add GPG Key
+Docker and a supported database server (PostgreSQL, MySQL, SQLite, SQL Server, Redis & more).
 
-::code-group
-```sh [linux]
-wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add -
-```
-
-```sh [macOS]
-soon
-
-```
-::
-
-This command adds the GPG security key required to install Beekeeper Studio. The security key helps you verify that the software comes from a trusted source and prevents malware from infecting your system. This command downloads and adds the security key from the official Beekeeper Studio repository.
-
-### 2) Add Repository
-
-::code-group
-```sh [linux]
-echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list
-```
-
-```sh [macOS]
-soon
-
-```
-::
-
-This command adds the official repository address of Beekeeper Studio to your Debian or Ubuntu-based Linux system, making Beekeeper Studio available for installation. You can receive updates for Beekeeper Studio through this repository. The command allows you to add a new source to your system's package manager.
-
-### 3) Update Package List
-
-::code-group
-```sh [linux]
-sudo apt update -y
-```
-
-```sh [macOS]
-soon
-
-```
-::
-
-This command updates the package lists on your Debian or Ubuntu-based Linux system. It ensures that the system has the latest information about available packages and their versions from the software repositories. The '-y' flag is used to automatically confirm any prompts for confirmation during the update process.
-
-### 4) Install Beekeeper Studio
-
-::code-group
-```sh [linux]
-sudo apt install beekeeper-studio -y
-```
-
-```sh [macOS]
-soon
-
-```
-::
-
-This command installs Beekeeper Studio, an open-source SQL editor and database management application, on your Debian or Ubuntu-based Linux system. The '-y' flag is used to automatically confirm any prompts for confirmation during the installation process.
+> If you already installed `docker-studio` with [Pergel](/pergel/getting-started), you don't need to install extra docker. Just install the docker database image you want to use with beekeeper.
 
 
-### 5) Run Beekeeper Studio
+## Install Beekeeper Studio
+
+You can install the Beekeeper Studio program with [Pergel](/pergel/getting-started).
+
+## Start the Application
+
+First, you should run this database image (MySQL, PostgreSQL, etc.) using [Docker Desktop](/pergel/os/programs/docker-desktop) or Docker CLI before connecting to the database system of your choice.
 
 1. To launch Beekeeper Studio, locate it in the menu or application launcher and click on it.
 2. Once the application is launched, you can use it to manage your database connections and execute SQL queries.
-3. When you're done, you can close the application by using the menu or the close button located in the top right corner of the window.
 
----
+### Run a Database Image with Docker CLI
 
-# Uninstall Beekeeper Studio
+#### Run the following command to run the `MySQL` database image:
 
-::code-group
-```sh [linux]
-sudo apt remove beekeeper-studio -y
-sudo rm /etc/apt/sources.list.d/beekeeper-studio-app.list
+```sh [terminal]
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
 ```
 
-```sh [macOS]
-soon
+#### Run the following command to run the `PostgreSQL` database image:
 
+```sh [terminal]
+docker run --name postgres -e POSTGRES_PASSWORD=postgres -d postgres:latest
+```
+
+## Create a Database Connection
+
+1. To create a new database connection, click on the 'New Connection' button located in the top left corner of the window.
+2. Select the database type (for example, MySQL, PostgreSQL, SQLite, etc.). If you don't know which database type to select, you can use the 'Auto Detect' option.
+3. In the 'New Connection' window, enter the connection details for your database and click on the 'Save' button.
+4. Once the connection is saved, you can use it to execute SQL queries and manage your database.
+
+## Example Database Connections
+
+#### MySQL
+
+- Host: localhost
+- Port: 3306
+- Username: root
+- Password: root
+
+#### PostgreSQL
+
+- Host: localhost
+- Port: 5432
+- Username: postgres
+- Password: postgres
+
+
+## Example SQL Queries
+
+Open the SQL editor and execute the following SQL queries.
+
+#### Create a Table
+
+::code-group
+
+```sh [terminal]
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
 ```
 ::
 
-This command removes Beekeeper Studio from your Debian or Ubuntu-based Linux system.
-
-
-# Update Beekeeper Studio
+#### Insert Data
 
 ::code-group
-```sh [linux]
-sudo apt update -y
-sudo apt upgrade beekeeper-studio -y
-```
 
-```sh [macOS]
-soon
-
+```sh [terminal]
+INSERT INTO users (name, email)
+VALUES ('John Doe', 'test@test.com');
 ```
 ::
 
-This command updates Beekeeper Studio to the latest version available on your Debian or Ubuntu-based Linux system.
+#### Select Data
 
-We used the official repository and the APT package manager to install Beekeeper Studio, so we can easily update it in the future using the system update command.
+::code-group
+
+```sh [terminal]
+SELECT * FROM users;
+```
+::
+
+#### Update Data
+
+::code-group
+
+```sh [terminal]
+UPDATE users SET name = 'Jane Doe' WHERE id = 1;
+```
+::
+
+#### Delete Data
+
+::code-group
+
+```sh [terminal]
+DELETE FROM users WHERE id = 1;
+```
+::
+
+
+
