@@ -32,7 +32,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           cache: pnpm
 
       - name: 📦 Install deps (with cache)
@@ -45,13 +45,3 @@ jobs:
         run: pnpm build
         env:
           NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
-
-      # - name: 🧪 Test
-      #   run: pnpm test
-
-      # - name: 🧪 Test with coverage
-      #   run: pnpm coverage
-
-      # - name: 📝 Upload coverage
-      #   if: always()
-      #   uses: davelosert/vitest-coverage-report-action@v1
