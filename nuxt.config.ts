@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@oku-ui/primitives-nuxt',
     'v-plausible',
+    'nuxt-og-image',
   ],
 
   imports: {
