@@ -17,8 +17,6 @@ links:
 :ContentPreview{componentSrc="OkuAspectRatio" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAspectRatio/index.vue" lang="vue"} -->
-#tailwind
-<!-- Autodocs{src="/primitives/OkuAspectRatio/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs

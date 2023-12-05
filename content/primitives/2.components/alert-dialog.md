@@ -19,8 +19,6 @@ navigation:
 :ContentPreview{componentSrc="OkuAlertDialog" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuAlertDialog/index.vue" lang="vue"} -->
-#tailwind
-<!-- Autodocs{src="/primitives/OkuAlertDialog/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs

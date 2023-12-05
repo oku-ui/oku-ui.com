@@ -1,8 +1,9 @@
 import pkg from './package.json'
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-
-  // devtools: { enabled: true },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
@@ -15,20 +16,17 @@ export default defineNuxtConfig({
     '@oku-ui/primitives-nuxt',
     'v-plausible',
   ],
-
   imports: {
     dirs: ['stores'],
   },
-
   extends: [
     '@nuxt/ui-pro',
+    ['github:oku-ui/pergel/.docs#main'],
   ],
-
   primitives: {
     // All components install
     installComponents: true,
   },
-
   runtimeConfig: {
     public: {
       version: pkg.version,
@@ -37,6 +35,23 @@ export default defineNuxtConfig({
   ui: {
     global: true,
     icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar'],
+  },
+  content: {
+    sources: {
+      pergel: process.env.NUXT_PERGEL_PATH
+        ? {
+            prefix: '/pergel',
+            driver: 'fs',
+            base: resolve(process.env.NUXT_PERGEL_PATH, '.docs/content/pro'),
+          }
+        : {
+            prefix: '/pergel',
+            driver: 'github',
+            repo: 'oku-ui/pergel',
+            branch: 'main',
+            dir: '.docs/content/pergel',
+          },
+    },
   },
   fontMetrics: {
     fonts: ['DM Sans'],
@@ -54,19 +69,9 @@ export default defineNuxtConfig({
       routes: ['/', '/primitives', '/primitives/getting-started', '/api/search.json'],
     },
   },
-
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
-  },
-  typescript: {
-    strict: false,
-    includeWorkspace: true,
-  },
-  github: {
-    owner: 'oku-ui',
-    repo: 'docs',
-    branch: 'main',
   },
   hooks: {
     // Related to https://github.com/nuxt/nuxt/pull/22558
@@ -79,7 +84,6 @@ export default defineNuxtConfig({
       }
     },
   },
-
   plausible: {
     init: {
       domain: 'oku-ui.com',
@@ -88,7 +92,6 @@ export default defineNuxtConfig({
     // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
     partytown: false,
   },
-
   routeRules: {
     '/docs/primitives/overview/introduction': {
       redirect: {

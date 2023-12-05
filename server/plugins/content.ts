@@ -41,9 +41,7 @@ export default defineNitroPlugin((nitroApp) => {
             acc[propertyName] = propertyValue
 
             return acc
-          },
-          {},
-          )
+          }, {})
           const code = codeCache.get(params.src.substring(1))
           const codeBlocka = `\`\`\`${params.lang || 'vue'}\n${code}\n\`\`\``
 
