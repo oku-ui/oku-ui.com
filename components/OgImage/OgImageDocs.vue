@@ -31,7 +31,7 @@ defineProps({
     />
     <div>
       <h1 class="text-8xl mb-4 text-white">
-        {{ title }} - asdasdasdasdaasd
+        {{ title }}
       </h1>
       <p class="text-5xl text-gray-200 leading-tight pr-10">
         {{ description }}
