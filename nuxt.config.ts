@@ -15,23 +15,18 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@oku-ui/primitives-nuxt',
     'v-plausible',
-    'nuxt-og-image',
   ],
-
   imports: {
     dirs: ['stores'],
   },
-
   extends: [
     '@nuxt/ui-pro',
     ['github:oku-ui/pergel/.docs#main'],
   ],
-
   primitives: {
     // All components install
     installComponents: true,
   },
-
   runtimeConfig: {
     public: {
       version: pkg.version,
@@ -74,19 +69,9 @@ export default defineNuxtConfig({
       routes: ['/', '/primitives', '/primitives/getting-started', '/api/search.json'],
     },
   },
-
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
-  },
-  typescript: {
-    strict: false,
-    includeWorkspace: true,
-  },
-  github: {
-    owner: 'oku-ui',
-    repo: 'docs',
-    branch: 'main',
   },
   hooks: {
     // Related to https://github.com/nuxt/nuxt/pull/22558
@@ -99,7 +84,6 @@ export default defineNuxtConfig({
       }
     },
   },
-
   plausible: {
     init: {
       domain: 'oku-ui.com',
@@ -108,7 +92,6 @@ export default defineNuxtConfig({
     // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
     partytown: false,
   },
-
   routeRules: {
     '/docs/primitives/overview/introduction': {
       redirect: {
