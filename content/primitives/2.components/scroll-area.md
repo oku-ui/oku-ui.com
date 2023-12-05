@@ -19,8 +19,6 @@ navigation:
 :ContentPreview{componentSrc="OkuScrollArea" lang="vue" project="primitives"}
 #vue
 <!-- Autodocs{src="/primitives/OkuScrollArea/index.vue" lang="vue"} -->
-#tailwind
-<!-- Autodocs{src="/primitives/OkuScrollArea/tailwind.js" lang="ts"} -->
 ::
 #radix
 ::ContentTabs
