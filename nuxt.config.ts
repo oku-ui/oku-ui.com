@@ -1,8 +1,9 @@
 import pkg from './package.json'
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-
-  // devtools: { enabled: true },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
@@ -22,6 +23,7 @@ export default defineNuxtConfig({
 
   extends: [
     '@nuxt/ui-pro',
+    ['github:oku-ui/pergel/.docs#main'],
   ],
 
   primitives: {
@@ -37,6 +39,23 @@ export default defineNuxtConfig({
   ui: {
     global: true,
     icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar'],
+  },
+  content: {
+    sources: {
+      pergel: process.env.NUXT_PERGEL_PATH
+        ? {
+            prefix: '/pergel',
+            driver: 'fs',
+            base: resolve(process.env.NUXT_PERGEL_PATH, '.docs/content/pro'),
+          }
+        : {
+            prefix: '/pergel',
+            driver: 'github',
+            repo: 'oku-ui/pergel',
+            branch: 'main',
+            dir: '.docs/content/pergel',
+          },
+    },
   },
   fontMetrics: {
     fonts: ['DM Sans'],
