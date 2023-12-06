@@ -77,6 +77,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
+      // Ignore weird url from crawler on some modules readme
+      ignore: ['/modules/%3C/span', '/modules/%253C/span'],
       routes: ['/', '/api/search.json'],
     },
   },
@@ -89,9 +91,11 @@ export default defineNuxtConfig({
     // Adding all global components to the main entry
     // To avoid lagging during page navigation on client-side
     'components:extend': function (components) {
-      for (const comp of components) {
-        if (comp.global)
-          comp.global = 'sync'
+      for (const component of components) {
+        if (component.shortPath.includes(process.env.NUXT_PERGEL_PATH || process.env.NUXT_PRIMITIVES_PATH || ''))
+          component.global = true
+        else if (component.global)
+          component.global = 'sync'
       }
     },
   },
