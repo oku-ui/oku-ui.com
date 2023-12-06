@@ -1,3 +1,11 @@
+# oku-ui.com
+
+Welcome to the source code of [oku-ui.com](https://oku-ui.com)!
+
+This is where we put the projects together and publish them.
+[Primitives](https://github.com/oku-ui/primitives/tree/main/.docs)
+[Pergel](https://github.com/oku-ui/pergel/tree/main/.docs)
+
 ## Setup
 
 Make sure to install the dependencies:
@@ -12,7 +20,7 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 ## Production
@@ -20,13 +28,13 @@ pnpm run dev
 Build the application for production:
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-pnpm run preview
+pnpm preview
 ```
 
 

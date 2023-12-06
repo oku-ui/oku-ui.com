@@ -4,6 +4,9 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  site: {
+    url: 'https://oku-ui.com',
+  },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
@@ -13,7 +16,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@oku-ui/primitives-nuxt',
     'v-plausible',
   ],
   imports: {
@@ -21,12 +23,9 @@ export default defineNuxtConfig({
   },
   extends: [
     '@nuxt/ui-pro',
-    ['github:oku-ui/pergel/.docs#main'],
+    process.env.NUXT_PERGEL_PATH ? resolve(process.env.NUXT_PERGEL_PATH, '.docs') : ['github:oku-ui/pergel/.docs#main'],
+    process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#main'],
   ],
-  primitives: {
-    // All components install
-    installComponents: true,
-  },
   runtimeConfig: {
     public: {
       version: pkg.version,
@@ -51,6 +50,19 @@ export default defineNuxtConfig({
             branch: 'main',
             dir: '.docs/content/pergel',
           },
+      primitives: process.env.NUXT_PRIMITIVES_PATH
+        ? {
+            prefix: '/primitives',
+            driver: 'fs',
+            base: resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs/content/primitives'),
+          }
+        : {
+            prefix: '/primitives',
+            driver: 'github',
+            repo: 'oku-ui/primitives',
+            branch: 'main',
+            dir: '.docs/content/primitives',
+          },
     },
   },
   fontMetrics: {
@@ -63,10 +75,11 @@ export default defineNuxtConfig({
       'DM+Sans': [400, 500, 600, 700],
     },
   },
-
   nitro: {
     prerender: {
-      routes: ['/', '/primitives', '/primitives/getting-started', '/api/search.json'],
+      // Ignore weird url from crawler on some modules readme
+      ignore: ['/modules/%3C/span', '/modules/%253C/span'],
+      routes: ['/', '/api/search.json'],
     },
   },
   colorMode: {
@@ -78,9 +91,11 @@ export default defineNuxtConfig({
     // Adding all global components to the main entry
     // To avoid lagging during page navigation on client-side
     'components:extend': function (components) {
-      for (const comp of components) {
-        if (comp.global)
-          comp.global = 'sync'
+      for (const component of components) {
+        if (component.shortPath.includes(process.env.NUXT_PERGEL_PATH || process.env.NUXT_PRIMITIVES_PATH || ''))
+          component.global = true
+        else if (component.global)
+          component.global = 'sync'
       }
     },
   },
@@ -91,73 +106,5 @@ export default defineNuxtConfig({
     },
     // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
     partytown: false,
-  },
-  routeRules: {
-    '/docs/primitives/overview/introduction': {
-      redirect: {
-        to: '/primitives/introduction/introduction',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/aspet-ratio': {
-      redirect: {
-        to: '/primitives/components/aspect-ratio',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/avatar': {
-      redirect: {
-        to: '/primitives/components/avatar',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/checkbox': {
-      redirect: {
-        to: '/primitives/components/checkbox',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/label': {
-      redirect: {
-        to: '/primitives/components/label',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/progress': {
-      redirect: {
-        to: '/primitives/components/progress',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/separator': {
-      redirect: {
-        to: '/primitives/components/separator',
-        statusCode: 301,
-      },
-    },
-    '/docs/primitives/components/toggle': {
-      redirect: {
-        to: '/primitives/components/toggle',
-        statusCode: 301,
-      },
-    },
-    '/about/we': {
-      redirect: {
-        to: '/oku',
-        statusCode: 301,
-      },
-    },
-    '/primitives/introduction/nuxt': {
-      redirect: {
-        to: '/primitives/getting-started/nuxt',
-        statusCode: 301,
-      },
-    },
-    '/primitives/introduction/introduction': {
-      redirect: {
-        to: '/primitives/getting-started',
-        statusCode: 301,
-      },
-    },
   },
 })
