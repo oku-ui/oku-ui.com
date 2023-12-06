@@ -4,6 +4,9 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  site: {
+    url: 'https://oku-ui.com',
+  },
   modules: [
     '@nuxt/content',
     'nuxt-og-image',
