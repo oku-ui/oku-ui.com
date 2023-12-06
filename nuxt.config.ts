@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   extends: [
     '@nuxt/ui-pro',
     process.env.NUXT_PERGEL_PATH ? resolve(process.env.NUXT_PERGEL_PATH, '.docs') : ['github:oku-ui/pergel/.docs#main'],
-    process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#docs-dev'],
+    process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#main'],
   ],
   runtimeConfig: {
     public: {
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
             prefix: '/primitives',
             driver: 'github',
             repo: 'oku-ui/primitives',
-            branch: 'docs-dev',
+            branch: 'main',
             dir: '.docs/content/primitives',
           },
     },
