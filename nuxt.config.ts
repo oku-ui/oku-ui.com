@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    'nuxt-og-image',
+    // 'nuxt-og-image',
     '@nuxt/ui',
     '@nuxtlabs/github-module',
     '@nuxtjs/fontaine',
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         ? {
             prefix: '/pergel',
             driver: 'fs',
-            base: resolve(process.env.NUXT_PERGEL_PATH, '.docs/content/pro'),
+            base: resolve(process.env.NUXT_PERGEL_PATH, '.docs/content/pergel'),
           }
         : {
             prefix: '/pergel',
@@ -77,6 +77,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
+      failOnError: false,
       // Ignore weird url from crawler on some modules readme
       ignore: ['/modules/%3C/span', '/modules/%253C/span'],
       routes: ['/', '/api/search.json'],

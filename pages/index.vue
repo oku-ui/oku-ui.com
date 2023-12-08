@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { teamMembers } = useContributors()
+const { teamMembers, maintainers } = useContributors()
 const data = [
   {
     to: 'oku',
@@ -79,10 +79,30 @@ useSeoMeta({
     </div>
     <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
       <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
-        Our Team
+        Core Team
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-stretch gap-4 w-full lg:grid-cols-4">
         <template v-for="item in teamMembers" :key="item.github">
+          <ThemeTeamCard
+            :data="{
+              image: item.avatar,
+              name: item.name,
+              github: item.github,
+              title: item.title,
+              description: item.desc,
+              twitter: item.twitter,
+              sponsor: item.sponsor,
+            }"
+          />
+        </template>
+      </div>
+    </div>
+    <div class="mt-20 flex mx-auto flex-col gap-6 w-full max-w-[1200px]">
+      <h2 class="text-center font-semibold leading-8 text-gray-900 dark:text-white text-3xl">
+        Maintainers
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-stretch gap-4 w-full lg:grid-cols-4">
+        <template v-for="item in maintainers" :key="item.github">
           <ThemeTeamCard
             :data="{
               image: item.avatar,
