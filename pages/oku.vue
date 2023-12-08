@@ -15,8 +15,6 @@ const kapadokyaImage = computed(() => {
   return isDark.value === 'dark' ? 'https://images.unsplash.com/photo-1664733580150-6a6de8415b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80' : 'https://images.unsplash.com/photo-1487564149407-9fb3522e2ceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'
 })
 
-const { teamMembers: teams } = useContributors()
-
 useSeoMeta({
   title: 'Oku About',
   ogTitle: 'Oku About - Vue and Nuxt',
@@ -244,31 +242,6 @@ useSeoMeta({
           </a>
         </div>
       </div>
-    </div>
-
-    <!-- Team section -->
-    <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-          Our team
-        </h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-white/60">
-          Our goal is to focus on pixel perfect design, clean code and clean typography. We are a small team of designers and developers.
-        </p>
-      </div>
-      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
-        <li v-for="item in teams" :key="item.name">
-          <img class="mx-auto h-24 w-24 rounded-full" :src="item.avatar" alt="">
-          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-white">
-            {{ item.name }}
-          </h3>
-          <p class="text-sm leading-6 text-gray-600 dark:text-white/60">
-            {{ item.title }}
-          </p>
-        </li>
-
-        <!-- More people... -->
-      </ul>
     </div>
   </main>
 </template>

@@ -75,6 +75,9 @@ const plainTeamMembers: CoreTeam[] = [
     title: 'Full Stack Developer',
     desc: 'Core team member of Oku',
   },
+]
+
+const maintainers: CoreTeam[] = [
   {
     avatar: contributorsAvatars.dammy001,
     name: 'Anjorin Damilare',
@@ -107,5 +110,6 @@ export function useContributors() {
   return {
     contributors,
     teamMembers,
+    maintainers,
   }
 }
