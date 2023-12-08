@@ -77,6 +77,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
+      failOnError: false,
       // Ignore weird url from crawler on some modules readme
       ignore: ['/modules/%3C/span', '/modules/%253C/span'],
       routes: ['/', '/api/search.json'],
