@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   ui: {
     global: true,
-    icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar', 'game-icons']
+    icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar', 'game-icons'],
   },
   content: {
     sources: {
