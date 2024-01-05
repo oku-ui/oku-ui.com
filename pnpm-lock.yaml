@@ -80,8 +80,8 @@ devDependencies:
     specifier: ^1.6.3
     version: 1.6.3
   '@oku-ui/motion-nuxt':
-    specifier: ^0.1.2
-    version: 0.1.2(vue@3.3.10)
+    specifier: ^0.2.0
+    version: 0.2.0(vue@3.3.10)
   '@oku-ui/primitives-nuxt':
     specifier: ^0.2.2
     version: 0.2.2
@@ -2695,8 +2695,8 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@oku-ui/motion-nuxt@0.1.2(vue@3.3.10):
-    resolution: {integrity: sha512-XRNQDKBZp5z+0DcRStrJJ3haWTdKxojzkADAtAYj0uoYVOh36IweCxGMNnK/jfhhpwJFVEo6Bu5vuzOk9j4u8Q==}
+  /@oku-ui/motion-nuxt@0.2.0(vue@3.3.10):
+    resolution: {integrity: sha512-tJ+HBWX27woSTXp4EuCtpoABdcmZa+nUKyU+I6cOMj5UqS2yUfjERl/zEjnPptP8gdKCtIsE9V6AYFGPc5mDCw==}
     engines: {node: '>=18'}
     peerDependencies:
       vue: '>=3.3.0'
