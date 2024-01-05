@@ -79,20 +79,11 @@ const plainTeamMembers: CoreTeam[] = [
 
 const maintainers: CoreTeam[] = [
   {
-    avatar: contributorsAvatars.dammy001,
-    name: 'Anjorin Damilare',
-    github: 'dammy001',
-    twitter: 'laravel00',
-    title: 'Software Engineer',
-    desc: 'Core team member of Oku',
-  },
-  {
-    avatar: contributorsAvatars.YeSuX,
-    name: 'Suxiong',
-    github: 'YeSuX',
-    twitter: 'YeSuX1998',
+    avatar: contributorsAvatars.Cr0zy07,
+    name: 'Cr0zy07',
+    github: 'Cr0zy07',
     title: 'A front-end Developer',
-    desc: 'Core team member of Oku',
+    desc: 'Primitives maintainer',
   },
   {
     avatar: contributorsAvatars.emirulucay,
@@ -100,7 +91,7 @@ const maintainers: CoreTeam[] = [
     github: 'emirulucay',
     twitter: 'astrodokki',
     title: 'A designer and developer',
-    desc: 'Core team member of Oku',
+    desc: 'Oku Design System maintainer',
   },
 ]
 
