@@ -23,6 +23,7 @@
     "unist-util-stringify-position": "^4.0.0"
   },
   "devDependencies": {
+    "@0b5vr/tweakpane-plugin-rotation": "^0.2.0",
     "@antfu/eslint-config": "2.3.4",
     "@egoist/tailwindcss-icons": "^1.4.0",
     "@iconify-json/fa-brands": "latest",
@@ -36,12 +37,16 @@
     "@iconify-json/twemoji": "latest",
     "@nuxt/content": "^2.9.0",
     "@nuxt/devtools": "1.0.4",
+    "@nuxt/ui": "^2.11.1",
     "@nuxt/ui-pro": "^0.5.0",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "^3.1.0",
     "@nuxtlabs/github-module": "^1.6.3",
+    "@oku-ui/motion-nuxt": "^0.1.2",
     "@oku-ui/primitives-nuxt": "^0.2.2",
     "@radix-ui/colors": "3.0.0",
+    "@tweakpane/core": "^2.0.3",
+    "@tweakpane/plugin-essentials": "^0.2.1",
     "@vueuse/core": "^10.6.1",
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "8.55.0",
@@ -52,6 +57,7 @@
     "nuxt-og-image": "3.0.0-beta.37",
     "sass": "^1.69.5",
     "simple-git-hooks": "^2.9.0",
+    "tweakpane": "^4.0.3",
     "typescript": "^5.3.2",
     "v-plausible": "^1.2.0"
   },
