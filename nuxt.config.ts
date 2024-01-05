@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia/nuxt',
     'v-plausible',
+    '@oku-ui/motion-nuxt',
   ],
   imports: {
     dirs: ['stores'],
