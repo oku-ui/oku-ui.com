@@ -29,29 +29,13 @@ const data = [
     buttonText: 'See Docs',
   },
   {
-    to: 'izlek',
-    title: 'izlek',
-    description: 'Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.',
-    active: false,
-    theme: 'red',
-    image: 'command',
-    buttonText: 'See Docs',
-  },
-  {
-    to: '#',
-    title: 'Notification',
-    description: 'in the future.',
-    theme: 'orange',
-    image: 'bell',
-    active: false,
-  },
-  {
-    to: '#',
+    to: 'motion',
     title: 'Motion',
-    description: 'in the future.',
+    description: 'Motion One for Vue is a 5kb animation library for Vue 3. Built on Motion One, it\'s capable of springs, independent transforms, and hardware accelerated animations.',
     theme: 'green',
     image: 'zap',
-    active: false,
+    active: true,
+    buttonText: 'See Docs',
   },
 ]
 

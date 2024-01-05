@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     process.env.NUXT_PERGEL_PATH ? resolve(process.env.NUXT_PERGEL_PATH, '.docs') : ['github:oku-ui/pergel/.docs#main'],
     process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#main'],
+    process.env.NUXT_MOTION_PATH ? resolve(process.env.NUXT_MOTION_PATH, '.docs') : ['github:oku-ui/motion/.docs#main'],
   ],
   runtimeConfig: {
     public: {
@@ -62,6 +63,19 @@ export default defineNuxtConfig({
             repo: 'oku-ui/primitives',
             branch: 'main',
             dir: '.docs/content/primitives',
+          },
+      motion: process.env.NUXT_MOTION_PATH
+        ? {
+            prefix: '/motion',
+            driver: 'fs',
+            base: resolve(process.env.NUXT_MOTION_PATH, '.docs/content/motion'),
+          }
+        : {
+            prefix: '/motion',
+            driver: 'github',
+            repo: 'oku-ui/motion',
+            branch: 'main',
+            dir: '.docs/content/motion',
           },
     },
   },
