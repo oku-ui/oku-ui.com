@@ -16,7 +16,7 @@
     "prefetch": "esno scripts/fetch-avatars.ts"
   },
   "dependencies": {
-    "@oku-ui/primitives": "^0.5.0",
+    "@oku-ui/primitives": "^0.6.1",
     "@pinia/nuxt": "^0.5.1",
     "mdast-util-to-string": "^4.0.0",
     "pinia": "^2.1.7",
@@ -43,7 +43,7 @@
     "@nuxtjs/google-fonts": "^3.1.0",
     "@nuxtlabs/github-module": "^1.6.3",
     "@oku-ui/motion-nuxt": "^0.2.0",
-    "@oku-ui/primitives-nuxt": "^0.2.2",
+    "@oku-ui/primitives-nuxt": "^0.3.0",
     "@radix-ui/colors": "3.0.0",
     "@tweakpane/core": "^2.0.3",
     "@tweakpane/plugin-essentials": "^0.2.1",
