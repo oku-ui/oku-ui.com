@@ -4,6 +4,7 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  ssr: false,
   site: {
     url: 'https://oku-ui.com',
   },
