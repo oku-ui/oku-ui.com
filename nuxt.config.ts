@@ -84,10 +84,10 @@ export default defineNuxtConfig({
         '/api/search.json',
       ],
     },
-  },
-  routeRules: {
-    '/pergel/**': {
-      redirect: 'https://pergel.oku-ui.com',
+    routeRules: {
+      '/pergel/**': {
+        redirect: 'https://pergel.oku-ui.com',
+      },
     },
   },
   colorMode: {
