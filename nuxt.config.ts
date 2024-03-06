@@ -5,9 +5,6 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   ssr: false,
-  site: {
-    url: 'https://oku-ui.com',
-  },
   modules: [
     '@nuxt/content',
     // 'nuxt-og-image',
@@ -25,7 +22,6 @@ export default defineNuxtConfig({
   },
   extends: [
     '@nuxt/ui-pro',
-    process.env.NUXT_PERGEL_PATH ? resolve(process.env.NUXT_PERGEL_PATH, '.docs') : ['github:oku-ui/pergel/.docs#main'],
     process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#main'],
     process.env.NUXT_MOTION_PATH ? resolve(process.env.NUXT_MOTION_PATH, '.docs') : ['github:oku-ui/motion/.docs#main'],
   ],
@@ -40,19 +36,6 @@ export default defineNuxtConfig({
   },
   content: {
     sources: {
-      pergel: process.env.NUXT_PERGEL_PATH
-        ? {
-            prefix: '/pergel',
-            driver: 'fs',
-            base: resolve(process.env.NUXT_PERGEL_PATH, '.docs/content/pergel'),
-          }
-        : {
-            prefix: '/pergel',
-            driver: 'github',
-            repo: 'oku-ui/pergel',
-            branch: 'main',
-            dir: '.docs/content/pergel',
-          },
       primitives: process.env.NUXT_PRIMITIVES_PATH
         ? {
             prefix: '/primitives',
@@ -96,8 +79,16 @@ export default defineNuxtConfig({
       failOnError: false,
       // Ignore weird url from crawler on some modules readme
       ignore: ['/modules/%3C/span', '/modules/%253C/span'],
-      routes: ['/', '/api/search.json'],
+      routes: [
+        '/', 
+        '/api/search.json',
+    ],
     },
+  },
+  routeRules: {
+    "/pergel/**": { 
+      redirect: 'https://pergel.oku-ui.com',
+     },
   },
   colorMode: {
     preference: 'dark',
