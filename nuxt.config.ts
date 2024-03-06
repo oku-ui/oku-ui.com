@@ -80,15 +80,15 @@ export default defineNuxtConfig({
       // Ignore weird url from crawler on some modules readme
       ignore: ['/modules/%3C/span', '/modules/%253C/span'],
       routes: [
-        '/', 
+        '/',
         '/api/search.json',
-    ],
+      ],
     },
   },
   routeRules: {
-    "/pergel/**": { 
+    '/pergel/**': {
       redirect: 'https://pergel.oku-ui.com',
-     },
+    },
   },
   colorMode: {
     preference: 'dark',
