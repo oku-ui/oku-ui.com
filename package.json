@@ -62,11 +62,11 @@
     "typescript": "^5.4.3",
     "v-plausible": "^1.2.0"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
   "resolutions": {
     "mdast-util-gfm-table": "2.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "pnpm eslint . --fix"
