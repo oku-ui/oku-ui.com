@@ -36,7 +36,7 @@
     "@iconify-json/solar": "latest",
     "@iconify-json/twemoji": "latest",
     "@nuxt/content": "^2.12.1",
-    "@nuxt/devtools": "1.0.4",
+    "@nuxt/devtools": "1.3.9",
     "@nuxt/ui": "^2.15.0",
     "@nuxt/ui-pro": "^0.5.0",
     "@nuxtjs/fontaine": "^0.4.1",
