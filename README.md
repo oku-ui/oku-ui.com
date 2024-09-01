@@ -37,7 +37,6 @@ Locally preview production build:
 pnpm preview
 ```
 
-
 ## Sponsors
 
 <p align="center">
