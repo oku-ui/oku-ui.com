@@ -22,7 +22,6 @@ export default defineNuxtConfig({
   },
   extends: [
     '@nuxt/ui-pro',
-    process.env.NUXT_PRIMITIVES_PATH ? resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs') : ['github:oku-ui/primitives/.docs#main'],
   ],
   runtimeConfig: {
     public: {
@@ -32,23 +31,6 @@ export default defineNuxtConfig({
   ui: {
     global: true,
     icons: ['heroicons', 'simple-icons', 'ph', 'twemoji', 'solar', 'game-icons'],
-  },
-  content: {
-    sources: {
-      primitives: process.env.NUXT_PRIMITIVES_PATH
-        ? {
-            prefix: '/primitives',
-            driver: 'fs',
-            base: resolve(process.env.NUXT_PRIMITIVES_PATH, '.docs/content/primitives'),
-          }
-        : {
-            prefix: '/primitives',
-            driver: 'github',
-            repo: 'oku-ui/primitives',
-            branch: 'main',
-            dir: '.docs/content/primitives',
-          },
-    },
   },
   fontMetrics: {
     fonts: ['DM Sans'],
@@ -76,6 +58,9 @@ export default defineNuxtConfig({
       },
       '/motion/**': {
         redirect: 'https://motion.oku-ui.com',
+      },
+      '/primitives/**': {
+        redirect: 'https://primitives.oku-ui.com',
       },
     },
   },
