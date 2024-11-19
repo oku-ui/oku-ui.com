@@ -1,10 +1,10 @@
 // noinspection ES6PreferShortImport: IntelliJ IDE hint to avoid warning to use `~/contributors`, will fail on build if changed
 
 /* Texts */
-export const okuPrimitivesName = 'Oku - Vue, Nuxt'
+export const okuPrimitivesName = 'Oku'
 export const okuPrimitivesShortName = 'Oku'
 export const okuPrimitivesDescription
-  = 'Oku focuses on the smallest detail. It is a Vue and Nuxt library that is designed to be simple, minimal, and functional.'
+  = 'Focuses on the smallest detail. It is a Vue and Nuxt library that is designed to be simple, minimal, and functional.'
 
 /* CDN fonts and styles */
 export const googleapis = 'https://fonts.googleapis.com'

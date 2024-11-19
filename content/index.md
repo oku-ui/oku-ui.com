@@ -7,11 +7,11 @@ aside: false
 editLink: false
 markdownStyles: false
 
-titleTemplate: Oku focuses on the smallest detail.
+titleTemplate: Focuses on the smallest detail.
 
 hero:
   name: Oku
-  text: Oku focuses on the smallest detail.
+  text: Focuses on the smallest detail.
   tagline: Vue, Nuxt and Nitro
   image:
     src: /logo.svg
