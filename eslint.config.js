@@ -1,43 +1,40 @@
 import antfu from '@antfu/eslint-config'
 
 export default antfu(
-  {},
   {
     ignores: [
-      'node_modules/',
-      'dist/',
-      'migrations/',
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/.nuxt',
-      '**/.output',
-      '**/.github',
-      '**/coverage',
-      '**/nuxt.d.ts',
-      '**/.DS_Store',
-      '**/.vscode',
-      '**/**.yml',
+      'dist',
+      '.github',
+      'node_modules',
+      'public',
+      'coverage',
+      'storybook-static',
+      '.nuxt',
+      '*.md',
+      '*.d.ts',
+      '.nx',
+      '.vitest-cache',
+      '__snapshots__',
+      // '.docs',
+      'packages/core/src/index.ts',
     ],
   },
   {
     rules: {
-      'no-console': 'warn',
-      'vue/no-deprecated-slot-attribute': 'off',
-      '@typescript-eslint/ban-ts-comment': 'off',
-      'import/order': 'off',
-      'n/prefer-global/process': 'off',
       'node/prefer-global/process': 'off',
-      'ts/ban-ts-comment': 'off',
       'ts/consistent-type-definitions': 'off',
+      'ts/no-unused-expressions': 'off',
+      '@typescript-eslint/prefer-interface': 'off',
     },
   },
   {
     files: [
-      '**/tests/**/*.ts',
+      '**/*.vue',
     ],
     rules: {
-      'unused-imports/no-unused-vars': 'off',
-      'no-console': 'off',
+      'import/first': 'off',
+      'import/order': 'off',
+      'vue/block-tag-newline': 'off',
     },
   },
 )
