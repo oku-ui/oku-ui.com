@@ -15,7 +15,7 @@ hero:
   tagline: Vue, Nuxt and Nitro
   image:
     src: /logo.svg
-    alt: Oku Motion
+    alt: Oku
   # prelink:
   #   title: 🎉 v0.4.0
   #   link: https://github.com/oku-ui/oku-ui.com/releases/tag/v0.4.0
